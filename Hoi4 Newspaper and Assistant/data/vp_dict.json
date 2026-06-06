@@ -1,0 +1,7899 @@
+{
+  "4": {
+    "stateName": "下奥地利",
+    "capital": "维也纳",
+    "capitalProvId": "11666",
+    "vp": 30,
+    "otherVPs": [
+      {
+        "provId": "732",
+        "vp": 10,
+        "name": "林茨"
+      }
+    ]
+  },
+  "5": {
+    "stateName": "埃姆兰-马祖伦",
+    "capital": "阿伦施泰因",
+    "capitalProvId": "6375",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "6": {
+    "stateName": "佛兰德斯",
+    "capital": "布鲁塞尔",
+    "capitalProvId": "516",
+    "vp": 30,
+    "otherVPs": [
+      {
+        "provId": "6560",
+        "vp": 5,
+        "name": "根特"
+      },
+      {
+        "provId": "3576",
+        "vp": 1,
+        "name": "科特赖克"
+      }
+    ]
+  },
+  "7": {
+    "stateName": "荷兰",
+    "capital": "阿姆斯特丹",
+    "capitalProvId": "391",
+    "vp": 40,
+    "otherVPs": [
+      {
+        "provId": "3211",
+        "vp": 10,
+        "name": "海牙"
+      },
+      {
+        "provId": "9498",
+        "vp": 20,
+        "name": "鹿特丹"
+      }
+    ]
+  },
+  "8": {
+    "stateName": "卢森堡",
+    "capital": "卢森堡",
+    "capitalProvId": "6583",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "10": {
+    "stateName": "华沙",
+    "capital": "华沙",
+    "capitalProvId": "3544",
+    "vp": 25,
+    "otherVPs": [
+      {
+        "provId": "402",
+        "vp": 1,
+        "name": "谢德尔采"
+      }
+    ]
+  },
+  "11": {
+    "stateName": "考纳斯",
+    "capital": "考纳斯",
+    "capitalProvId": "6296",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "9357",
+        "vp": 1,
+        "name": "乌克梅尔盖"
+      }
+    ]
+  },
+  "12": {
+    "stateName": "维泽梅",
+    "capital": "瓦尔米耶拉",
+    "capitalProvId": "10493",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "13": {
+    "stateName": "佩尔努",
+    "capital": "佩尔努",
+    "capitalProvId": "3174",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "14": {
+    "stateName": "布列塔尼",
+    "capital": "布雷斯特",
+    "capitalProvId": "3552",
+    "vp": 20,
+    "otherVPs": [
+      {
+        "provId": "6536",
+        "vp": 5,
+        "name": "洛里昂"
+      },
+      {
+        "provId": "9495",
+        "vp": 1,
+        "name": "雷恩"
+      }
+    ]
+  },
+  "15": {
+    "stateName": "诺曼底",
+    "capital": "勒阿弗尔",
+    "capitalProvId": "9434",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "6449",
+        "vp": 3,
+        "name": "瑟堡"
+      },
+      {
+        "provId": "11563",
+        "vp": 5,
+        "name": "鲁昂"
+      },
+      {
+        "provId": "485",
+        "vp": 3,
+        "name": "迪耶普"
+      }
+    ]
+  },
+  "16": {
+    "stateName": "法兰西岛",
+    "capital": "巴黎",
+    "capitalProvId": "11506",
+    "vp": 50,
+    "otherVPs": []
+  },
+  "17": {
+    "stateName": "弗朗什-孔泰",
+    "capital": "南锡",
+    "capitalProvId": "11516",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "9642",
+        "vp": 5,
+        "name": "贝桑松"
+      }
+    ]
+  },
+  "18": {
+    "stateName": "香槟",
+    "capital": "兰斯",
+    "capitalProvId": "13011",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "9490",
+        "vp": 5,
+        "name": "特鲁瓦"
+      },
+      {
+        "provId": "3560",
+        "vp": 1,
+        "name": "色当"
+      }
+    ]
+  },
+  "19": {
+    "stateName": "阿基坦",
+    "capital": "波尔多",
+    "capitalProvId": "9737",
+    "vp": 20,
+    "otherVPs": []
+  },
+  "20": {
+    "stateName": "罗讷",
+    "capital": "里昂",
+    "capitalProvId": "6613",
+    "vp": 10,
+    "otherVPs": []
+  },
+  "21": {
+    "stateName": "罗讷河口",
+    "capital": "马赛",
+    "capitalProvId": "11834",
+    "vp": 10,
+    "otherVPs": []
+  },
+  "22": {
+    "stateName": "朗格多克",
+    "capital": "蒙彼利埃",
+    "capitalProvId": "9898",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "23": {
+    "stateName": "普瓦图",
+    "capital": "拉罗谢尔",
+    "capitalProvId": "6657",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "24": {
+    "stateName": "中央大区",
+    "capital": "奥尔良",
+    "capitalProvId": "512",
+    "vp": 15,
+    "otherVPs": [
+      {
+        "provId": "3671",
+        "vp": 10,
+        "name": "图尔"
+      }
+    ]
+  },
+  "25": {
+    "stateName": "利穆赞",
+    "capital": "利摩日",
+    "capitalProvId": "620",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "26": {
+    "stateName": "奥弗涅",
+    "capital": "维希",
+    "capitalProvId": "3594",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "27": {
+    "stateName": "勃艮第",
+    "capital": "第戎",
+    "capitalProvId": "3652",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "29": {
+    "stateName": "北部-加来海峡",
+    "capital": "加来",
+    "capitalProvId": "11548",
+    "vp": 15,
+    "otherVPs": [
+      {
+        "provId": "575",
+        "vp": 5,
+        "name": "敦刻尔克"
+      },
+      {
+        "provId": "11483",
+        "vp": 10,
+        "name": "里尔"
+      }
+    ]
+  },
+  "30": {
+    "stateName": "卢瓦尔",
+    "capital": "南特",
+    "capitalProvId": "11465",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "31": {
+    "stateName": "南部-比利牛斯",
+    "capital": "图卢兹",
+    "capitalProvId": "6766",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "32": {
+    "stateName": "阿尔卑斯",
+    "capital": "格勒诺布尔",
+    "capitalProvId": "3768",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "33": {
+    "stateName": "中南大区",
+    "capital": "沙托鲁",
+    "capitalProvId": "651",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "34": {
+    "stateName": "瓦隆尼亚",
+    "capital": "列日",
+    "capitalProvId": "11519",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "3516",
+        "vp": 5,
+        "name": "那慕尔"
+      },
+      {
+        "provId": "9536",
+        "vp": 3,
+        "name": "沙勒罗瓦"
+      }
+    ]
+  },
+  "35": {
+    "stateName": "布拉班特",
+    "capital": "布雷达",
+    "capitalProvId": "3262",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "6496",
+        "vp": 3,
+        "name": "埃因霍温"
+      },
+      {
+        "provId": "11562",
+        "vp": 1,
+        "name": "马斯特里赫特"
+      }
+    ]
+  },
+  "36": {
+    "stateName": "弗里斯兰",
+    "capital": "乌得勒支",
+    "capitalProvId": "6241",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "9363",
+        "vp": 1,
+        "name": "阿纳姆"
+      },
+      {
+        "provId": "9335",
+        "vp": 3,
+        "name": "格罗宁根"
+      },
+      {
+        "provId": "6336",
+        "vp": 1,
+        "name": "吕伐登"
+      }
+    ]
+  },
+  "37": {
+    "stateName": "西兰",
+    "capital": "哥本哈根",
+    "capitalProvId": "6287",
+    "vp": 20,
+    "otherVPs": [
+      {
+        "provId": "6393",
+        "vp": 2,
+        "name": "罗斯基勒"
+      }
+    ]
+  },
+  "38": {
+    "stateName": "耶夫勒堡",
+    "capital": "耶夫勒",
+    "capitalProvId": "11091",
+    "vp": 2,
+    "otherVPs": [
+      {
+        "provId": "130",
+        "vp": 1,
+        "name": "松兹瓦尔"
+      }
+    ]
+  },
+  "40": {
+    "stateName": "阿尔泰边疆区",
+    "capital": "巴尔瑙尔",
+    "capitalProvId": "1794",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "41": {
+    "stateName": "马德里",
+    "capital": "马德里",
+    "capitalProvId": "3938",
+    "vp": 30,
+    "otherVPs": [
+      {
+        "provId": "858",
+        "vp": 1,
+        "name": "托莱多"
+      }
+    ]
+  },
+  "42": {
+    "stateName": "摩泽兰",
+    "capital": "萨尔布吕肯",
+    "capitalProvId": "11531",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "11435",
+        "vp": 1,
+        "name": "比特堡"
+      },
+      {
+        "provId": "9575",
+        "vp": 3,
+        "name": "特里尔"
+      }
+    ]
+  },
+  "43": {
+    "stateName": "北匈牙利",
+    "capital": "布达佩斯",
+    "capitalProvId": "9660",
+    "vp": 20,
+    "otherVPs": []
+  },
+  "44": {
+    "stateName": "中阿尔巴尼亚",
+    "capital": "地拉那",
+    "capitalProvId": "9914",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "11767",
+        "vp": 2,
+        "name": "发罗拉"
+      },
+      {
+        "provId": "13255",
+        "vp": 2,
+        "name": "都拉斯"
+      },
+      {
+        "provId": "6900",
+        "vp": 2,
+        "name": "科尔察"
+      }
+    ]
+  },
+  "46": {
+    "stateName": "蒙特尼亚",
+    "capital": "布加勒斯特",
+    "capitalProvId": "9617",
+    "vp": 20,
+    "otherVPs": [
+      {
+        "provId": "3663",
+        "vp": 5,
+        "name": "普洛耶什蒂"
+      }
+    ]
+  },
+  "47": {
+    "stateName": "阿提卡",
+    "capital": "雅典",
+    "capitalProvId": "4109",
+    "vp": 20,
+    "otherVPs": [
+      {
+        "provId": "3973",
+        "vp": 3,
+        "name": "拉里萨"
+      },
+      {
+        "provId": "7127",
+        "vp": 3,
+        "name": "哈尔基斯"
+      },
+      {
+        "provId": "3988",
+        "vp": 1,
+        "name": "科林斯"
+      }
+    ]
+  },
+  "49": {
+    "stateName": "安卡拉",
+    "capital": "安卡拉",
+    "capitalProvId": "11747",
+    "vp": 15,
+    "otherVPs": [
+      {
+        "provId": "804",
+        "vp": 5,
+        "name": "克勒克卡莱"
+      },
+      {
+        "provId": "3951",
+        "vp": 1,
+        "name": "埃斯基谢希尔"
+      }
+    ]
+  },
+  "50": {
+    "stateName": "符腾堡",
+    "capital": "斯图加特",
+    "capitalProvId": "9517",
+    "vp": 20,
+    "otherVPs": [
+      {
+        "provId": "11499",
+        "vp": 3,
+        "name": "乌尔姆"
+      }
+    ]
+  },
+  "51": {
+    "stateName": "莱茵兰",
+    "capital": "埃森",
+    "capitalProvId": "6469",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "587",
+        "vp": 5,
+        "name": "科隆"
+      }
+    ]
+  },
+  "52": {
+    "stateName": "上巴伐利亚",
+    "capital": "慕尼黑",
+    "capitalProvId": "692",
+    "vp": 20,
+    "otherVPs": [
+      {
+        "provId": "708",
+        "vp": 3,
+        "name": "奥格斯堡"
+      }
+    ]
+  },
+  "53": {
+    "stateName": "下巴伐利亚",
+    "capital": "雷根斯堡",
+    "capitalProvId": "9515",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "54": {
+    "stateName": "弗兰肯",
+    "capital": "纽伦堡",
+    "capitalProvId": "11544",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "6421",
+        "vp": 2,
+        "name": "科堡"
+      },
+      {
+        "provId": "9557",
+        "vp": 2,
+        "name": "维尔茨堡"
+      }
+    ]
+  },
+  "55": {
+    "stateName": "黑森",
+    "capital": "法兰克福",
+    "capitalProvId": "6488",
+    "vp": 20,
+    "otherVPs": [
+      {
+        "provId": "564",
+        "vp": 3,
+        "name": "卡塞尔"
+      },
+      {
+        "provId": "6444",
+        "vp": 2,
+        "name": "威斯巴登"
+      },
+      {
+        "provId": "11560",
+        "vp": 2,
+        "name": "美因茨"
+      }
+    ]
+  },
+  "56": {
+    "stateName": "威悉-埃姆斯",
+    "capital": "明斯特",
+    "capitalProvId": "11388",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "241",
+        "vp": 5,
+        "name": "威廉港"
+      },
+      {
+        "provId": "11360",
+        "vp": 1,
+        "name": "埃姆登"
+      }
+    ]
+  },
+  "57": {
+    "stateName": "威斯特法伦",
+    "capital": "多特蒙德",
+    "capitalProvId": "495",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "58": {
+    "stateName": "荷尔斯泰因",
+    "capital": "汉堡",
+    "capitalProvId": "9347",
+    "vp": 20,
+    "otherVPs": [
+      {
+        "provId": "6389",
+        "vp": 10,
+        "name": "基尔"
+      }
+    ]
+  },
+  "59": {
+    "stateName": "汉诺威",
+    "capital": "汉诺威",
+    "capitalProvId": "6377",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "3326",
+        "vp": 5,
+        "name": "不来梅"
+      },
+      {
+        "provId": "374",
+        "vp": 2,
+        "name": "库克斯港"
+      },
+      {
+        "provId": "6298",
+        "vp": 1,
+        "name": "吕讷堡"
+      }
+    ]
+  },
+  "60": {
+    "stateName": "图林根",
+    "capital": "埃尔福特",
+    "capitalProvId": "3561",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "425",
+        "vp": 1,
+        "name": "魏玛"
+      },
+      {
+        "provId": "538",
+        "vp": 2,
+        "name": "耶拿"
+      }
+    ]
+  },
+  "61": {
+    "stateName": "梅克伦堡",
+    "capital": "罗斯托克",
+    "capitalProvId": "321",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "11305",
+        "vp": 3,
+        "name": "吕贝克"
+      }
+    ]
+  },
+  "62": {
+    "stateName": "前波美拉尼亚",
+    "capital": "新施特雷利茨",
+    "capitalProvId": "3258",
+    "vp": 1,
+    "otherVPs": [
+      {
+        "provId": "9388",
+        "vp": 1,
+        "name": "施特拉尔松德"
+      }
+    ]
+  },
+  "63": {
+    "stateName": "后波美拉尼亚",
+    "capital": "斯德丁",
+    "capitalProvId": "6282",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "11372",
+        "vp": 3,
+        "name": "克斯林"
+      }
+    ]
+  },
+  "64": {
+    "stateName": "勃兰登堡",
+    "capital": "柏林",
+    "capitalProvId": "6521",
+    "vp": 50,
+    "otherVPs": [
+      {
+        "provId": "3522",
+        "vp": 5,
+        "name": "马格德堡"
+      },
+      {
+        "provId": "9496",
+        "vp": 1,
+        "name": "塞洛"
+      }
+    ]
+  },
+  "65": {
+    "stateName": "萨克森",
+    "capital": "莱比锡",
+    "capitalProvId": "3535",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "514",
+        "vp": 5,
+        "name": "德累斯顿"
+      },
+      {
+        "provId": "9471",
+        "vp": 2,
+        "name": "开姆尼茨"
+      }
+    ]
+  },
+  "66": {
+    "stateName": "下西里西亚",
+    "capital": "布雷斯劳",
+    "capitalProvId": "9570",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "552",
+        "vp": 1,
+        "name": "利格尼茨"
+      }
+    ]
+  },
+  "67": {
+    "stateName": "上西里西亚",
+    "capital": "格莱维茨",
+    "capitalProvId": "11467",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "9511",
+        "vp": 3,
+        "name": "奥珀伦"
+      }
+    ]
+  },
+  "68": {
+    "stateName": "奥斯特马克",
+    "capital": "屈斯特林",
+    "capitalProvId": "3473",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "69": {
+    "stateName": "北苏台德",
+    "capital": "利贝雷茨",
+    "capitalProvId": "11401",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "3585",
+        "vp": 3,
+        "name": "卡尔斯巴德"
+      },
+      {
+        "provId": "11432",
+        "vp": 1,
+        "name": "奥西格"
+      }
+    ]
+  },
+  "70": {
+    "stateName": "西斯洛伐克",
+    "capital": "布拉迪斯拉发",
+    "capitalProvId": "9692",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "11539",
+        "vp": 5,
+        "name": "日利纳"
+      },
+      {
+        "provId": "541",
+        "vp": 2,
+        "name": "尼特拉"
+      }
+    ]
+  },
+  "71": {
+    "stateName": "东斯洛伐克",
+    "capital": "普雷绍夫",
+    "capitalProvId": "3581",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "73": {
+    "stateName": "喀尔巴阡鲁塞尼亚",
+    "capital": "乌日霍罗德",
+    "capitalProvId": "11691",
+    "vp": 2,
+    "otherVPs": [
+      {
+        "provId": "3548",
+        "vp": 1,
+        "name": "穆卡切沃"
+      },
+      {
+        "provId": "6571",
+        "vp": 1,
+        "name": "亚西尼亚"
+      }
+    ]
+  },
+  "74": {
+    "stateName": "苏台德西里西亚",
+    "capital": "俄斯特拉发",
+    "capitalProvId": "3583",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "3414",
+        "vp": 2,
+        "name": "奥帕瓦"
+      }
+    ]
+  },
+  "75": {
+    "stateName": "摩拉维亚",
+    "capital": "布尔诺",
+    "capitalProvId": "3569",
+    "vp": 20,
+    "otherVPs": [
+      {
+        "provId": "6562",
+        "vp": 5,
+        "name": "奥尔米茨"
+      }
+    ]
+  },
+  "76": {
+    "stateName": "北特兰西瓦尼亚",
+    "capital": "克卢日",
+    "capitalProvId": "6711",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "9672",
+        "vp": 2,
+        "name": "特尔古穆列什"
+      },
+      {
+        "provId": "9670",
+        "vp": 1,
+        "name": "得达"
+      }
+    ]
+  },
+  "77": {
+    "stateName": "多布罗加",
+    "capital": "多布里奇",
+    "capitalProvId": "11597",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "78": {
+    "stateName": "比萨拉比亚",
+    "capital": "基希讷乌",
+    "capitalProvId": "3707",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "79": {
+    "stateName": "摩尔多瓦",
+    "capital": "加拉茨",
+    "capitalProvId": "6706",
+    "vp": 1,
+    "otherVPs": [
+      {
+        "provId": "9716",
+        "vp": 1,
+        "name": "雅西"
+      }
+    ]
+  },
+  "80": {
+    "stateName": "布科维纳",
+    "capital": "切尔诺夫策",
+    "capitalProvId": "577",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "81": {
+    "stateName": "奥尔特尼亚",
+    "capital": "克拉约瓦",
+    "capitalProvId": "6652",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "82": {
+    "stateName": "巴纳特",
+    "capital": "蒂米什瓦拉",
+    "capitalProvId": "9606",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "83": {
+    "stateName": "克里沙那",
+    "capital": "阿拉德",
+    "capitalProvId": "6682",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "84": {
+    "stateName": "特兰西瓦尼亚",
+    "capital": "布拉索夫",
+    "capitalProvId": "690",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "85": {
+    "stateName": "但泽",
+    "capital": "但泽",
+    "capitalProvId": "362",
+    "vp": 10,
+    "otherVPs": []
+  },
+  "86": {
+    "stateName": "波兹南",
+    "capital": "波兹南",
+    "capitalProvId": "6558",
+    "vp": 10,
+    "otherVPs": []
+  },
+  "87": {
+    "stateName": "罗兹",
+    "capital": "罗兹",
+    "capitalProvId": "9508",
+    "vp": 10,
+    "otherVPs": []
+  },
+  "88": {
+    "stateName": "克拉科夫",
+    "capital": "克拉科夫",
+    "capitalProvId": "9427",
+    "vp": 20,
+    "otherVPs": [
+      {
+        "provId": "442",
+        "vp": 3,
+        "name": "塔尔努夫"
+      },
+      {
+        "provId": "9494",
+        "vp": 1,
+        "name": "扎莫希奇"
+      }
+    ]
+  },
+  "89": {
+    "stateName": "斯坦尼斯瓦沃夫",
+    "capital": "省份11411",
+    "capitalProvId": "11411",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "90": {
+    "stateName": "凯尔采",
+    "capital": "拉多姆",
+    "capitalProvId": "3458",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "11430",
+        "vp": 5,
+        "name": "凯尔采"
+      }
+    ]
+  },
+  "91": {
+    "stateName": "利沃夫",
+    "capital": "利沃夫",
+    "capitalProvId": "11479",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "92": {
+    "stateName": "卢布林",
+    "capital": "卢布林",
+    "capitalProvId": "11399",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "93": {
+    "stateName": "沃伦",
+    "capital": "科韦利",
+    "capitalProvId": "422",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "6557",
+        "vp": 1,
+        "name": "罗夫诺"
+      }
+    ]
+  },
+  "94": {
+    "stateName": "波莱谢",
+    "capital": "平斯克",
+    "capitalProvId": "560",
+    "vp": 1,
+    "otherVPs": [
+      {
+        "provId": "3392",
+        "vp": 1,
+        "name": "布列斯特-立托夫斯克"
+      }
+    ]
+  },
+  "95": {
+    "stateName": "新格鲁多克",
+    "capital": "巴拉诺维奇",
+    "capitalProvId": "9304",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "96": {
+    "stateName": "维列伊卡",
+    "capital": "莫洛杰奇诺",
+    "capitalProvId": "406",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "97": {
+    "stateName": "比亚韦斯托克",
+    "capital": "格罗德诺",
+    "capitalProvId": "3393",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "11301",
+        "vp": 3,
+        "name": "比亚韦斯托克"
+      },
+      {
+        "provId": "3254",
+        "vp": 1,
+        "name": "苏瓦乌基"
+      }
+    ]
+  },
+  "98": {
+    "stateName": "普沃茨克",
+    "capital": "普沃茨克",
+    "capitalProvId": "3230",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "99": {
+    "stateName": "日德兰",
+    "capital": "奥胡斯",
+    "capitalProvId": "6364",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "6235",
+        "vp": 2,
+        "name": "奥尔堡"
+      },
+      {
+        "provId": "3277",
+        "vp": 1,
+        "name": "科灵"
+      },
+      {
+        "provId": "399",
+        "vp": 2,
+        "name": "埃斯比约"
+      },
+      {
+        "provId": "3206",
+        "vp": 1,
+        "name": "维堡"
+      }
+    ]
+  },
+  "102": {
+    "stateName": "北斯洛文尼亚",
+    "capital": "马里博尔",
+    "capitalProvId": "665",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "104": {
+    "stateName": "波斯尼亚",
+    "capital": "萨拉热窝",
+    "capitalProvId": "11899",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "6983",
+        "vp": 3,
+        "name": "巴尼亚卢卡"
+      }
+    ]
+  },
+  "105": {
+    "stateName": "黑山",
+    "capital": "波德戈里察",
+    "capitalProvId": "9809",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "9821",
+        "vp": 1,
+        "name": "科托尔"
+      }
+    ]
+  },
+  "106": {
+    "stateName": "马其顿",
+    "capital": "斯科普里",
+    "capitalProvId": "3882",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "107": {
+    "stateName": "塞尔维亚",
+    "capital": "贝尔格莱德",
+    "capitalProvId": "11586",
+    "vp": 15,
+    "otherVPs": []
+  },
+  "108": {
+    "stateName": "摩拉瓦",
+    "capital": "尼什",
+    "capitalProvId": "9602",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "109": {
+    "stateName": "克罗地亚",
+    "capital": "萨格勒布",
+    "capitalProvId": "11581",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "110": {
+    "stateName": "奥斯陆峡湾",
+    "capital": "奥斯陆",
+    "capitalProvId": "6115",
+    "vp": 13,
+    "otherVPs": [
+      {
+        "provId": "11151",
+        "vp": 2,
+        "name": "腓特烈斯塔"
+      }
+    ]
+  },
+  "112": {
+    "stateName": "里斯本",
+    "capital": "里斯本",
+    "capitalProvId": "11805",
+    "vp": 20,
+    "otherVPs": [
+      {
+        "provId": "3798",
+        "vp": 1,
+        "name": "科英布拉"
+      }
+    ]
+  },
+  "113": {
+    "stateName": "伦斯特",
+    "capital": "都柏林",
+    "capitalProvId": "11293",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "285",
+        "vp": 1,
+        "name": "韦克斯福德"
+      },
+      {
+        "provId": "303",
+        "vp": 1,
+        "name": "塔拉莫尔"
+      }
+    ]
+  },
+  "114": {
+    "stateName": "撒丁",
+    "capital": "卡利亚里",
+    "capitalProvId": "11773",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "9772",
+        "vp": 2,
+        "name": "萨萨里"
+      }
+    ]
+  },
+  "115": {
+    "stateName": "西西里",
+    "capital": "巴勒莫",
+    "capitalProvId": "10074",
+    "vp": 20,
+    "otherVPs": [
+      {
+        "provId": "4159",
+        "vp": 5,
+        "name": "墨西拿"
+      },
+      {
+        "provId": "4014",
+        "vp": 5,
+        "name": "卡塔尼亚"
+      },
+      {
+        "provId": "13256",
+        "vp": 1,
+        "name": "锡拉库萨"
+      }
+    ]
+  },
+  "116": {
+    "stateName": "马耳他",
+    "capital": "瓦莱塔",
+    "capitalProvId": "12003",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "117": {
+    "stateName": "坎帕尼亚",
+    "capital": "那不勒斯",
+    "capitalProvId": "819",
+    "vp": 20,
+    "otherVPs": []
+  },
+  "119": {
+    "stateName": "北爱尔兰",
+    "capital": "贝尔法斯特",
+    "capitalProvId": "3379",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "385",
+        "vp": 1,
+        "name": "伦敦德里"
+      }
+    ]
+  },
+  "120": {
+    "stateName": "苏格兰高地",
+    "capital": "因弗内斯",
+    "capitalProvId": "9075",
+    "vp": 1,
+    "otherVPs": [
+      {
+        "provId": "6062",
+        "vp": 1,
+        "name": "斯托诺韦"
+      },
+      {
+        "provId": "284",
+        "vp": 1,
+        "name": "奥本"
+      }
+    ]
+  },
+  "122": {
+    "stateName": "威尔士",
+    "capital": "斯旺西",
+    "capitalProvId": "407",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "311",
+        "vp": 1,
+        "name": "雷克瑟姆"
+      }
+    ]
+  },
+  "124": {
+    "stateName": "哥特兰",
+    "capital": "维斯比",
+    "capitalProvId": "408",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "125": {
+    "stateName": "东盎格利亚",
+    "capital": "诺里奇",
+    "capitalProvId": "322",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "271",
+        "vp": 2,
+        "name": "伊普斯威奇"
+      }
+    ]
+  },
+  "126": {
+    "stateName": "大伦敦区",
+    "capital": "伦敦",
+    "capitalProvId": "6103",
+    "vp": 50,
+    "otherVPs": []
+  },
+  "127": {
+    "stateName": "萨塞克斯",
+    "capital": "多佛尔",
+    "capitalProvId": "3501",
+    "vp": 20,
+    "otherVPs": [
+      {
+        "provId": "9458",
+        "vp": 15,
+        "name": "朴茨茅斯"
+      }
+    ]
+  },
+  "128": {
+    "stateName": "西米德兰兹",
+    "capital": "伯明翰",
+    "capitalProvId": "9297",
+    "vp": 25,
+    "otherVPs": []
+  },
+  "129": {
+    "stateName": "东米德兰兹",
+    "capital": "诺丁汉",
+    "capitalProvId": "6237",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "11279",
+        "vp": 3,
+        "name": "莱斯特"
+      }
+    ]
+  },
+  "130": {
+    "stateName": "约克",
+    "capital": "谢菲尔德",
+    "capitalProvId": "9315",
+    "vp": 15,
+    "otherVPs": [
+      {
+        "provId": "9379",
+        "vp": 10,
+        "name": "利兹"
+      },
+      {
+        "provId": "11297",
+        "vp": 5,
+        "name": "赫尔"
+      }
+    ]
+  },
+  "131": {
+    "stateName": "诺森伯兰",
+    "capital": "纽卡斯尔",
+    "capitalProvId": "351",
+    "vp": 8,
+    "otherVPs": []
+  },
+  "132": {
+    "stateName": "兰开夏",
+    "capital": "利物浦",
+    "capitalProvId": "6384",
+    "vp": 30,
+    "otherVPs": [
+      {
+        "provId": "6318",
+        "vp": 5,
+        "name": "曼彻斯特"
+      }
+    ]
+  },
+  "133": {
+    "stateName": "拉纳克",
+    "capital": "格拉斯哥",
+    "capitalProvId": "3273",
+    "vp": 15,
+    "otherVPs": [
+      {
+        "provId": "11218",
+        "vp": 1,
+        "name": "邓弗里斯"
+      }
+    ]
+  },
+  "134": {
+    "stateName": "康诺特",
+    "capital": "戈尔韦",
+    "capitalProvId": "9303",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "11371",
+        "vp": 1,
+        "name": "斯莱戈"
+      }
+    ]
+  },
+  "135": {
+    "stateName": "芒斯特",
+    "capital": "科克",
+    "capitalProvId": "7394",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "6313",
+        "vp": 1,
+        "name": "利默里克"
+      }
+    ]
+  },
+  "136": {
+    "stateName": "阿伯丁",
+    "capital": "阿伯丁",
+    "capitalProvId": "200",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "3150",
+        "vp": 1,
+        "name": "邓迪"
+      }
+    ]
+  },
+  "137": {
+    "stateName": "克里米亚",
+    "capital": "塞瓦斯托波尔",
+    "capitalProvId": "3686",
+    "vp": 20,
+    "otherVPs": [
+      {
+        "provId": "9680",
+        "vp": 1,
+        "name": "刻赤"
+      },
+      {
+        "provId": "6704",
+        "vp": 1,
+        "name": "雅尔塔"
+      },
+      {
+        "provId": "705",
+        "vp": 3,
+        "name": "辛菲罗波尔"
+      }
+    ]
+  },
+  "138": {
+    "stateName": "斯科讷",
+    "capital": "马尔默",
+    "capitalProvId": "9279",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "11215",
+        "vp": 1,
+        "name": "卡尔斯克鲁纳"
+      },
+      {
+        "provId": "6345",
+        "vp": 1,
+        "name": "赫尔辛堡"
+      }
+    ]
+  },
+  "139": {
+    "stateName": "斯莫兰",
+    "capital": "卡尔马",
+    "capitalProvId": "299",
+    "vp": 2,
+    "otherVPs": [
+      {
+        "provId": "9329",
+        "vp": 1,
+        "name": "延雪平"
+      },
+      {
+        "provId": "211",
+        "vp": 1,
+        "name": "博里霍姆"
+      }
+    ]
+  },
+  "140": {
+    "stateName": "西约特兰",
+    "capital": "哥德堡",
+    "capitalProvId": "383",
+    "vp": 10,
+    "otherVPs": []
+  },
+  "141": {
+    "stateName": "南曼兰",
+    "capital": "斯德哥尔摩",
+    "capitalProvId": "6050",
+    "vp": 20,
+    "otherVPs": [
+      {
+        "provId": "9149",
+        "vp": 3,
+        "name": "乌普萨拉"
+      }
+    ]
+  },
+  "142": {
+    "stateName": "西挪威",
+    "capital": "卑尔根",
+    "capitalProvId": "122",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "53",
+        "vp": 3,
+        "name": "斯塔万格"
+      }
+    ]
+  },
+  "143": {
+    "stateName": "特伦德拉格",
+    "capital": "特隆赫姆",
+    "capitalProvId": "3022",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "144": {
+    "stateName": "诺德兰",
+    "capital": "纳尔维克",
+    "capitalProvId": "192",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "9126",
+        "vp": 1,
+        "name": "博德"
+      }
+    ]
+  },
+  "148": {
+    "stateName": "拉皮",
+    "capital": "凯米",
+    "capitalProvId": "11164",
+    "vp": 2,
+    "otherVPs": [
+      {
+        "provId": "6087",
+        "vp": 1,
+        "name": "罗瓦涅米"
+      },
+      {
+        "provId": "11125",
+        "vp": 1,
+        "name": "托尔尼奥"
+      },
+      {
+        "provId": "6142",
+        "vp": 1,
+        "name": "伊纳里"
+      }
+    ]
+  },
+  "152": {
+    "stateName": "上奥地利",
+    "capital": "萨尔茨堡",
+    "capitalProvId": "688",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "9665",
+        "vp": 3,
+        "name": "韦尔斯"
+      }
+    ]
+  },
+  "153": {
+    "stateName": "蒂罗尔",
+    "capital": "因斯布鲁克",
+    "capitalProvId": "673",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "154": {
+    "stateName": "特兰蒂萨",
+    "capital": "德布勒森",
+    "capitalProvId": "11659",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "11646",
+        "vp": 1,
+        "name": "琼格拉德"
+      }
+    ]
+  },
+  "155": {
+    "stateName": "北外多瑙",
+    "capital": "杰尔",
+    "capitalProvId": "6720",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "686",
+        "vp": 1,
+        "name": "肖普朗"
+      }
+    ]
+  },
+  "156": {
+    "stateName": "卡拉布里亚",
+    "capital": "雷焦卡拉布里亚",
+    "capitalProvId": "9990",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "157": {
+    "stateName": "阿布鲁佐",
+    "capital": "安科纳",
+    "capitalProvId": "925",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "158": {
+    "stateName": "皮埃蒙特",
+    "capital": "热那亚",
+    "capitalProvId": "6788",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "6780",
+        "vp": 5,
+        "name": "都灵"
+      }
+    ]
+  },
+  "162": {
+    "stateName": "托斯卡纳",
+    "capital": "佛罗伦萨",
+    "capitalProvId": "9907",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "6973",
+        "vp": 1,
+        "name": "拉斯佩齐亚"
+      },
+      {
+        "provId": "11833",
+        "vp": 1,
+        "name": "里窝那"
+      },
+      {
+        "provId": "6946",
+        "vp": 1,
+        "name": "卢卡"
+      }
+    ]
+  },
+  "164": {
+    "stateName": "十二群岛",
+    "capital": "罗德岛",
+    "capitalProvId": "10007",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "165": {
+    "stateName": "加泰罗尼亚",
+    "capital": "巴塞罗那",
+    "capitalProvId": "9764",
+    "vp": 30,
+    "otherVPs": [
+      {
+        "provId": "6966",
+        "vp": 1,
+        "name": "托尔托萨"
+      },
+      {
+        "provId": "6927",
+        "vp": 1,
+        "name": "赫罗纳"
+      }
+    ]
+  },
+  "166": {
+    "stateName": "西阿拉贡",
+    "capital": "萨拉戈萨",
+    "capitalProvId": "3816",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "9840",
+        "vp": 1,
+        "name": "韦斯卡"
+      },
+      {
+        "provId": "7213",
+        "vp": 1,
+        "name": "特鲁埃尔"
+      }
+    ]
+  },
+  "167": {
+    "stateName": "巴伦西亚",
+    "capital": "巴伦西亚",
+    "capitalProvId": "6906",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "4098",
+        "vp": 3,
+        "name": "阿利坎特"
+      }
+    ]
+  },
+  "168": {
+    "stateName": "穆尔西亚",
+    "capital": "穆尔西亚",
+    "capitalProvId": "10024",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "169": {
+    "stateName": "塞维利亚",
+    "capital": "塞维利亚",
+    "capitalProvId": "7183",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "1048",
+        "vp": 3,
+        "name": "加的斯"
+      }
+    ]
+  },
+  "170": {
+    "stateName": "埃斯特雷马杜拉",
+    "capital": "巴达霍斯",
+    "capitalProvId": "6902",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "171": {
+    "stateName": "加利西亚",
+    "capital": "拉科鲁尼亚",
+    "capitalProvId": "758",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "6734",
+        "vp": 3,
+        "name": "维戈"
+      }
+    ]
+  },
+  "172": {
+    "stateName": "纳瓦拉",
+    "capital": "潘普洛纳",
+    "capitalProvId": "3933",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "173": {
+    "stateName": "格拉纳达",
+    "capital": "马拉加",
+    "capitalProvId": "9979",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "12038",
+        "vp": 1,
+        "name": "阿尔梅里亚"
+      },
+      {
+        "provId": "1176",
+        "vp": 3,
+        "name": "格拉纳达"
+      }
+    ]
+  },
+  "174": {
+    "stateName": "莱昂",
+    "capital": "莱昂",
+    "capitalProvId": "726",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "175": {
+    "stateName": "雷阿尔城",
+    "capital": "雷阿尔城",
+    "capitalProvId": "6832",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "176": {
+    "stateName": "布尔戈斯",
+    "capital": "布尔戈斯",
+    "capitalProvId": "885",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "177": {
+    "stateName": "巴利阿里群岛",
+    "capital": "马略卡岛帕尔马",
+    "capitalProvId": "9793",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "178": {
+    "stateName": "加那利群岛",
+    "capital": "圣克鲁兹-德特内里费",
+    "capitalProvId": "13071",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "179": {
+    "stateName": "贝雅",
+    "capital": "塞图巴尔",
+    "capitalProvId": "970",
+    "vp": 1,
+    "otherVPs": [
+      {
+        "provId": "3790",
+        "vp": 1,
+        "name": "波尔蒂芒"
+      },
+      {
+        "provId": "6880",
+        "vp": 1,
+        "name": "法鲁"
+      },
+      {
+        "provId": "6933",
+        "vp": 1,
+        "name": "贝雅"
+      }
+    ]
+  },
+  "180": {
+    "stateName": "波尔图",
+    "capital": "波尔图",
+    "capitalProvId": "9817",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "11673",
+        "vp": 5,
+        "name": "布拉加"
+      }
+    ]
+  },
+  "181": {
+    "stateName": "瓜尔达",
+    "capital": "瓜尔达",
+    "capitalProvId": "6996",
+    "vp": 1,
+    "otherVPs": [
+      {
+        "provId": "9787",
+        "vp": 1,
+        "name": "维塞乌"
+      }
+    ]
+  },
+  "182": {
+    "stateName": "克里特",
+    "capital": "伊拉克利翁",
+    "capitalProvId": "9940",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "12058",
+        "vp": 3,
+        "name": "哈尼亚"
+      }
+    ]
+  },
+  "183": {
+    "stateName": "塞浦路斯",
+    "capital": "尼科西亚",
+    "capitalProvId": "11984",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "7193",
+        "vp": 3,
+        "name": "利马索尔"
+      }
+    ]
+  },
+  "184": {
+    "stateName": "色雷斯",
+    "capital": "亚历山德鲁波利斯",
+    "capitalProvId": "11905",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "185": {
+    "stateName": "伊庇鲁斯",
+    "capital": "约阿尼纳",
+    "capitalProvId": "3914",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "10203",
+        "vp": 1,
+        "name": "科孚"
+      },
+      {
+        "provId": "1205",
+        "vp": 1,
+        "name": "阿格里尼奥"
+      }
+    ]
+  },
+  "186": {
+    "stateName": "伯罗奔尼撒",
+    "capital": "帕特拉斯",
+    "capitalProvId": "7211",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "7096",
+        "vp": 1,
+        "name": "阿尔戈斯"
+      },
+      {
+        "provId": "11965",
+        "vp": 1,
+        "name": "卡拉马塔"
+      }
+    ]
+  },
+  "187": {
+    "stateName": "爱琴群岛",
+    "capital": "米蒂利尼",
+    "capitalProvId": "8435",
+    "vp": 1,
+    "otherVPs": [
+      {
+        "provId": "6550",
+        "vp": 1,
+        "name": "萨摩斯"
+      }
+    ]
+  },
+  "188": {
+    "stateName": "梅梅尔",
+    "capital": "梅梅尔",
+    "capitalProvId": "3288",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "189": {
+    "stateName": "萨莫吉希亚",
+    "capital": "希奥利艾",
+    "capitalProvId": "9483",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "6314",
+        "vp": 1,
+        "name": "帕兰加"
+      }
+    ]
+  },
+  "190": {
+    "stateName": "库尔泽梅",
+    "capital": "利耶帕亚",
+    "capitalProvId": "9262",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "3296",
+        "vp": 1,
+        "name": "文茨皮尔斯"
+      }
+    ]
+  },
+  "191": {
+    "stateName": "塔尔图",
+    "capital": "沃鲁",
+    "capitalProvId": "592",
+    "vp": 1,
+    "otherVPs": [
+      {
+        "provId": "9221",
+        "vp": 1,
+        "name": "塔尔图"
+      }
+    ]
+  },
+  "192": {
+    "stateName": "敖德萨",
+    "capital": "敖德萨",
+    "capitalProvId": "11670",
+    "vp": 10,
+    "otherVPs": []
+  },
+  "193": {
+    "stateName": "切尔尼戈夫",
+    "capital": "切尔尼戈夫",
+    "capitalProvId": "3568",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "194": {
+    "stateName": "莫济里",
+    "capital": "莫济里",
+    "capitalProvId": "6232",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "195": {
+    "stateName": "列宁格勒",
+    "capital": "列宁格勒",
+    "capitalProvId": "3151",
+    "vp": 30,
+    "otherVPs": []
+  },
+  "196": {
+    "stateName": "赫尔松",
+    "capital": "赫尔松",
+    "capitalProvId": "721",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "197": {
+    "stateName": "尼古拉耶夫",
+    "capital": "尼古拉耶夫",
+    "capitalProvId": "11683",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "198": {
+    "stateName": "文尼察",
+    "capital": "文尼察",
+    "capitalProvId": "476",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "199": {
+    "stateName": "赫梅利尼茨基",
+    "capital": "普罗斯库里夫",
+    "capitalProvId": "3457",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "200": {
+    "stateName": "扎波罗热",
+    "capital": "扎波罗热",
+    "capitalProvId": "11405",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "201": {
+    "stateName": "日托米尔",
+    "capital": "日托米尔",
+    "capitalProvId": "6593",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "202": {
+    "stateName": "基辅",
+    "capital": "基辅",
+    "capitalProvId": "525",
+    "vp": 25,
+    "otherVPs": []
+  },
+  "203": {
+    "stateName": "切尔卡瑟",
+    "capital": "切尔卡瑟",
+    "capitalProvId": "488",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "204": {
+    "stateName": "博布鲁伊斯克",
+    "capital": "博布鲁伊斯克",
+    "capitalProvId": "3350",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "205": {
+    "stateName": "卡卢加",
+    "capital": "卡卢加",
+    "capitalProvId": "382",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "206": {
+    "stateName": "明斯克",
+    "capital": "明斯克",
+    "capitalProvId": "11370",
+    "vp": 20,
+    "otherVPs": [
+      {
+        "provId": "9289",
+        "vp": 5,
+        "name": "莫吉廖夫"
+      }
+    ]
+  },
+  "207": {
+    "stateName": "维捷布斯克",
+    "capital": "维捷布斯克",
+    "capitalProvId": "11241",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "208": {
+    "stateName": "卢加",
+    "capital": "卢加",
+    "capitalProvId": "9098",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "209": {
+    "stateName": "普斯科夫",
+    "capital": "普斯科夫",
+    "capitalProvId": "11202",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "210": {
+    "stateName": "涅韦尔",
+    "capital": "大卢基",
+    "capitalProvId": "11234",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "213": {
+    "stateName": "摩尔曼斯克",
+    "capital": "摩尔曼斯克",
+    "capitalProvId": "3134",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "6181",
+        "vp": 1,
+        "name": "坎达拉克沙"
+      }
+    ]
+  },
+  "214": {
+    "stateName": "阿尔汉格尔斯克",
+    "capital": "阿尔汉格尔斯克",
+    "capitalProvId": "3338",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "216": {
+    "stateName": "奥洛涅茨",
+    "capital": "彼得罗扎沃茨克",
+    "capitalProvId": "11159",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "217": {
+    "stateName": "斯大林格勒",
+    "capital": "斯大林格勒",
+    "capitalProvId": "3529",
+    "vp": 30,
+    "otherVPs": []
+  },
+  "218": {
+    "stateName": "罗斯托夫",
+    "capital": "罗斯托夫",
+    "capitalProvId": "9417",
+    "vp": 15,
+    "otherVPs": []
+  },
+  "219": {
+    "stateName": "莫斯科",
+    "capital": "莫斯科",
+    "capitalProvId": "6380",
+    "vp": 50,
+    "otherVPs": []
+  },
+  "220": {
+    "stateName": "库尔斯克",
+    "capital": "库尔斯克",
+    "capitalProvId": "3580",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "221": {
+    "stateName": "哈尔科夫",
+    "capital": "哈尔科夫",
+    "capitalProvId": "418",
+    "vp": 10,
+    "otherVPs": []
+  },
+  "222": {
+    "stateName": "奥廖尔",
+    "capital": "奥廖尔",
+    "capitalProvId": "9355",
+    "vp": 10,
+    "otherVPs": []
+  },
+  "223": {
+    "stateName": "图拉",
+    "capital": "图拉",
+    "capitalProvId": "6262",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "224": {
+    "stateName": "布良斯克",
+    "capital": "布良斯克",
+    "capitalProvId": "3335",
+    "vp": 10,
+    "otherVPs": []
+  },
+  "225": {
+    "stateName": "苏梅",
+    "capital": "苏梅",
+    "capitalProvId": "3520",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "9566",
+        "vp": 1,
+        "name": "绍斯特卡"
+      }
+    ]
+  },
+  "226": {
+    "stateName": "第聂伯罗彼得罗夫斯克",
+    "capital": "第聂伯罗彼得罗夫斯克",
+    "capitalProvId": "11437",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "11561",
+        "vp": 1,
+        "name": "克里维里赫"
+      }
+    ]
+  },
+  "227": {
+    "stateName": "斯大林诺",
+    "capital": "斯大林诺",
+    "capitalProvId": "6474",
+    "vp": 10,
+    "otherVPs": []
+  },
+  "228": {
+    "stateName": "伏罗希洛夫格勒",
+    "capital": "伏罗希洛夫格勒",
+    "capitalProvId": "9461",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "229": {
+    "stateName": "阿塞拜疆",
+    "capital": "巴库",
+    "capitalProvId": "7661",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "11674",
+        "vp": 1,
+        "name": "甘贾"
+      }
+    ]
+  },
+  "230": {
+    "stateName": "亚美尼亚",
+    "capital": "埃里温",
+    "capitalProvId": "12320",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "12441",
+        "vp": 1,
+        "name": "久姆里"
+      }
+    ]
+  },
+  "231": {
+    "stateName": "格鲁吉亚",
+    "capital": "第比利斯",
+    "capitalProvId": "1599",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "3653",
+        "vp": 3,
+        "name": "巴统"
+      }
+    ]
+  },
+  "232": {
+    "stateName": "达吉斯坦",
+    "capital": "马哈奇卡拉",
+    "capitalProvId": "6701",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "7624",
+        "vp": 1,
+        "name": "杰尔宾特"
+      }
+    ]
+  },
+  "233": {
+    "stateName": "索契",
+    "capital": "索契",
+    "capitalProvId": "9663",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "234": {
+    "stateName": "克拉斯诺达尔",
+    "capital": "克拉斯诺达尔",
+    "capitalProvId": "3734",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "3720",
+        "vp": 1,
+        "name": "迈科普"
+      },
+      {
+        "provId": "719",
+        "vp": 3,
+        "name": "新罗西斯克"
+      }
+    ]
+  },
+  "235": {
+    "stateName": "斯塔夫罗波尔",
+    "capital": "斯塔夫罗波尔",
+    "capitalProvId": "11696",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "236": {
+    "stateName": "阿斯特拉罕",
+    "capital": "阿斯特拉罕",
+    "capitalProvId": "9753",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "237": {
+    "stateName": "卡尔梅克",
+    "capital": "埃利斯塔",
+    "capitalProvId": "11724",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "238": {
+    "stateName": "伏尔加顿斯克",
+    "capital": "萨利斯克",
+    "capitalProvId": "775",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "239": {
+    "stateName": "萨拉托夫",
+    "capital": "萨拉托夫",
+    "capitalProvId": "3578",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "240": {
+    "stateName": "别尔哥罗德",
+    "capital": "别尔哥罗德",
+    "capitalProvId": "9449",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "241": {
+    "stateName": "戈梅利",
+    "capital": "戈梅利",
+    "capitalProvId": "9288",
+    "vp": 10,
+    "otherVPs": []
+  },
+  "242": {
+    "stateName": "斯摩棱斯克",
+    "capital": "斯摩棱斯克",
+    "capitalProvId": "306",
+    "vp": 15,
+    "otherVPs": []
+  },
+  "243": {
+    "stateName": "罗斯拉夫尔",
+    "capital": "罗斯拉夫尔",
+    "capitalProvId": "11336",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "244": {
+    "stateName": "沃尔霍夫",
+    "capital": "沃尔霍夫",
+    "capitalProvId": "9197",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "245": {
+    "stateName": "米列罗沃",
+    "capital": "米列罗沃",
+    "capitalProvId": "11476",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "246": {
+    "stateName": "勒热夫",
+    "capital": "勒热夫",
+    "capitalProvId": "11349",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "247": {
+    "stateName": "加里宁",
+    "capital": "加里宁",
+    "capitalProvId": "6245",
+    "vp": 10,
+    "otherVPs": []
+  },
+  "248": {
+    "stateName": "雅罗斯拉夫尔",
+    "capital": "雅罗斯拉夫尔",
+    "capitalProvId": "121",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "249": {
+    "stateName": "喀山",
+    "capital": "喀山",
+    "capitalProvId": "6338",
+    "vp": 10,
+    "otherVPs": []
+  },
+  "250": {
+    "stateName": "乌里扬诺夫斯克",
+    "capital": "乌里扬诺夫斯克",
+    "capitalProvId": "392",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "251": {
+    "stateName": "古比雪夫",
+    "capital": "古比雪夫",
+    "capitalProvId": "11225",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "252": {
+    "stateName": "高尔基",
+    "capital": "高尔基",
+    "capitalProvId": "11375",
+    "vp": 10,
+    "otherVPs": []
+  },
+  "253": {
+    "stateName": "伊万诺沃",
+    "capital": "伊万诺沃",
+    "capitalProvId": "6269",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "254": {
+    "stateName": "梁赞",
+    "capital": "梁赞",
+    "capitalProvId": "11248",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "255": {
+    "stateName": "奔萨",
+    "capital": "奔萨",
+    "capitalProvId": "9258",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "256": {
+    "stateName": "楚瓦什",
+    "capital": "切博克萨雷",
+    "capitalProvId": "9259",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "257": {
+    "stateName": "坦波夫",
+    "capital": "坦波夫",
+    "capitalProvId": "11351",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "258": {
+    "stateName": "利佩茨克",
+    "capital": "利佩茨克",
+    "capitalProvId": "6398",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "259": {
+    "stateName": "波尔塔瓦",
+    "capital": "波尔塔瓦",
+    "capitalProvId": "11504",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "260": {
+    "stateName": "沃罗涅日",
+    "capital": "沃罗涅日",
+    "capitalProvId": "413",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "261": {
+    "stateName": "俄亥俄",
+    "capital": "克里夫兰",
+    "capitalProvId": "6890",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "6855",
+        "vp": 5,
+        "name": "哥伦布"
+      }
+    ]
+  },
+  "263": {
+    "stateName": "诺夫哥罗德",
+    "capital": "诺夫哥罗德",
+    "capitalProvId": "117",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "264": {
+    "stateName": "季赫温",
+    "capital": "季赫温",
+    "capitalProvId": "3140",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "265": {
+    "stateName": "米哈伊洛夫卡",
+    "capital": "米哈伊洛夫卡",
+    "capitalProvId": "487",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "266": {
+    "stateName": "德黑兰",
+    "capital": "德黑兰",
+    "capitalProvId": "10837",
+    "vp": 10,
+    "otherVPs": []
+  },
+  "267": {
+    "stateName": "喀布尔",
+    "capital": "喀布尔",
+    "capitalProvId": "10737",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "268": {
+    "stateName": "法属索马里兰",
+    "capital": "吉布提",
+    "capitalProvId": "8124",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "269": {
+    "stateName": "英属索马里兰",
+    "capital": "哈尔格萨",
+    "capitalProvId": "5068",
+    "vp": 1,
+    "otherVPs": [
+      {
+        "provId": "10833",
+        "vp": 1,
+        "name": "柏培拉"
+      }
+    ]
+  },
+  "271": {
+    "stateName": "绍阿",
+    "capital": "亚的斯亚贝巴",
+    "capitalProvId": "5010",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "8036",
+        "vp": 1,
+        "name": "阿塞拉"
+      }
+    ]
+  },
+  "272": {
+    "stateName": "塞内加尔",
+    "capital": "达喀尔",
+    "capitalProvId": "4948",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "274": {
+    "stateName": "加纳",
+    "capital": "阿克拉",
+    "capitalProvId": "10862",
+    "vp": 2,
+    "otherVPs": [
+      {
+        "provId": "12787",
+        "vp": 1,
+        "name": "库马西"
+      }
+    ]
+  },
+  "275": {
+    "stateName": "德兰士瓦",
+    "capital": "比勒陀利亚",
+    "capitalProvId": "10400",
+    "vp": 10,
+    "otherVPs": []
+  },
+  "276": {
+    "stateName": "南安大略",
+    "capital": "渥太华",
+    "capitalProvId": "3778",
+    "vp": 20,
+    "otherVPs": [
+      {
+        "provId": "3775",
+        "vp": 10,
+        "name": "多伦多"
+      }
+    ]
+  },
+  "277": {
+    "stateName": "墨西哥城",
+    "capital": "墨西哥城",
+    "capitalProvId": "1965",
+    "vp": 25,
+    "otherVPs": [
+      {
+        "provId": "2008",
+        "vp": 10,
+        "name": "莱昂"
+      }
+    ]
+  },
+  "278": {
+    "stateName": "布宜诺斯艾利斯",
+    "capital": "布宜诺斯艾利斯",
+    "capitalProvId": "12364",
+    "vp": 15,
+    "otherVPs": [
+      {
+        "provId": "7621",
+        "vp": 2,
+        "name": "马德普拉塔"
+      }
+    ]
+  },
+  "279": {
+    "stateName": "圣地亚哥",
+    "capital": "圣地亚哥",
+    "capitalProvId": "650",
+    "vp": 15,
+    "otherVPs": [
+      {
+        "provId": "8194",
+        "vp": 3,
+        "name": "科金博"
+      },
+      {
+        "provId": "8222",
+        "vp": 5,
+        "name": "瓦尔帕莱索"
+      },
+      {
+        "provId": "12984",
+        "vp": 2,
+        "name": "康塞普西翁"
+      },
+      {
+        "provId": "8251",
+        "vp": 1,
+        "name": "奇廉"
+      }
+    ]
+  },
+  "280": {
+    "stateName": "马托格罗索",
+    "capital": "库亚巴",
+    "capitalProvId": "2111",
+    "vp": 2,
+    "otherVPs": []
+  },
+  "281": {
+    "stateName": "马尔代夫",
+    "capital": "马累",
+    "capitalProvId": "4967",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "282": {
+    "stateName": "关东",
+    "capital": "东京",
+    "capitalProvId": "1182",
+    "vp": 50,
+    "otherVPs": [
+      {
+        "provId": "9998",
+        "vp": 25,
+        "name": "横滨"
+      }
+    ]
+  },
+  "283": {
+    "stateName": "甘肃",
+    "capital": "兰州",
+    "capitalProvId": "2022",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "7911",
+        "vp": 1,
+        "name": "天水"
+      }
+    ]
+  },
+  "284": {
+    "stateName": "北岛",
+    "capital": "惠灵顿",
+    "capitalProvId": "1814",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "4543",
+        "vp": 5,
+        "name": "奥克兰"
+      }
+    ]
+  },
+  "285": {
+    "stateName": "新南威尔士",
+    "capital": "堪培拉",
+    "capitalProvId": "7859",
+    "vp": 30,
+    "otherVPs": [
+      {
+        "provId": "12406",
+        "vp": 20,
+        "name": "悉尼"
+      },
+      {
+        "provId": "7520",
+        "vp": 1,
+        "name": "纽卡斯尔"
+      }
+    ]
+  },
+  "286": {
+    "stateName": "占婆",
+    "capital": "西贡",
+    "capitalProvId": "4401",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "288": {
+    "stateName": "马圭",
+    "capital": "仁安羌",
+    "capitalProvId": "4202",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "289": {
+    "stateName": "暹罗",
+    "capital": "曼谷",
+    "capitalProvId": "7408",
+    "vp": 10,
+    "otherVPs": []
+  },
+  "290": {
+    "stateName": "西属非洲",
+    "capital": "休达",
+    "capitalProvId": "9945",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "12100",
+        "vp": 2,
+        "name": "梅利利亚"
+      },
+      {
+        "provId": "12087",
+        "vp": 1,
+        "name": "得土安"
+      }
+    ]
+  },
+  "291": {
+    "stateName": "巴格达",
+    "capital": "巴格达",
+    "capitalProvId": "2097",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "7994",
+        "vp": 1,
+        "name": "卡尔巴拉"
+      },
+      {
+        "provId": "3795",
+        "vp": 2,
+        "name": "提克里特"
+      }
+    ]
+  },
+  "292": {
+    "stateName": "内志",
+    "capital": "利雅得",
+    "capitalProvId": "12727",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "293": {
+    "stateName": "北也门",
+    "capital": "萨那",
+    "capitalProvId": "10840",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "294": {
+    "stateName": "马斯喀特",
+    "capital": "马斯喀特",
+    "capitalProvId": "10760",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "295": {
+    "stateName": "利奥波德维尔",
+    "capital": "利奥波德维尔",
+    "capitalProvId": "5117",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "12925",
+        "vp": 2,
+        "name": "马塔迪"
+      },
+      {
+        "provId": "13365",
+        "vp": 1,
+        "name": "恩坎巴"
+      }
+    ]
+  },
+  "296": {
+    "stateName": "葡属几内亚",
+    "capital": "比绍",
+    "capitalProvId": "12891",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "297": {
+    "stateName": "赤道几内亚",
+    "capital": "马拉博",
+    "capitalProvId": "1903",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "298": {
+    "stateName": "利比里亚",
+    "capital": "蒙罗维亚",
+    "capitalProvId": "7959",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "299": {
+    "stateName": "福克兰群岛",
+    "capital": "斯坦利港",
+    "capitalProvId": "12960",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "300": {
+    "stateName": "蒙得维的亚",
+    "capital": "蒙得维的亚",
+    "capitalProvId": "10362",
+    "vp": 10,
+    "otherVPs": []
+  },
+  "301": {
+    "stateName": "巴拉圭",
+    "capital": "亚松森",
+    "capitalProvId": "2152",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "2194",
+        "vp": 5,
+        "name": "恩卡纳西翁"
+      },
+      {
+        "provId": "11023",
+        "vp": 1,
+        "name": "佩德罗胡安-卡瓦列罗"
+      }
+    ]
+  },
+  "302": {
+    "stateName": "拉巴斯",
+    "capital": "拉巴斯",
+    "capitalProvId": "5230",
+    "vp": 12,
+    "otherVPs": [
+      {
+        "provId": "12930",
+        "vp": 10,
+        "name": "苏克雷"
+      }
+    ]
+  },
+  "303": {
+    "stateName": "利马",
+    "capital": "利马",
+    "capitalProvId": "12997",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "2156",
+        "vp": 2,
+        "name": "皮乌拉"
+      }
+    ]
+  },
+  "304": {
+    "stateName": "巴拿马",
+    "capital": "巴拿马城",
+    "capitalProvId": "7630",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "4611",
+        "vp": 1,
+        "name": "圣何塞-德戴维"
+      }
+    ]
+  },
+  "305": {
+    "stateName": "厄瓜多尔",
+    "capital": "基多",
+    "capitalProvId": "12798",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "8252",
+        "vp": 5,
+        "name": "瓜亚基尔"
+      },
+      {
+        "provId": "5120",
+        "vp": 2,
+        "name": "马查拉"
+      }
+    ]
+  },
+  "306": {
+    "stateName": "昆迪纳马卡",
+    "capital": "波哥大",
+    "capitalProvId": "10747",
+    "vp": 10,
+    "otherVPs": []
+  },
+  "307": {
+    "stateName": "米兰达",
+    "capital": "加拉加斯",
+    "capitalProvId": "8113",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "309": {
+    "stateName": "苏里南",
+    "capital": "帕拉马里博",
+    "capitalProvId": "10906",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "310": {
+    "stateName": "法属圭亚那",
+    "capital": "卡宴",
+    "capitalProvId": "12885",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "311": {
+    "stateName": "英属洪都拉斯",
+    "capital": "伯利兹城",
+    "capitalProvId": "2077",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "312": {
+    "stateName": "洪都拉斯",
+    "capital": "特古西加尔巴",
+    "capitalProvId": "12865",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "313": {
+    "stateName": "危地马拉",
+    "capital": "危地马拉",
+    "capitalProvId": "10886",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "314": {
+    "stateName": "萨尔瓦多",
+    "capital": "圣萨尔瓦多",
+    "capitalProvId": "12823",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "315": {
+    "stateName": "古巴",
+    "capital": "哈瓦那",
+    "capitalProvId": "7622",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "7590",
+        "vp": 1,
+        "name": "关塔那摩"
+      }
+    ]
+  },
+  "316": {
+    "stateName": "哥斯达黎加",
+    "capital": "圣何塞",
+    "capitalProvId": "13087",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "317": {
+    "stateName": "尼加拉瓜",
+    "capital": "马那瓜",
+    "capitalProvId": "12738",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "2075",
+        "vp": 1,
+        "name": "布卢菲尔兹"
+      }
+    ]
+  },
+  "318": {
+    "stateName": "海地",
+    "capital": "太子港",
+    "capitalProvId": "4641",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "319": {
+    "stateName": "多米尼加",
+    "capital": "圣多明各",
+    "capitalProvId": "7660",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "4598",
+        "vp": 1,
+        "name": "圣地亚哥-德洛斯卡瓦耶罗斯"
+      }
+    ]
+  },
+  "320": {
+    "stateName": "法属印度",
+    "capital": "本地治里",
+    "capitalProvId": "10149",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "321": {
+    "stateName": "果阿",
+    "capital": "果阿",
+    "capitalProvId": "1273",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "323": {
+    "stateName": "尼泊尔",
+    "capital": "加德满都",
+    "capitalProvId": "4987",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "324": {
+    "stateName": "不丹",
+    "capital": "普那卡",
+    "capitalProvId": "8010",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "325": {
+    "stateName": "云南",
+    "capital": "昆明",
+    "capitalProvId": "1319",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "4501",
+        "vp": 1,
+        "name": "蒙自"
+      },
+      {
+        "provId": "12262",
+        "vp": 1,
+        "name": "普洱"
+      },
+      {
+        "provId": "5072",
+        "vp": 1,
+        "name": "镇雄"
+      }
+    ]
+  },
+  "326": {
+    "stateName": "香港",
+    "capital": "香港",
+    "capitalProvId": "10062",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "327": {
+    "stateName": "马尼拉",
+    "capital": "马尼拉",
+    "capitalProvId": "10265",
+    "vp": 15,
+    "otherVPs": [
+      {
+        "provId": "1221",
+        "vp": 1,
+        "name": "八打雁"
+      },
+      {
+        "provId": "4288",
+        "vp": 1,
+        "name": "卡拉潘"
+      }
+    ]
+  },
+  "328": {
+    "stateName": "吉林",
+    "capital": "哈尔滨",
+    "capitalProvId": "10433",
+    "vp": 1,
+    "otherVPs": [
+      {
+        "provId": "4572",
+        "vp": 1,
+        "name": "新京"
+      }
+    ]
+  },
+  "329": {
+    "stateName": "唐努图瓦",
+    "capital": "克孜勒",
+    "capitalProvId": "10627",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "330": {
+    "stateName": "乌兰巴托",
+    "capital": "乌兰巴托",
+    "capitalProvId": "4801",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "7799",
+        "vp": 1,
+        "name": "乌里雅苏台"
+      }
+    ]
+  },
+  "331": {
+    "stateName": "纽芬兰",
+    "capital": "圣约翰",
+    "capitalProvId": "12505",
+    "vp": 2,
+    "otherVPs": []
+  },
+  "333": {
+    "stateName": "沙捞越",
+    "capital": "古晋",
+    "capitalProvId": "1208",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "334": {
+    "stateName": "加里曼丹",
+    "capital": "巴厘巴板",
+    "capitalProvId": "10237",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "335": {
+    "stateName": "爪哇",
+    "capital": "巴达维亚",
+    "capitalProvId": "7381",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "4608",
+        "vp": 3,
+        "name": "泗水"
+      }
+    ]
+  },
+  "336": {
+    "stateName": "马来亚",
+    "capital": "吉隆坡",
+    "capitalProvId": "10297",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "7329",
+        "vp": 1,
+        "name": "哥打巴鲁"
+      }
+    ]
+  },
+  "338": {
+    "stateName": "格洛斯特",
+    "capital": "布里斯托尔",
+    "capitalProvId": "3369",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "339": {
+    "stateName": "伊兹密尔",
+    "capital": "伊兹密尔",
+    "capitalProvId": "4112",
+    "vp": 15,
+    "otherVPs": [
+      {
+        "provId": "928",
+        "vp": 5,
+        "name": "马尼萨"
+      }
+    ]
+  },
+  "340": {
+    "stateName": "布尔萨",
+    "capital": "布尔萨",
+    "capitalProvId": "947",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "9799",
+        "vp": 5,
+        "name": "巴勒克西尔"
+      }
+    ]
+  },
+  "341": {
+    "stateName": "埃迪尔内",
+    "capital": "埃迪尔内",
+    "capitalProvId": "11842",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "342": {
+    "stateName": "安塔利亚",
+    "capital": "安塔利亚",
+    "capitalProvId": "1005",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "343": {
+    "stateName": "阿菲永",
+    "capital": "阿菲永",
+    "capitalProvId": "9878",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "10041",
+        "vp": 1,
+        "name": "代尼兹利"
+      },
+      {
+        "provId": "3856",
+        "vp": 3,
+        "name": "屈塔希亚"
+      }
+    ]
+  },
+  "344": {
+    "stateName": "马拉蒂亚",
+    "capital": "加济安泰普",
+    "capitalProvId": "9893",
+    "vp": 15,
+    "otherVPs": [
+      {
+        "provId": "7620",
+        "vp": 10,
+        "name": "马拉蒂亚"
+      },
+      {
+        "provId": "6813",
+        "vp": 3,
+        "name": "卡赫拉曼马拉什"
+      },
+      {
+        "provId": "11746",
+        "vp": 5,
+        "name": "阿达纳"
+      }
+    ]
+  },
+  "345": {
+    "stateName": "梅尔辛",
+    "capital": "塔尔苏斯",
+    "capitalProvId": "11810",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "10056",
+        "vp": 1,
+        "name": "梅尔辛"
+      }
+    ]
+  },
+  "346": {
+    "stateName": "科尼亚",
+    "capital": "科尼亚",
+    "capitalProvId": "9861",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "6807",
+        "vp": 3,
+        "name": "卡拉曼"
+      },
+      {
+        "provId": "784",
+        "vp": 1,
+        "name": "伊斯帕塔"
+      }
+    ]
+  },
+  "347": {
+    "stateName": "伊兹密特",
+    "capital": "阿达帕扎勒",
+    "capitalProvId": "904",
+    "vp": 1,
+    "otherVPs": [
+      {
+        "provId": "11811",
+        "vp": 1,
+        "name": "伊兹密特"
+      }
+    ]
+  },
+  "348": {
+    "stateName": "开塞利",
+    "capital": "省份3870",
+    "capitalProvId": "3870",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "349": {
+    "stateName": "锡瓦斯",
+    "capital": "锡瓦斯",
+    "capitalProvId": "9777",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "350": {
+    "stateName": "迪亚巴克尔",
+    "capital": "迪亚巴克尔",
+    "capitalProvId": "4512",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "9823",
+        "vp": 1,
+        "name": "乌尔法"
+      },
+      {
+        "provId": "12387",
+        "vp": 1,
+        "name": "巴特曼"
+      }
+    ]
+  },
+  "351": {
+    "stateName": "沃洛格达",
+    "capital": "沃洛格达",
+    "capitalProvId": "9131",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "352": {
+    "stateName": "哈卡里",
+    "capital": "锡尔特",
+    "capitalProvId": "10497",
+    "vp": 1,
+    "otherVPs": [
+      {
+        "provId": "12476",
+        "vp": 1,
+        "name": "哈卡里"
+      },
+      {
+        "provId": "7530",
+        "vp": 1,
+        "name": "吉兹雷"
+      }
+    ]
+  },
+  "353": {
+    "stateName": "通杰利",
+    "capital": "埃尔祖鲁姆",
+    "capitalProvId": "11853",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "9860",
+        "vp": 1,
+        "name": "通杰利"
+      },
+      {
+        "provId": "876",
+        "vp": 1,
+        "name": "埃拉泽"
+      },
+      {
+        "provId": "9868",
+        "vp": 1,
+        "name": "埃尔津詹"
+      }
+    ]
+  },
+  "354": {
+    "stateName": "特拉布宗",
+    "capital": "特拉布宗",
+    "capitalProvId": "9932",
+    "vp": 15,
+    "otherVPs": [
+      {
+        "provId": "10472",
+        "vp": 5,
+        "name": "卡尔斯"
+      },
+      {
+        "provId": "3979",
+        "vp": 3,
+        "name": "居米什哈内"
+      }
+    ]
+  },
+  "355": {
+    "stateName": "萨姆松",
+    "capital": "萨姆松",
+    "capitalProvId": "11881",
+    "vp": 10,
+    "otherVPs": []
+  },
+  "356": {
+    "stateName": "卡斯塔莫努",
+    "capital": "卡斯塔莫努",
+    "capitalProvId": "6938",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "6995",
+        "vp": 3,
+        "name": "锡诺普"
+      }
+    ]
+  },
+  "357": {
+    "stateName": "新英格兰",
+    "capital": "波士顿",
+    "capitalProvId": "6732",
+    "vp": 20,
+    "otherVPs": [
+      {
+        "provId": "12459",
+        "vp": 1,
+        "name": "班戈"
+      },
+      {
+        "provId": "9832",
+        "vp": 1,
+        "name": "普罗维登斯"
+      }
+    ]
+  },
+  "358": {
+    "stateName": "纽约",
+    "capital": "纽约",
+    "capitalProvId": "3878",
+    "vp": 30,
+    "otherVPs": [
+      {
+        "provId": "11654",
+        "vp": 3,
+        "name": "布法罗"
+      }
+    ]
+  },
+  "359": {
+    "stateName": "新泽西",
+    "capital": "纽瓦克",
+    "capitalProvId": "6882",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "360": {
+    "stateName": "宾夕法尼亚",
+    "capital": "费城",
+    "capitalProvId": "6845",
+    "vp": 20,
+    "otherVPs": [
+      {
+        "provId": "11800",
+        "vp": 15,
+        "name": "匹兹堡"
+      }
+    ]
+  },
+  "361": {
+    "stateName": "马里兰",
+    "capital": "华盛顿特区",
+    "capitalProvId": "3957",
+    "vp": 40,
+    "otherVPs": [
+      {
+        "provId": "6984",
+        "vp": 5,
+        "name": "巴尔的摩"
+      }
+    ]
+  },
+  "362": {
+    "stateName": "弗吉尼亚",
+    "capital": "里士满",
+    "capitalProvId": "10412",
+    "vp": 15,
+    "otherVPs": [
+      {
+        "provId": "788",
+        "vp": 10,
+        "name": "诺福克"
+      }
+    ]
+  },
+  "363": {
+    "stateName": "北卡罗来纳",
+    "capital": "夏洛特",
+    "capitalProvId": "7138",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "364": {
+    "stateName": "南卡罗来纳",
+    "capital": "查尔斯顿",
+    "capitalProvId": "7202",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "365": {
+    "stateName": "佐治亚",
+    "capital": "亚特兰大",
+    "capitalProvId": "12384",
+    "vp": 10,
+    "otherVPs": []
+  },
+  "366": {
+    "stateName": "佛罗里达",
+    "capital": "迈阿密",
+    "capitalProvId": "1843",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "367": {
+    "stateName": "阿拉巴马",
+    "capital": "伯明翰",
+    "capitalProvId": "12735",
+    "vp": 1,
+    "otherVPs": [
+      {
+        "provId": "7480",
+        "vp": 1,
+        "name": "莫比尔"
+      }
+    ]
+  },
+  "368": {
+    "stateName": "田纳西",
+    "capital": "纳什维尔",
+    "capitalProvId": "12501",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "369": {
+    "stateName": "肯塔基",
+    "capital": "路易斯维尔",
+    "capitalProvId": "6696",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "370": {
+    "stateName": "密西西比",
+    "capital": "比洛克西",
+    "capitalProvId": "4464",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "371": {
+    "stateName": "路易斯安那",
+    "capital": "新奥尔良",
+    "capitalProvId": "7552",
+    "vp": 10,
+    "otherVPs": []
+  },
+  "372": {
+    "stateName": "阿肯色",
+    "capital": "小石城",
+    "capitalProvId": "12489",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "373": {
+    "stateName": "密苏里",
+    "capital": "堪萨斯城",
+    "capitalProvId": "10717",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "4569",
+        "vp": 10,
+        "name": "圣路易斯"
+      },
+      {
+        "provId": "10370",
+        "vp": 1,
+        "name": "斯普林菲尔德"
+      }
+    ]
+  },
+  "374": {
+    "stateName": "俄克拉荷马",
+    "capital": "塔尔萨",
+    "capitalProvId": "1806",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "375": {
+    "stateName": "德克萨斯",
+    "capital": "达拉斯",
+    "capitalProvId": "3960",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "10337",
+        "vp": 10,
+        "name": "休斯敦"
+      },
+      {
+        "provId": "12782",
+        "vp": 1,
+        "name": "圣安东尼奥"
+      }
+    ]
+  },
+  "376": {
+    "stateName": "新墨西哥",
+    "capital": "阿尔伯克基",
+    "capitalProvId": "4975",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "377": {
+    "stateName": "亚利桑那",
+    "capital": "凤凰城",
+    "capitalProvId": "853",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "378": {
+    "stateName": "加利福尼亚",
+    "capital": "洛杉矶",
+    "capitalProvId": "9814",
+    "vp": 30,
+    "otherVPs": [
+      {
+        "provId": "1562",
+        "vp": 15,
+        "name": "圣迭戈"
+      },
+      {
+        "provId": "9671",
+        "vp": 25,
+        "name": "圣弗朗西斯科"
+      },
+      {
+        "provId": "9713",
+        "vp": 1,
+        "name": "萨克拉门托"
+      }
+    ]
+  },
+  "379": {
+    "stateName": "内华达",
+    "capital": "拉斯维加斯",
+    "capitalProvId": "4799",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "380": {
+    "stateName": "犹他",
+    "capital": "盐湖城",
+    "capitalProvId": "4865",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "382": {
+    "stateName": "科罗拉多",
+    "capital": "丹佛",
+    "capitalProvId": "1827",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "383": {
+    "stateName": "堪萨斯",
+    "capital": "威奇托",
+    "capitalProvId": "4740",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "7834",
+        "vp": 1,
+        "name": "托皮卡"
+      }
+    ]
+  },
+  "384": {
+    "stateName": "内布拉斯加",
+    "capital": "奥马哈",
+    "capitalProvId": "12586",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "385": {
+    "stateName": "俄勒冈",
+    "capital": "波特兰",
+    "capitalProvId": "3513",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "386": {
+    "stateName": "华盛顿",
+    "capital": "西雅图",
+    "capitalProvId": "7315",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "1690",
+        "vp": 1,
+        "name": "斯波坎"
+      }
+    ]
+  },
+  "387": {
+    "stateName": "爱达荷",
+    "capital": "博伊西",
+    "capitalProvId": "9616",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "388": {
+    "stateName": "蒙大拿",
+    "capital": "大瀑布城",
+    "capitalProvId": "4860",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "389": {
+    "stateName": "北达科他",
+    "capital": "俾斯麦",
+    "capitalProvId": "1836",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "390": {
+    "stateName": "南达科他",
+    "capital": "拉皮德城",
+    "capitalProvId": "1747",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "391": {
+    "stateName": "明尼苏达",
+    "capital": "明尼阿波利斯",
+    "capitalProvId": "1866",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "392": {
+    "stateName": "艾奥瓦",
+    "capital": "德梅因",
+    "capitalProvId": "1770",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "393": {
+    "stateName": "密歇根",
+    "capital": "底特律",
+    "capitalProvId": "6710",
+    "vp": 20,
+    "otherVPs": []
+  },
+  "394": {
+    "stateName": "威斯康星",
+    "capital": "密尔沃基",
+    "capitalProvId": "12357",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "395": {
+    "stateName": "伊利诺伊",
+    "capital": "芝加哥",
+    "capitalProvId": "9450",
+    "vp": 30,
+    "otherVPs": []
+  },
+  "396": {
+    "stateName": "印第安纳",
+    "capital": "印第安纳波利斯",
+    "capitalProvId": "1595",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "397": {
+    "stateName": "瑟克特夫卡尔",
+    "capital": "瑟克特夫卡尔",
+    "capitalProvId": "108",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "398": {
+    "stateName": "彼尔姆",
+    "capital": "彼尔姆",
+    "capitalProvId": "7375",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "399": {
+    "stateName": "乌德穆尔特",
+    "capital": "伊热夫斯克",
+    "capitalProvId": "6278",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "400": {
+    "stateName": "基洛夫",
+    "capital": "基洛夫",
+    "capitalProvId": "6124",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "401": {
+    "stateName": "巴拉科沃",
+    "capital": "巴拉科沃",
+    "capitalProvId": "6502",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "402": {
+    "stateName": "阿赫图宾斯克",
+    "capital": "阿克托别",
+    "capitalProvId": "7341",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "403": {
+    "stateName": "秋明",
+    "capital": "秋明",
+    "capitalProvId": "4824",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "404": {
+    "stateName": "克孜勒奥尔达",
+    "capital": "克孜勒奥尔达",
+    "capitalProvId": "7597",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "405": {
+    "stateName": "塔什干",
+    "capital": "塔什干",
+    "capitalProvId": "1459",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "10488",
+        "vp": 1,
+        "name": "浩罕"
+      }
+    ]
+  },
+  "406": {
+    "stateName": "古里耶夫",
+    "capital": "古里耶夫",
+    "capitalProvId": "3618",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "407": {
+    "stateName": "乌拉尔斯克",
+    "capital": "乌拉尔斯克",
+    "capitalProvId": "11537",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "408": {
+    "stateName": "符拉迪沃斯托克",
+    "capital": "符拉迪沃斯托克",
+    "capitalProvId": "957",
+    "vp": 15,
+    "otherVPs": []
+  },
+  "409": {
+    "stateName": "哈巴罗夫斯克",
+    "capital": "哈巴罗夫斯克",
+    "capitalProvId": "12189",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "410": {
+    "stateName": "锡斯坦",
+    "capital": "伊朗沙赫尔",
+    "capitalProvId": "10782",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "411": {
+    "stateName": "伊斯法罕",
+    "capital": "亚苏季",
+    "capitalProvId": "4928",
+    "vp": 1,
+    "otherVPs": [
+      {
+        "provId": "2026",
+        "vp": 1,
+        "name": "伊斯法罕"
+      }
+    ]
+  },
+  "412": {
+    "stateName": "法尔斯",
+    "capital": "阿巴斯港",
+    "capitalProvId": "7982",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "8117",
+        "vp": 3,
+        "name": "设拉子"
+      },
+      {
+        "provId": "12832",
+        "vp": 1,
+        "name": "布什尔"
+      }
+    ]
+  },
+  "413": {
+    "stateName": "胡齐斯坦",
+    "capital": "阿瓦士",
+    "capitalProvId": "7953",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "414": {
+    "stateName": "克尔曼",
+    "capital": "克尔曼",
+    "capitalProvId": "10913",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "415": {
+    "stateName": "赫拉特",
+    "capital": "赫拉特",
+    "capitalProvId": "4893",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "416": {
+    "stateName": "霍拉桑",
+    "capital": "马什哈德",
+    "capitalProvId": "5029",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "417": {
+    "stateName": "哈马丹",
+    "capital": "哈马丹",
+    "capitalProvId": "8040",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "2065",
+        "vp": 1,
+        "name": "阿拉克"
+      }
+    ]
+  },
+  "418": {
+    "stateName": "塞姆南",
+    "capital": "沙赫鲁德",
+    "capitalProvId": "8093",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "419": {
+    "stateName": "西阿塞拜疆",
+    "capital": "马哈巴德",
+    "capitalProvId": "1822",
+    "vp": 2,
+    "otherVPs": [
+      {
+        "provId": "7604",
+        "vp": 1,
+        "name": "乌鲁米耶"
+      }
+    ]
+  },
+  "420": {
+    "stateName": "吉兰",
+    "capital": "卡拉季",
+    "capitalProvId": "7969",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "4901",
+        "vp": 3,
+        "name": "阿尔达比勒"
+      }
+    ]
+  },
+  "422": {
+    "stateName": "锡兰",
+    "capital": "亭可马里",
+    "capitalProvId": "10201",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "423": {
+    "stateName": "南马德拉斯",
+    "capital": "马德拉斯",
+    "capitalProvId": "10278",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "10246",
+        "vp": 3,
+        "name": "马杜赖"
+      }
+    ]
+  },
+  "425": {
+    "stateName": "迈索尔",
+    "capital": "迈索尔城",
+    "capitalProvId": "4315",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "8011",
+        "vp": 10,
+        "name": "班加罗尔"
+      },
+      {
+        "provId": "7244",
+        "vp": 1,
+        "name": "门格洛尔"
+      }
+    ]
+  },
+  "427": {
+    "stateName": "海德拉巴",
+    "capital": "海德拉巴",
+    "capitalProvId": "8087",
+    "vp": 15,
+    "otherVPs": []
+  },
+  "428": {
+    "stateName": "古吉拉特",
+    "capital": "艾哈迈达巴德",
+    "capitalProvId": "9975",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "10118",
+        "vp": 1,
+        "name": "贾姆讷格尔"
+      }
+    ]
+  },
+  "429": {
+    "stateName": "孟买",
+    "capital": "孟买",
+    "capitalProvId": "1349",
+    "vp": 25,
+    "otherVPs": []
+  },
+  "430": {
+    "stateName": "东孟加拉",
+    "capital": "达卡",
+    "capitalProvId": "11929",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "431": {
+    "stateName": "西孟加拉",
+    "capital": "加尔各答",
+    "capitalProvId": "4245",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "12338",
+        "vp": 1,
+        "name": "大吉岭"
+      }
+    ]
+  },
+  "432": {
+    "stateName": "阿萨姆",
+    "capital": "迪斯布尔",
+    "capitalProvId": "12366",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "433": {
+    "stateName": "拉贾斯坦",
+    "capital": "斋浦尔",
+    "capitalProvId": "1908",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "434": {
+    "stateName": "阿鲁纳恰尔",
+    "capital": "伊塔那噶",
+    "capitalProvId": "1116",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "435": {
+    "stateName": "比哈尔",
+    "capital": "巴特那",
+    "capitalProvId": "4516",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "436": {
+    "stateName": "中央省",
+    "capital": "那格浦尔",
+    "capitalProvId": "4950",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "437": {
+    "stateName": "中印度",
+    "capital": "印多尔",
+    "capitalProvId": "4106",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "438": {
+    "stateName": "联合省",
+    "capital": "勒克瑙",
+    "capitalProvId": "1377",
+    "vp": 10,
+    "otherVPs": []
+  },
+  "439": {
+    "stateName": "德里",
+    "capital": "德里",
+    "capitalProvId": "2086",
+    "vp": 30,
+    "otherVPs": []
+  },
+  "441": {
+    "stateName": "克什米尔",
+    "capital": "查谟",
+    "capitalProvId": "12754",
+    "vp": 2,
+    "otherVPs": [
+      {
+        "provId": "8005",
+        "vp": 1,
+        "name": "列城"
+      }
+    ]
+  },
+  "442": {
+    "stateName": "白沙瓦",
+    "capital": "白沙瓦",
+    "capitalProvId": "12763",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "443": {
+    "stateName": "信德",
+    "capital": "卡拉奇",
+    "capitalProvId": "3456",
+    "vp": 25,
+    "otherVPs": []
+  },
+  "444": {
+    "stateName": "南俾路支斯坦",
+    "capital": "瓜德尔",
+    "capitalProvId": "12774",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "446": {
+    "stateName": "苏伊士",
+    "capital": "塞得港",
+    "capitalProvId": "12049",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "4073",
+        "vp": 3,
+        "name": "苏伊士"
+      }
+    ]
+  },
+  "447": {
+    "stateName": "亚历山大",
+    "capital": "亚历山大港",
+    "capitalProvId": "4076",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "1071",
+        "vp": 1,
+        "name": "阿拉曼"
+      }
+    ]
+  },
+  "448": {
+    "stateName": "的黎波里",
+    "capital": "的黎波里",
+    "capitalProvId": "1149",
+    "vp": 10,
+    "otherVPs": []
+  },
+  "450": {
+    "stateName": "班加西",
+    "capital": "班加西",
+    "capitalProvId": "11954",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "451": {
+    "stateName": "德尔纳",
+    "capital": "托布鲁克",
+    "capitalProvId": "1130",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "452": {
+    "stateName": "马特鲁",
+    "capital": "马特鲁港",
+    "capitalProvId": "10061",
+    "vp": 2,
+    "otherVPs": [
+      {
+        "provId": "9989",
+        "vp": 1,
+        "name": "西迪巴拉尼"
+      }
+    ]
+  },
+  "453": {
+    "stateName": "西奈",
+    "capital": "阿里什",
+    "capitalProvId": "4161",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "10099",
+        "vp": 1,
+        "name": "沙姆沙伊赫"
+      }
+    ]
+  },
+  "454": {
+    "stateName": "巴勒斯坦",
+    "capital": "耶路撒冷",
+    "capitalProvId": "1086",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "4206",
+        "vp": 1,
+        "name": "特拉维夫"
+      },
+      {
+        "provId": "1065",
+        "vp": 1,
+        "name": "拿撒勒"
+      }
+    ]
+  },
+  "455": {
+    "stateName": "约旦",
+    "capital": "安曼",
+    "capitalProvId": "7151",
+    "vp": 2,
+    "otherVPs": [
+      {
+        "provId": "11976",
+        "vp": 1,
+        "name": "马安"
+      }
+    ]
+  },
+  "456": {
+    "stateName": "阿斯旺",
+    "capital": "卢克索",
+    "capitalProvId": "12071",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "11974",
+        "vp": 1,
+        "name": "艾斯尤特"
+      },
+      {
+        "provId": "11999",
+        "vp": 1,
+        "name": "阿斯旺"
+      }
+    ]
+  },
+  "457": {
+    "stateName": "东部沙漠",
+    "capital": "赫嘎达",
+    "capitalProvId": "12002",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "458": {
+    "stateName": "突尼斯",
+    "capital": "突尼斯",
+    "capitalProvId": "11969",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "9994",
+        "vp": 1,
+        "name": "比塞大"
+      },
+      {
+        "provId": "11921",
+        "vp": 1,
+        "name": "斯法克斯"
+      }
+    ]
+  },
+  "459": {
+    "stateName": "阿尔及尔",
+    "capital": "奥兰",
+    "capitalProvId": "7132",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "1145",
+        "vp": 5,
+        "name": "阿尔及尔"
+      }
+    ]
+  },
+  "460": {
+    "stateName": "康斯坦丁",
+    "capital": "康斯坦丁",
+    "capitalProvId": "12051",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "7081",
+        "vp": 1,
+        "name": "安纳巴"
+      }
+    ]
+  },
+  "461": {
+    "stateName": "卡萨布兰卡",
+    "capital": "卡萨布兰卡",
+    "capitalProvId": "7069",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "10070",
+        "vp": 2,
+        "name": "拉巴特"
+      }
+    ]
+  },
+  "462": {
+    "stateName": "马拉喀什",
+    "capital": "马拉喀什",
+    "capitalProvId": "4108",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "463": {
+    "stateName": "阿拉斯加",
+    "capital": "安克雷奇",
+    "capitalProvId": "13091",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "13090",
+        "vp": 1,
+        "name": "乌纳拉斯卡"
+      }
+    ]
+  },
+  "464": {
+    "stateName": "新斯科舍",
+    "capital": "哈利法克斯",
+    "capitalProvId": "7361",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "465": {
+    "stateName": "新不伦瑞克",
+    "capital": "蒙克顿",
+    "capitalProvId": "1424",
+    "vp": 2,
+    "otherVPs": [
+      {
+        "provId": "4285",
+        "vp": 1,
+        "name": "圣约翰"
+      }
+    ]
+  },
+  "467": {
+    "stateName": "曼尼托巴",
+    "capital": "温尼伯",
+    "capitalProvId": "4872",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "468": {
+    "stateName": "圣劳伦斯",
+    "capital": "蒙特利尔",
+    "capitalProvId": "4345",
+    "vp": 20,
+    "otherVPs": [
+      {
+        "provId": "12149",
+        "vp": 3,
+        "name": "魁北克"
+      },
+      {
+        "provId": "10230",
+        "vp": 1,
+        "name": "舍布鲁克"
+      }
+    ]
+  },
+  "469": {
+    "stateName": "萨斯喀彻温",
+    "capital": "萨斯卡通",
+    "capitalProvId": "4739",
+    "vp": 2,
+    "otherVPs": []
+  },
+  "470": {
+    "stateName": "阿尔伯塔",
+    "capital": "埃德蒙顿",
+    "capitalProvId": "3010",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "473": {
+    "stateName": "不列颠哥伦比亚",
+    "capital": "温哥华",
+    "capitalProvId": "1408",
+    "vp": 15,
+    "otherVPs": []
+  },
+  "474": {
+    "stateName": "尤卡坦",
+    "capital": "切图马尔",
+    "capitalProvId": "4965",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "4904",
+        "vp": 1,
+        "name": "坎佩切"
+      }
+    ]
+  },
+  "475": {
+    "stateName": "恰帕斯",
+    "capital": "图斯特拉古铁雷斯",
+    "capitalProvId": "1900",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "476": {
+    "stateName": "瓦哈卡",
+    "capital": "比亚埃尔莫萨",
+    "capitalProvId": "2021",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "10889",
+        "vp": 1,
+        "name": "夸察夸尔科斯"
+      }
+    ]
+  },
+  "477": {
+    "stateName": "韦拉克鲁斯",
+    "capital": "普埃布拉",
+    "capitalProvId": "8089",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "12810",
+        "vp": 5,
+        "name": "韦拉克鲁斯"
+      }
+    ]
+  },
+  "478": {
+    "stateName": "哈利斯科",
+    "capital": "瓜达拉哈拉",
+    "capitalProvId": "13089",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "10172",
+        "vp": 5,
+        "name": "阿瓜斯卡连特斯"
+      },
+      {
+        "provId": "12746",
+        "vp": 1,
+        "name": "巴亚尔塔港"
+      }
+    ]
+  },
+  "479": {
+    "stateName": "塔毛利帕斯",
+    "capital": "圣路易斯波托西",
+    "capitalProvId": "4956",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "5015",
+        "vp": 5,
+        "name": "马塔莫罗斯"
+      }
+    ]
+  },
+  "480": {
+    "stateName": "科阿韦拉",
+    "capital": "蒙特雷",
+    "capitalProvId": "12835",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "10769",
+        "vp": 5,
+        "name": "雷诺萨"
+      },
+      {
+        "provId": "12811",
+        "vp": 1,
+        "name": "彼德拉斯内格拉斯"
+      }
+    ]
+  },
+  "481": {
+    "stateName": "杜兰戈",
+    "capital": "杜兰戈",
+    "capitalProvId": "7921",
+    "vp": 10,
+    "otherVPs": []
+  },
+  "482": {
+    "stateName": "奇瓦瓦",
+    "capital": "奇瓦瓦",
+    "capitalProvId": "10830",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "8097",
+        "vp": 10,
+        "name": "华雷斯"
+      }
+    ]
+  },
+  "483": {
+    "stateName": "索诺拉",
+    "capital": "埃莫西约",
+    "capitalProvId": "10765",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "484": {
+    "stateName": "下加利福尼亚",
+    "capital": "蒂华纳",
+    "capitalProvId": "12461",
+    "vp": 10,
+    "otherVPs": []
+  },
+  "485": {
+    "stateName": "格雷罗",
+    "capital": "阿卡普尔科",
+    "capitalProvId": "10730",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "4887",
+        "vp": 3,
+        "name": "莫雷利亚"
+      },
+      {
+        "provId": "8032",
+        "vp": 1,
+        "name": "曼萨尼约"
+      }
+    ]
+  },
+  "487": {
+    "stateName": "圣克鲁兹",
+    "capital": "圣克鲁斯-德拉谢拉",
+    "capitalProvId": "2160",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "488": {
+    "stateName": "玻利瓦尔",
+    "capital": "圣费利克斯",
+    "capitalProvId": "10879",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "489": {
+    "stateName": "苏利亚",
+    "capital": "马拉开波",
+    "capitalProvId": "1944",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "490": {
+    "stateName": "帕斯塔萨",
+    "capital": "伊基托斯",
+    "capitalProvId": "13289",
+    "vp": 2,
+    "otherVPs": []
+  },
+  "491": {
+    "stateName": "洛雷托",
+    "capital": "尤里马瓜斯",
+    "capitalProvId": "10970",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "492": {
+    "stateName": "阿雷基帕",
+    "capital": "阿雷基帕",
+    "capitalProvId": "2210",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "13288",
+        "vp": 1,
+        "name": "莫延多"
+      },
+      {
+        "provId": "13286",
+        "vp": 1,
+        "name": "普诺"
+      }
+    ]
+  },
+  "493": {
+    "stateName": "拉利伯塔德",
+    "capital": "卡塔赫纳",
+    "capitalProvId": "12790",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "2023",
+        "vp": 1,
+        "name": "麦德林"
+      }
+    ]
+  },
+  "494": {
+    "stateName": "乌卡亚利",
+    "capital": "库斯科",
+    "capitalProvId": "5166",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "8191",
+        "vp": 1,
+        "name": "马尔多纳多港"
+      },
+      {
+        "provId": "2226",
+        "vp": 2,
+        "name": "普卡尔帕"
+      }
+    ]
+  },
+  "495": {
+    "stateName": "亚马逊",
+    "capital": "马瑙斯",
+    "capitalProvId": "10934",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "496": {
+    "stateName": "米纳斯吉拉斯",
+    "capital": "贝洛奥里藏特",
+    "capitalProvId": "7476",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "497": {
+    "stateName": "马拉尼昂",
+    "capital": "圣路易斯",
+    "capitalProvId": "12933",
+    "vp": 2,
+    "otherVPs": []
+  },
+  "498": {
+    "stateName": "北里奥格兰德",
+    "capital": "纳塔尔",
+    "capitalProvId": "10933",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "499": {
+    "stateName": "巴伊亚",
+    "capital": "萨尔瓦多",
+    "capitalProvId": "10946",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "500": {
+    "stateName": "里约热内卢",
+    "capital": "里约热内卢",
+    "capitalProvId": "10980",
+    "vp": 10,
+    "otherVPs": []
+  },
+  "501": {
+    "stateName": "圣保罗",
+    "capital": "圣保罗",
+    "capitalProvId": "10513",
+    "vp": 20,
+    "otherVPs": [
+      {
+        "provId": "5112",
+        "vp": 1,
+        "name": "桑托斯"
+      }
+    ]
+  },
+  "502": {
+    "stateName": "南里奥格兰德",
+    "capital": "阿雷格里港",
+    "capitalProvId": "10447",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "503": {
+    "stateName": "圣卡塔琳娜",
+    "capital": "弗洛里亚诺波利斯",
+    "capitalProvId": "4548",
+    "vp": 2,
+    "otherVPs": [
+      {
+        "provId": "10405",
+        "vp": 1,
+        "name": "茹安维尔"
+      }
+    ]
+  },
+  "504": {
+    "stateName": "蓬塔波朗",
+    "capital": "大坎普",
+    "capitalProvId": "12951",
+    "vp": 2,
+    "otherVPs": []
+  },
+  "505": {
+    "stateName": "戈亚斯",
+    "capital": "戈亚尼亚",
+    "capitalProvId": "12987",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "506": {
+    "stateName": "安托法加斯塔",
+    "capital": "省份12994",
+    "capitalProvId": "12994",
+    "vp": 10,
+    "otherVPs": []
+  },
+  "507": {
+    "stateName": "麦哲伦",
+    "capital": "蓬塔阿雷纳斯",
+    "capitalProvId": "5215",
+    "vp": 2,
+    "otherVPs": [
+      {
+        "provId": "5201",
+        "vp": 1,
+        "name": "蓬塔德尔加达"
+      }
+    ]
+  },
+  "508": {
+    "stateName": "图库曼",
+    "capital": "图库曼",
+    "capitalProvId": "8216",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "13309",
+        "vp": 2,
+        "name": "卡塔马卡"
+      }
+    ]
+  },
+  "509": {
+    "stateName": "南查科",
+    "capital": "雷西斯滕西亚",
+    "capitalProvId": "2106",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "510": {
+    "stateName": "美索不达米亚",
+    "capital": "巴拉那",
+    "capitalProvId": "1449",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "11007",
+        "vp": 2,
+        "name": "波萨达斯"
+      },
+      {
+        "provId": "12964",
+        "vp": 1,
+        "name": "科连特斯"
+      }
+    ]
+  },
+  "511": {
+    "stateName": "门多萨",
+    "capital": "门多萨",
+    "capitalProvId": "10964",
+    "vp": 2,
+    "otherVPs": []
+  },
+  "512": {
+    "stateName": "里奥内格罗",
+    "capital": "别德马",
+    "capitalProvId": "12321",
+    "vp": 2,
+    "otherVPs": [
+      {
+        "provId": "12306",
+        "vp": 1,
+        "name": "内乌肯"
+      }
+    ]
+  },
+  "513": {
+    "stateName": "特莱姆森",
+    "capital": "巴特纳",
+    "capitalProvId": "12034",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "516": {
+    "stateName": "杜金卡",
+    "capital": "杜金卡",
+    "capitalProvId": "4859",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "517": {
+    "stateName": "维多利亚",
+    "capital": "墨尔本",
+    "capitalProvId": "7798",
+    "vp": 20,
+    "otherVPs": []
+  },
+  "518": {
+    "stateName": "塔斯马尼亚",
+    "capital": "霍巴特",
+    "capitalProvId": "5187",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "519": {
+    "stateName": "南澳大利亚",
+    "capital": "阿德莱德",
+    "capitalProvId": "12910",
+    "vp": 15,
+    "otherVPs": []
+  },
+  "520": {
+    "stateName": "北领地",
+    "capital": "达尔文",
+    "capitalProvId": "7669",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "521": {
+    "stateName": "昆士兰",
+    "capital": "布里斯班",
+    "capitalProvId": "7564",
+    "vp": 15,
+    "otherVPs": [
+      {
+        "provId": "7566",
+        "vp": 1,
+        "name": "汤斯维尔"
+      }
+    ]
+  },
+  "522": {
+    "stateName": "西澳大利亚",
+    "capital": "珀斯",
+    "capitalProvId": "1652",
+    "vp": 10,
+    "otherVPs": []
+  },
+  "523": {
+    "stateName": "巴布亚",
+    "capital": "莫尔兹比港",
+    "capitalProvId": "4329",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "1283",
+        "vp": 1,
+        "name": "达鲁"
+      },
+      {
+        "provId": "10260",
+        "vp": 1,
+        "name": "阿洛陶"
+      }
+    ]
+  },
+  "524": {
+    "stateName": "台湾",
+    "capital": "台北",
+    "capitalProvId": "7186",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "12068",
+        "vp": 1,
+        "name": "高雄"
+      }
+    ]
+  },
+  "525": {
+    "stateName": "京畿",
+    "capital": "汉城",
+    "capitalProvId": "7125",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "526": {
+    "stateName": "冲绳",
+    "capital": "那霸",
+    "capitalProvId": "11932",
+    "vp": 10,
+    "otherVPs": []
+  },
+  "527": {
+    "stateName": "平安-黄海",
+    "capital": "平壤",
+    "capitalProvId": "4052",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "11835",
+        "vp": 1,
+        "name": "新义州"
+      },
+      {
+        "provId": "1003",
+        "vp": 1,
+        "name": "海州"
+      }
+    ]
+  },
+  "528": {
+    "stateName": "北九州",
+    "capital": "长崎",
+    "capitalProvId": "9950",
+    "vp": 15,
+    "otherVPs": [
+      {
+        "provId": "1025",
+        "vp": 10,
+        "name": "小仓"
+      },
+      {
+        "provId": "7110",
+        "vp": 5,
+        "name": "福冈"
+      },
+      {
+        "provId": "11925",
+        "vp": 5,
+        "name": "熊本"
+      }
+    ]
+  },
+  "529": {
+    "stateName": "山阳",
+    "capital": "广岛",
+    "capitalProvId": "1092",
+    "vp": 20,
+    "otherVPs": [
+      {
+        "provId": "7212",
+        "vp": 10,
+        "name": "冈山"
+      },
+      {
+        "provId": "11985",
+        "vp": 2,
+        "name": "下关"
+      }
+    ]
+  },
+  "530": {
+    "stateName": "四国",
+    "capital": "松山",
+    "capitalProvId": "4179",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "7197",
+        "vp": 8,
+        "name": "高知"
+      }
+    ]
+  },
+  "531": {
+    "stateName": "关西",
+    "capital": "大阪",
+    "capitalProvId": "7072",
+    "vp": 40,
+    "otherVPs": [
+      {
+        "provId": "11960",
+        "vp": 20,
+        "name": "京都"
+      },
+      {
+        "provId": "1136",
+        "vp": 1,
+        "name": "舞鹤"
+      }
+    ]
+  },
+  "532": {
+    "stateName": "东海道",
+    "capital": "名古屋",
+    "capitalProvId": "10125",
+    "vp": 25,
+    "otherVPs": [
+      {
+        "provId": "7087",
+        "vp": 3,
+        "name": "静冈"
+      }
+    ]
+  },
+  "533": {
+    "stateName": "北东北",
+    "capital": "青森",
+    "capitalProvId": "6994",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "1063",
+        "vp": 2,
+        "name": "秋田"
+      },
+      {
+        "provId": "9807",
+        "vp": 1,
+        "name": "盛冈"
+      }
+    ]
+  },
+  "534": {
+    "stateName": "甲信越",
+    "capital": "长野",
+    "capitalProvId": "10015",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "1117",
+        "vp": 10,
+        "name": "新潟"
+      },
+      {
+        "provId": "10128",
+        "vp": 1,
+        "name": "富山"
+      }
+    ]
+  },
+  "535": {
+    "stateName": "北陆",
+    "capital": "金泽",
+    "capitalProvId": "10032",
+    "vp": 15,
+    "otherVPs": []
+  },
+  "536": {
+    "stateName": "北海道",
+    "capital": "札幌",
+    "capitalProvId": "10444",
+    "vp": 15,
+    "otherVPs": [
+      {
+        "provId": "12421",
+        "vp": 5,
+        "name": "旭川"
+      },
+      {
+        "provId": "3962",
+        "vp": 2,
+        "name": "函馆"
+      }
+    ]
+  },
+  "537": {
+    "stateName": "南萨哈林",
+    "capital": "丰原",
+    "capitalProvId": "12446",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "538": {
+    "stateName": "科基拉维尔",
+    "capital": "科基拉维尔",
+    "capitalProvId": "988",
+    "vp": 2,
+    "otherVPs": []
+  },
+  "539": {
+    "stateName": "加蓬",
+    "capital": "利伯维尔",
+    "capitalProvId": "5139",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "540": {
+    "stateName": "罗安达",
+    "capital": "罗安达",
+    "capitalProvId": "8248",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "541": {
+    "stateName": "霍马斯",
+    "capital": "温得和克",
+    "capitalProvId": "4879",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "542": {
+    "stateName": "贝专纳兰",
+    "capital": "哈博罗内",
+    "capitalProvId": "8214",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "543": {
+    "stateName": "马达加斯加",
+    "capital": "塔那那利佛",
+    "capitalProvId": "5128",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "544": {
+    "stateName": "洛伦索-马贵斯",
+    "capital": "洛伦索-马贵斯",
+    "capitalProvId": "8245",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "545": {
+    "stateName": "罗得西亚",
+    "capital": "索尔兹伯里",
+    "capitalProvId": "10929",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "546": {
+    "stateName": "坦噶尼喀",
+    "capital": "达累斯萨拉姆",
+    "capitalProvId": "2196",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "547": {
+    "stateName": "内罗毕",
+    "capital": "内罗毕",
+    "capitalProvId": "1939",
+    "vp": 2,
+    "otherVPs": []
+  },
+  "548": {
+    "stateName": "乌干达",
+    "capital": "坎帕拉",
+    "capitalProvId": "12989",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "549": {
+    "stateName": "科尔多凡",
+    "capital": "朱巴",
+    "capitalProvId": "2096",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "551": {
+    "stateName": "喀土穆",
+    "capital": "喀土穆",
+    "capitalProvId": "12806",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "553": {
+    "stateName": "黎巴嫩",
+    "capital": "贝鲁特",
+    "capitalProvId": "792",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "554": {
+    "stateName": "大马士革",
+    "capital": "大马士革",
+    "capitalProvId": "4111",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "4486",
+        "vp": 1,
+        "name": "苏韦达"
+      }
+    ]
+  },
+  "556": {
+    "stateName": "巴马科",
+    "capital": "巴马科",
+    "capitalProvId": "4927",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "557": {
+    "stateName": "毛里塔尼亚",
+    "capital": "努瓦克肖特",
+    "capitalProvId": "5034",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "558": {
+    "stateName": "拉各斯",
+    "capital": "拉各斯",
+    "capitalProvId": "2050",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "559": {
+    "stateName": "索马里兰",
+    "capital": "摩加迪沙",
+    "capitalProvId": "12991",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "561": {
+    "stateName": "阿穆尔",
+    "capital": "阿尔巴津诺",
+    "capitalProvId": "7851",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "563": {
+    "stateName": "赤塔",
+    "capital": "赤塔",
+    "capitalProvId": "4705",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "564": {
+    "stateName": "布里亚特",
+    "capital": "乌兰乌德",
+    "capitalProvId": "7835",
+    "vp": 2,
+    "otherVPs": [
+      {
+        "provId": "12644",
+        "vp": 1,
+        "name": "巴尔古津"
+      }
+    ]
+  },
+  "566": {
+    "stateName": "伊尔库茨克",
+    "capital": "伊尔库茨克",
+    "capitalProvId": "4797",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "568": {
+    "stateName": "克拉斯诺亚尔斯克",
+    "capital": "克拉斯诺亚尔斯克",
+    "capitalProvId": "4724",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "569": {
+    "stateName": "哈卡斯",
+    "capital": "阿巴坎",
+    "capitalProvId": "10580",
+    "vp": 2,
+    "otherVPs": [
+      {
+        "provId": "7757",
+        "vp": 1,
+        "name": "克麦罗沃"
+      },
+      {
+        "provId": "7822",
+        "vp": 1,
+        "name": "新库兹涅茨克"
+      }
+    ]
+  },
+  "570": {
+    "stateName": "新西伯利亚",
+    "capital": "新西伯利亚",
+    "capitalProvId": "7274",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "571": {
+    "stateName": "鄂木斯克",
+    "capital": "鄂木斯克",
+    "capitalProvId": "10696",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "572": {
+    "stateName": "车里雅宾斯克",
+    "capital": "车里雅宾斯克",
+    "capitalProvId": "9292",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "573": {
+    "stateName": "兹拉托乌斯特",
+    "capital": "兹拉托乌斯特",
+    "capitalProvId": "10329",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "574": {
+    "stateName": "雅库茨克",
+    "capital": "雅库茨克",
+    "capitalProvId": "10641",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "578": {
+    "stateName": "托木斯克",
+    "capital": "托木斯克",
+    "capitalProvId": "7789",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "579": {
+    "stateName": "萨列哈尔德",
+    "capital": "萨列哈尔德",
+    "capitalProvId": "1684",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "580": {
+    "stateName": "托博尔斯克",
+    "capital": "汉特-曼西斯克",
+    "capitalProvId": "1659",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "582": {
+    "stateName": "马格尼托哥尔斯克",
+    "capital": "马格尼托哥尔斯克",
+    "capitalProvId": "10256",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "4311",
+        "vp": 1,
+        "name": "别洛列茨克"
+      }
+    ]
+  },
+  "583": {
+    "stateName": "科斯塔奈",
+    "capital": "科斯塔奈",
+    "capitalProvId": "10312",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "584": {
+    "stateName": "阿什哈巴德",
+    "capital": "阿什哈巴德",
+    "capitalProvId": "12333",
+    "vp": 2,
+    "otherVPs": []
+  },
+  "585": {
+    "stateName": "纳沃伊",
+    "capital": "纳沃伊",
+    "capitalProvId": "1554",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "586": {
+    "stateName": "阿拉木图",
+    "capital": "阿拉木图",
+    "capitalProvId": "1591",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "587": {
+    "stateName": "乌斯秋尔特",
+    "capital": "曼吉斯套",
+    "capitalProvId": "1517",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "588": {
+    "stateName": "塞米巴拉金斯克",
+    "capital": "塞米巴拉金斯克",
+    "capitalProvId": "12594",
+    "vp": 2,
+    "otherVPs": []
+  },
+  "589": {
+    "stateName": "阿亚古兹",
+    "capital": "阿亚古兹",
+    "capitalProvId": "1668",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "590": {
+    "stateName": "阿克莫林斯克",
+    "capital": "阿克莫林斯克",
+    "capitalProvId": "4333",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "591": {
+    "stateName": "海南",
+    "capital": "海口",
+    "capitalProvId": "1070",
+    "vp": 2,
+    "otherVPs": [
+      {
+        "provId": "994",
+        "vp": 1,
+        "name": "崖县"
+      }
+    ]
+  },
+  "592": {
+    "stateName": "广州",
+    "capital": "广州",
+    "capitalProvId": "1047",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "12077",
+        "vp": 1,
+        "name": "茂名"
+      }
+    ]
+  },
+  "593": {
+    "stateName": "广东",
+    "capital": "曲江",
+    "capitalProvId": "9970",
+    "vp": 2,
+    "otherVPs": [
+      {
+        "provId": "9938",
+        "vp": 1,
+        "name": "汕头"
+      },
+      {
+        "provId": "7108",
+        "vp": 1,
+        "name": "宝安"
+      }
+    ]
+  },
+  "594": {
+    "stateName": "南宁",
+    "capital": "南宁",
+    "capitalProvId": "7137",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "10459",
+        "vp": 1,
+        "name": "百色"
+      }
+    ]
+  },
+  "595": {
+    "stateName": "福建",
+    "capital": "福州",
+    "capitalProvId": "4196",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "7071",
+        "vp": 1,
+        "name": "厦门"
+      }
+    ]
+  },
+  "596": {
+    "stateName": "浙江",
+    "capital": "衢州",
+    "capitalProvId": "7174",
+    "vp": 1,
+    "otherVPs": [
+      {
+        "provId": "9974",
+        "vp": 1,
+        "name": "宁波"
+      },
+      {
+        "provId": "7191",
+        "vp": 1,
+        "name": "杭州"
+      },
+      {
+        "provId": "1055",
+        "vp": 1,
+        "name": "温州"
+      }
+    ]
+  },
+  "597": {
+    "stateName": "山东",
+    "capital": "烟台",
+    "capitalProvId": "1104",
+    "vp": 2,
+    "otherVPs": [
+      {
+        "provId": "4205",
+        "vp": 1,
+        "name": "威海卫"
+      }
+    ]
+  },
+  "598": {
+    "stateName": "江苏",
+    "capital": "东海",
+    "capitalProvId": "1029",
+    "vp": 2,
+    "otherVPs": [
+      {
+        "provId": "7025",
+        "vp": 1,
+        "name": "徐州"
+      },
+      {
+        "provId": "4001",
+        "vp": 1,
+        "name": "扬州"
+      }
+    ]
+  },
+  "599": {
+    "stateName": "广西",
+    "capital": "桂林",
+    "capitalProvId": "10404",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "1597",
+        "vp": 1,
+        "name": "柳州"
+      }
+    ]
+  },
+  "600": {
+    "stateName": "江西",
+    "capital": "南昌",
+    "capitalProvId": "3992",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "7199",
+        "vp": 1,
+        "name": "赣州"
+      }
+    ]
+  },
+  "601": {
+    "stateName": "昌都",
+    "capital": "昌都",
+    "capitalProvId": "10856",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "602": {
+    "stateName": "湖南",
+    "capital": "长沙",
+    "capitalProvId": "7097",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "12350",
+        "vp": 1,
+        "name": "衡阳"
+      }
+    ]
+  },
+  "603": {
+    "stateName": "贵州",
+    "capital": "贵阳",
+    "capitalProvId": "4504",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "604": {
+    "stateName": "青海",
+    "capital": "玉树",
+    "capitalProvId": "8018",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "605": {
+    "stateName": "四川",
+    "capital": "万县",
+    "capitalProvId": "11865",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "606": {
+    "stateName": "安徽",
+    "capital": "安庆",
+    "capitalProvId": "1083",
+    "vp": 1,
+    "otherVPs": [
+      {
+        "provId": "7222",
+        "vp": 1,
+        "name": "合肥"
+      }
+    ]
+  },
+  "607": {
+    "stateName": "河南",
+    "capital": "郑州",
+    "capitalProvId": "9958",
+    "vp": 2,
+    "otherVPs": [
+      {
+        "provId": "7656",
+        "vp": 1,
+        "name": "开封"
+      },
+      {
+        "provId": "11931",
+        "vp": 1,
+        "name": "洛阳"
+      }
+    ]
+  },
+  "608": {
+    "stateName": "北平",
+    "capital": "北平",
+    "capitalProvId": "9843",
+    "vp": 20,
+    "otherVPs": [
+      {
+        "provId": "10068",
+        "vp": 2,
+        "name": "天津"
+      },
+      {
+        "provId": "12026",
+        "vp": 1,
+        "name": "保定"
+      }
+    ]
+  },
+  "609": {
+    "stateName": "冀东",
+    "capital": "通县",
+    "capitalProvId": "11822",
+    "vp": 2,
+    "otherVPs": [
+      {
+        "provId": "1052",
+        "vp": 1,
+        "name": "唐山"
+      }
+    ]
+  },
+  "610": {
+    "stateName": "热河",
+    "capital": "承德",
+    "capitalProvId": "11801",
+    "vp": 2,
+    "otherVPs": [
+      {
+        "provId": "934",
+        "vp": 1,
+        "name": "朝阳"
+      }
+    ]
+  },
+  "611": {
+    "stateName": "察哈尔",
+    "capital": "张北",
+    "capitalProvId": "10397",
+    "vp": 2,
+    "otherVPs": []
+  },
+  "612": {
+    "stateName": "锡林郭勒",
+    "capital": "二连浩特",
+    "capitalProvId": "12448",
+    "vp": 1,
+    "otherVPs": [
+      {
+        "provId": "10372",
+        "vp": 1,
+        "name": "锡林浩特"
+      }
+    ]
+  },
+  "613": {
+    "stateName": "上海",
+    "capital": "上海",
+    "capitalProvId": "7014",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "614": {
+    "stateName": "河北",
+    "capital": "石门",
+    "capitalProvId": "4190",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "615": {
+    "stateName": "山西",
+    "capital": "太原",
+    "capitalProvId": "4174",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "12432",
+        "vp": 1,
+        "name": "大同"
+      },
+      {
+        "provId": "1180",
+        "vp": 1,
+        "name": "晋城"
+      }
+    ]
+  },
+  "616": {
+    "stateName": "宁夏",
+    "capital": "银川",
+    "capitalProvId": "8127",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "5031",
+        "vp": 1,
+        "name": "阿拉善右旗"
+      }
+    ]
+  },
+  "617": {
+    "stateName": "乌鲁木齐",
+    "capital": "乌鲁木齐",
+    "capitalProvId": "4709",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "10545",
+        "vp": 1,
+        "name": "和静"
+      },
+      {
+        "provId": "4682",
+        "vp": 1,
+        "name": "阿克苏"
+      },
+      {
+        "provId": "12601",
+        "vp": 1,
+        "name": "伊宁"
+      }
+    ]
+  },
+  "618": {
+    "stateName": "准噶尔",
+    "capital": "阿勒泰",
+    "capitalProvId": "4823",
+    "vp": 2,
+    "otherVPs": []
+  },
+  "619": {
+    "stateName": "莎车",
+    "capital": "喀什",
+    "capitalProvId": "2015",
+    "vp": 2,
+    "otherVPs": []
+  },
+  "620": {
+    "stateName": "湖北",
+    "capital": "宜昌",
+    "capitalProvId": "1612",
+    "vp": 1,
+    "otherVPs": [
+      {
+        "provId": "4130",
+        "vp": 1,
+        "name": "沔阳"
+      }
+    ]
+  },
+  "621": {
+    "stateName": "绥远",
+    "capital": "归绥",
+    "capitalProvId": "7631",
+    "vp": 1,
+    "otherVPs": [
+      {
+        "provId": "7158",
+        "vp": 1,
+        "name": "乌兰察布"
+      }
+    ]
+  },
+  "622": {
+    "stateName": "陕北",
+    "capital": "瓦窑堡",
+    "capitalProvId": "12356",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "623": {
+    "stateName": "吕宋",
+    "capital": "阿帕里",
+    "capitalProvId": "12213",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "627": {
+    "stateName": "达沃",
+    "capital": "达沃",
+    "capitalProvId": "4241",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "628": {
+    "stateName": "西米沙鄢",
+    "capital": "宿雾",
+    "capitalProvId": "12118",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "629": {
+    "stateName": "夏威夷",
+    "capital": "檀香山",
+    "capitalProvId": "4180",
+    "vp": 15,
+    "otherVPs": [
+      {
+        "provId": "12021",
+        "vp": 3,
+        "name": "希洛"
+      }
+    ]
+  },
+  "631": {
+    "stateName": "中途岛",
+    "capital": "中途岛",
+    "capitalProvId": "13052",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "632": {
+    "stateName": "威克岛",
+    "capital": "威克岛",
+    "capitalProvId": "13047",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "633": {
+    "stateName": "马绍尔群岛",
+    "capital": "夸贾林环礁",
+    "capitalProvId": "13041",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "13046",
+        "vp": 1,
+        "name": "埃尼威托克"
+      }
+    ]
+  },
+  "634": {
+    "stateName": "所罗门群岛",
+    "capital": "瓜达尔卡纳尔",
+    "capitalProvId": "1269",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "4226",
+        "vp": 1,
+        "name": "布因"
+      }
+    ]
+  },
+  "635": {
+    "stateName": "新喀里多尼亚",
+    "capital": "维拉港",
+    "capitalProvId": "12120",
+    "vp": 1,
+    "otherVPs": [
+      {
+        "provId": "4268",
+        "vp": 1,
+        "name": "努美阿"
+      }
+    ]
+  },
+  "636": {
+    "stateName": "斐济",
+    "capital": "苏瓦",
+    "capitalProvId": "4286",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "638": {
+    "stateName": "关岛",
+    "capital": "阿加尼亚",
+    "capitalProvId": "12140",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "639": {
+    "stateName": "吉尔伯特群岛",
+    "capital": "塔拉瓦",
+    "capitalProvId": "13021",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "640": {
+    "stateName": "曼德勒",
+    "capital": "曼德勒",
+    "capitalProvId": "1492",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "641": {
+    "stateName": "塔希提",
+    "capital": "帕皮提",
+    "capitalProvId": "12148",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "644": {
+    "stateName": "科雷马",
+    "capital": "中科雷姆斯克",
+    "capitalProvId": "1819",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "645": {
+    "stateName": "硫磺岛",
+    "capital": "硫磺岛",
+    "capitalProvId": "13025",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "646": {
+    "stateName": "塞班岛",
+    "capital": "塞班岛",
+    "capitalProvId": "3995",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "647": {
+    "stateName": "帕劳群岛",
+    "capital": "科罗尔",
+    "capitalProvId": "12103",
+    "vp": 2,
+    "otherVPs": [
+      {
+        "provId": "4357",
+        "vp": 1,
+        "name": "雅拉尔德"
+      }
+    ]
+  },
+  "649": {
+    "stateName": "加拉帕戈斯群岛",
+    "capital": "阿约拉港",
+    "capitalProvId": "5023",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "650": {
+    "stateName": "阿图岛",
+    "capital": "阿图",
+    "capitalProvId": "13067",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "651": {
+    "stateName": "乌法",
+    "capital": "乌法",
+    "capitalProvId": "1278",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "4354",
+        "vp": 1,
+        "name": "斯捷尔利塔马克"
+      }
+    ]
+  },
+  "653": {
+    "stateName": "斯维尔德洛夫斯克",
+    "capital": "斯维尔德洛夫斯克",
+    "capitalProvId": "1821",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "654": {
+    "stateName": "卫拉特地区",
+    "capital": "卫拉特-图拉",
+    "capitalProvId": "4800",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "656": {
+    "stateName": "科威特",
+    "capital": "科威特城",
+    "capitalProvId": "8085",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "658": {
+    "stateName": "阿布扎比",
+    "capital": "阿布扎比",
+    "capitalProvId": "7960",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "660": {
+    "stateName": "赤道非洲",
+    "capital": "班吉",
+    "capitalProvId": "12830",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "664": {
+    "stateName": "南斯洛伐克",
+    "capital": "科希策",
+    "capitalProvId": "6573",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "665": {
+    "stateName": "加贝斯",
+    "capital": "加贝斯",
+    "capitalProvId": "7005",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "666": {
+    "stateName": "北博滕",
+    "capital": "吕勒奥",
+    "capitalProvId": "9108",
+    "vp": 2,
+    "otherVPs": [
+      {
+        "provId": "3095",
+        "vp": 1,
+        "name": "基律纳"
+      },
+      {
+        "provId": "11155",
+        "vp": 1,
+        "name": "耶利瓦勒"
+      },
+      {
+        "provId": "9147",
+        "vp": 1,
+        "name": "哈帕兰达"
+      }
+    ]
+  },
+  "669": {
+    "stateName": "西巴布亚",
+    "capital": "霍兰迪亚",
+    "capitalProvId": "12371",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "670": {
+    "stateName": "老挝",
+    "capital": "万象",
+    "capitalProvId": "1464",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "671": {
+    "stateName": "东京",
+    "capital": "河内",
+    "capitalProvId": "4075",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "9948",
+        "vp": 1,
+        "name": "高平"
+      }
+    ]
+  },
+  "672": {
+    "stateName": "苏门答腊",
+    "capital": "巨港",
+    "capitalProvId": "12268",
+    "vp": 1,
+    "otherVPs": [
+      {
+        "provId": "4652",
+        "vp": 1,
+        "name": "棉兰"
+      }
+    ]
+  },
+  "673": {
+    "stateName": "苏拉威西",
+    "capital": "望加锡",
+    "capitalProvId": "10263",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "675": {
+    "stateName": "哈扎拉",
+    "capital": "萨马沃",
+    "capitalProvId": "12879",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "676": {
+    "stateName": "摩苏尔",
+    "capital": "摩苏尔",
+    "capitalProvId": "10106",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "3916",
+        "vp": 3,
+        "name": "埃尔比勒"
+      },
+      {
+        "provId": "6826",
+        "vp": 1,
+        "name": "苏莱曼尼亚"
+      }
+    ]
+  },
+  "677": {
+    "stateName": "阿勒颇",
+    "capital": "阿勒颇",
+    "capitalProvId": "12473",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "1056",
+        "vp": 1,
+        "name": "霍姆斯"
+      },
+      {
+        "provId": "1088",
+        "vp": 1,
+        "name": "拉塔基亚"
+      }
+    ]
+  },
+  "679": {
+    "stateName": "麦地那",
+    "capital": "麦地那",
+    "capitalProvId": "12758",
+    "vp": 2,
+    "otherVPs": []
+  },
+  "680": {
+    "stateName": "代尔祖尔",
+    "capital": "艾因阿拉伯",
+    "capitalProvId": "6883",
+    "vp": 1,
+    "otherVPs": [
+      {
+        "provId": "3942",
+        "vp": 1,
+        "name": "代尔祖尔"
+      },
+      {
+        "provId": "1549",
+        "vp": 1,
+        "name": "卡米什利"
+      }
+    ]
+  },
+  "681": {
+    "stateName": "开普",
+    "capital": "开普敦",
+    "capitalProvId": "12589",
+    "vp": 10,
+    "otherVPs": []
+  },
+  "682": {
+    "stateName": "北安大略",
+    "capital": "桑德贝",
+    "capitalProvId": "7899",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "684": {
+    "stateName": "加罗林群岛",
+    "capital": "特鲁克",
+    "capitalProvId": "2489",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "13028",
+        "vp": 1,
+        "name": "雅浦岛"
+      }
+    ]
+  },
+  "685": {
+    "stateName": "巴拿马运河",
+    "capital": "科隆",
+    "capitalProvId": "7617",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "686": {
+    "stateName": "波多黎各",
+    "capital": "圣胡安",
+    "capitalProvId": "1440",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "687": {
+    "stateName": "英属圭亚那",
+    "capital": "乔治敦",
+    "capitalProvId": "4982",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "688": {
+    "stateName": "北查科",
+    "capital": "巴勃罗・拉海伦萨少校镇",
+    "capitalProvId": "5165",
+    "vp": 1,
+    "otherVPs": [
+      {
+        "provId": "2195",
+        "vp": 1,
+        "name": "菲拉德尔菲亚"
+      }
+    ]
+  },
+  "689": {
+    "stateName": "牙买加",
+    "capital": "金斯敦",
+    "capitalProvId": "12304",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "690": {
+    "stateName": "北巴哈马",
+    "capital": "拿骚",
+    "capitalProvId": "10254",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "691": {
+    "stateName": "特立尼达",
+    "capital": "西班牙港",
+    "capitalProvId": "3284",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "692": {
+    "stateName": "向风群岛",
+    "capital": "布里奇顿",
+    "capitalProvId": "11350",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "694": {
+    "stateName": "法属加勒比",
+    "capital": "皮特尔角",
+    "capitalProvId": "9377",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "695": {
+    "stateName": "库拉索",
+    "capital": "威廉斯塔德",
+    "capitalProvId": "153",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "696": {
+    "stateName": "百慕大",
+    "capital": "汉密尔顿",
+    "capitalProvId": "13010",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "697": {
+    "stateName": "马德拉",
+    "capital": "丰沙尔",
+    "capitalProvId": "3118",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "698": {
+    "stateName": "亚速尔",
+    "capital": "蓬塔德尔加达",
+    "capitalProvId": "1751",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "699": {
+    "stateName": "里奥德奥罗",
+    "capital": "阿尤恩",
+    "capitalProvId": "8038",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "700": {
+    "stateName": "塞拉利昂",
+    "capital": "弗里敦",
+    "capitalProvId": "2038",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "701": {
+    "stateName": "冈比亚",
+    "capital": "班珠尔",
+    "capitalProvId": "4989",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "702": {
+    "stateName": "佛得角",
+    "capital": "普拉亚",
+    "capitalProvId": "13014",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "714": {
+    "stateName": "黑龙江",
+    "capital": "黑河",
+    "capitalProvId": "1693",
+    "vp": 2,
+    "otherVPs": [
+      {
+        "provId": "12485",
+        "vp": 1,
+        "name": "乌兰浩特"
+      },
+      {
+        "provId": "7848",
+        "vp": 1,
+        "name": "漠河"
+      }
+    ]
+  },
+  "715": {
+    "stateName": "辽北",
+    "capital": "通辽",
+    "capitalProvId": "11836",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "716": {
+    "stateName": "辽宁",
+    "capital": "奉天",
+    "capitalProvId": "11771",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "11764",
+        "vp": 1,
+        "name": "营口"
+      }
+    ]
+  },
+  "717": {
+    "stateName": "松江",
+    "capital": "佳木斯",
+    "capitalProvId": "10463",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "718": {
+    "stateName": "斯坦利维尔",
+    "capital": "斯坦利维尔",
+    "capitalProvId": "1950",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "719": {
+    "stateName": "纳塔尔",
+    "capital": "德班",
+    "capitalProvId": "1468",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "4696",
+        "vp": 1,
+        "name": "伊丽莎白港"
+      }
+    ]
+  },
+  "721": {
+    "stateName": "东帝汶",
+    "capital": "帝力",
+    "capitalProvId": "12190",
+    "vp": 2,
+    "otherVPs": []
+  },
+  "723": {
+    "stateName": "南岛",
+    "capital": "达尼丁",
+    "capitalProvId": "2211",
+    "vp": 1,
+    "otherVPs": [
+      {
+        "provId": "2197",
+        "vp": 1,
+        "name": "克莱斯特彻奇"
+      }
+    ]
+  },
+  "724": {
+    "stateName": "北马来",
+    "capital": "合艾",
+    "capitalProvId": "7236",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "725": {
+    "stateName": "瑙鲁",
+    "capital": "瑙鲁",
+    "capitalProvId": "13038",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "726": {
+    "stateName": "萨摩亚",
+    "capital": "阿皮亚",
+    "capitalProvId": "7290",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "728": {
+    "stateName": "广州湾",
+    "capital": "湛江",
+    "capitalProvId": "11981",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "729": {
+    "stateName": "澳门",
+    "capital": "澳门",
+    "capitalProvId": "4189",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "731": {
+    "stateName": "中马其顿",
+    "capital": "塞萨洛尼基",
+    "capitalProvId": "11818",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "732": {
+    "stateName": "帕米尔",
+    "capital": "伏龙芝",
+    "capitalProvId": "12583",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "733": {
+    "stateName": "安达曼",
+    "capital": "布莱尔港",
+    "capitalProvId": "12251",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "735": {
+    "stateName": "萨伏依",
+    "capital": "尼斯",
+    "capitalProvId": "9909",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "778",
+        "vp": 1,
+        "name": "阿讷西"
+      }
+    ]
+  },
+  "736": {
+    "stateName": "滨海区",
+    "capital": "的里雅斯特",
+    "capitalProvId": "6626",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "737": {
+    "stateName": "俾斯麦群岛",
+    "capital": "拉包尔",
+    "capitalProvId": "7251",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "740": {
+    "stateName": "温哥华岛",
+    "capital": "维多利亚",
+    "capitalProvId": "7259",
+    "vp": 2,
+    "otherVPs": []
+  },
+  "741": {
+    "stateName": "柬埔寨",
+    "capital": "金边",
+    "capitalProvId": "7376",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "742": {
+    "stateName": "斯大林纳巴德",
+    "capital": "斯大林纳巴德",
+    "capitalProvId": "1384",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "743": {
+    "stateName": "青岛",
+    "capital": "青岛",
+    "capitalProvId": "10000",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "744": {
+    "stateName": "西安",
+    "capital": "西安",
+    "capitalProvId": "7301",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "745": {
+    "stateName": "大连",
+    "capital": "大连",
+    "capitalProvId": "1150",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "746": {
+    "stateName": "鄂尔多斯",
+    "capital": "乌海",
+    "capitalProvId": "10854",
+    "vp": 1,
+    "otherVPs": [
+      {
+        "provId": "3427",
+        "vp": 1,
+        "name": "鄂尔多斯"
+      }
+    ]
+  },
+  "747": {
+    "stateName": "大理",
+    "capital": "大理",
+    "capitalProvId": "7965",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "10863",
+        "vp": 1,
+        "name": "和顺"
+      }
+    ]
+  },
+  "748": {
+    "stateName": "遵义",
+    "capital": "遵义",
+    "capitalProvId": "1010",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "749": {
+    "stateName": "黄山",
+    "capital": "徽州",
+    "capitalProvId": "12019",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "750": {
+    "stateName": "常德",
+    "capital": "常德",
+    "capitalProvId": "7101",
+    "vp": 10,
+    "otherVPs": []
+  },
+  "751": {
+    "stateName": "凉山",
+    "capital": "雅安",
+    "capitalProvId": "10841",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "7294",
+        "vp": 1,
+        "name": "凉山"
+      }
+    ]
+  },
+  "752": {
+    "stateName": "甘孜",
+    "capital": "巴安",
+    "capitalProvId": "12724",
+    "vp": 1,
+    "otherVPs": [
+      {
+        "provId": "4999",
+        "vp": 1,
+        "name": "康定"
+      }
+    ]
+  },
+  "753": {
+    "stateName": "甘南",
+    "capital": "岷县",
+    "capitalProvId": "5193",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "754": {
+    "stateName": "果洛",
+    "capital": "西宁",
+    "capitalProvId": "12732",
+    "vp": 10,
+    "otherVPs": [
+      {
+        "provId": "11448",
+        "vp": 1,
+        "name": "拉卜楞"
+      }
+    ]
+  },
+  "755": {
+    "stateName": "海西",
+    "capital": "都兰",
+    "capitalProvId": "10750",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "756": {
+    "stateName": "酒泉",
+    "capital": "酒泉",
+    "capitalProvId": "7971",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "757": {
+    "stateName": "日喀则",
+    "capital": "拉萨",
+    "capitalProvId": "5033",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "759": {
+    "stateName": "昆仑山",
+    "capital": "若羌",
+    "capitalProvId": "2074",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "760": {
+    "stateName": "达坂城",
+    "capital": "哈密",
+    "capitalProvId": "4704",
+    "vp": 2,
+    "otherVPs": []
+  },
+  "761": {
+    "stateName": "呼伦贝尔",
+    "capital": "塔乌兰",
+    "capitalProvId": "12690",
+    "vp": 1,
+    "otherVPs": [
+      {
+        "provId": "10612",
+        "vp": 1,
+        "name": "满洲里"
+      },
+      {
+        "provId": "1776",
+        "vp": 1,
+        "name": "根河"
+      },
+      {
+        "provId": "13150",
+        "vp": 1,
+        "name": "海拉尔"
+      }
+    ]
+  },
+  "762": {
+    "stateName": "卡托维兹",
+    "capital": "卡托维兹",
+    "capitalProvId": "6464",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "763": {
+    "stateName": "柯尼斯堡",
+    "capital": "柯尼斯堡",
+    "capitalProvId": "6332",
+    "vp": 10,
+    "otherVPs": []
+  },
+  "764": {
+    "stateName": "西巴纳特",
+    "capital": "潘切沃",
+    "capitalProvId": "3614",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "765": {
+    "stateName": "卡塔尔",
+    "capital": "多哈",
+    "capitalProvId": "8051",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "766": {
+    "stateName": "南比萨拉比亚",
+    "capital": "卡塔提亚-阿尔巴",
+    "capitalProvId": "6727",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "768": {
+    "stateName": "卢旺达",
+    "capital": "基加利",
+    "capitalProvId": "9962",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "769": {
+    "stateName": "布隆迪",
+    "capital": "布琼布拉",
+    "capitalProvId": "2220",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "770": {
+    "stateName": "马拉维",
+    "capital": "利隆圭",
+    "capitalProvId": "12986",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "771": {
+    "stateName": "赞比亚",
+    "capital": "卢萨卡",
+    "capitalProvId": "5199",
+    "vp": 2,
+    "otherVPs": [
+      {
+        "provId": "5221",
+        "vp": 1,
+        "name": "奇帕塔"
+      }
+    ]
+  },
+  "772": {
+    "stateName": "中央刚果",
+    "capital": "布拉柴维尔",
+    "capitalProvId": "8193",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "12975",
+        "vp": 1,
+        "name": "卢安果"
+      }
+    ]
+  },
+  "773": {
+    "stateName": "喀麦隆",
+    "capital": "雅温得",
+    "capitalProvId": "2080",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "774": {
+    "stateName": "乍得",
+    "capital": "恩贾梅纳",
+    "capitalProvId": "2081",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "776": {
+    "stateName": "达荷美",
+    "capital": "波多诺伏",
+    "capitalProvId": "10919",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "777": {
+    "stateName": "多哥",
+    "capital": "洛美",
+    "capitalProvId": "1951",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "778": {
+    "stateName": "上沃尔特",
+    "capital": "瓦加杜古",
+    "capitalProvId": "10836",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "779": {
+    "stateName": "象牙海岸",
+    "capital": "阿比让",
+    "capitalProvId": "10803",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "780": {
+    "stateName": "几内亚",
+    "capital": "科纳克里",
+    "capitalProvId": "1909",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "781": {
+    "stateName": "尼日尔",
+    "capital": "尼亚美",
+    "capitalProvId": "2056",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "783": {
+    "stateName": "西迪伊夫尼",
+    "capital": "西迪伊夫尼",
+    "capitalProvId": "12857",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "784": {
+    "stateName": "维尔纳",
+    "capital": "维尔纳",
+    "capitalProvId": "3320",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "785": {
+    "stateName": "皮卡第",
+    "capital": "亚眠",
+    "capitalProvId": "11420",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "787": {
+    "stateName": "北克什米尔",
+    "capital": "科特利",
+    "capitalProvId": "1910",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "788": {
+    "stateName": "萨拉曼卡",
+    "capital": "萨拉曼卡",
+    "capitalProvId": "3874",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "789": {
+    "stateName": "科尔多瓦",
+    "capital": "科尔多瓦",
+    "capitalProvId": "875",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "790": {
+    "stateName": "阿斯图里亚斯",
+    "capital": "奥维耶多",
+    "capitalProvId": "11707",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "791": {
+    "stateName": "巴利亚多利德",
+    "capital": "巴利亚多利德",
+    "capitalProvId": "11825",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "792": {
+    "stateName": "巴斯克",
+    "capital": "毕尔巴鄂",
+    "capitalProvId": "740",
+    "vp": 10,
+    "otherVPs": []
+  },
+  "793": {
+    "stateName": "瓜达拉哈拉",
+    "capital": "昆卡",
+    "capitalProvId": "3945",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "794": {
+    "stateName": "东阿拉贡",
+    "capital": "卡斯佩",
+    "capitalProvId": "3954",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "795": {
+    "stateName": "圣塔伦",
+    "capital": "圣塔伦",
+    "capitalProvId": "924",
+    "vp": 1,
+    "otherVPs": [
+      {
+        "provId": "9869",
+        "vp": 1,
+        "name": "埃武拉"
+      }
+    ]
+  },
+  "796": {
+    "stateName": "卡宾达",
+    "capital": "卡宾达",
+    "capitalProvId": "2115",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "797": {
+    "stateName": "伊斯坦布尔",
+    "capital": "伊斯坦布尔",
+    "capitalProvId": "9833",
+    "vp": 25,
+    "otherVPs": []
+  },
+  "798": {
+    "stateName": "阿马西亚",
+    "capital": "省份919",
+    "capitalProvId": "919",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "3862",
+        "vp": 3,
+        "name": "约兹加特"
+      }
+    ]
+  },
+  "799": {
+    "stateName": "哈塔伊",
+    "capital": "安塔基亚",
+    "capitalProvId": "12029",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "800": {
+    "stateName": "凡城",
+    "capital": "凡城",
+    "capitalProvId": "6935",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "12376",
+        "vp": 1,
+        "name": "阿勒"
+      }
+    ]
+  },
+  "802": {
+    "stateName": "科索沃",
+    "capital": "普里什蒂纳",
+    "capitalProvId": "6940",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "9849",
+        "vp": 2,
+        "name": "普里兹伦"
+      }
+    ]
+  },
+  "803": {
+    "stateName": "南塞尔维亚",
+    "capital": "莱斯科瓦茨",
+    "capitalProvId": "11857",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "804": {
+    "stateName": "黑塞哥维那",
+    "capital": "莫斯塔尔",
+    "capitalProvId": "9894",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "805": {
+    "stateName": "北伊庇鲁斯",
+    "capital": "吉罗卡斯特",
+    "capitalProvId": "914",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "806": {
+    "stateName": "比利牛斯-大西洋",
+    "capital": "巴约讷",
+    "capitalProvId": "9710",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "807": {
+    "stateName": "格丁尼亚",
+    "capital": "托伦",
+    "capitalProvId": "3295",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "9263",
+        "vp": 5,
+        "name": "格丁尼亚"
+      },
+      {
+        "provId": "279",
+        "vp": 1,
+        "name": "比得哥什"
+      }
+    ]
+  },
+  "808": {
+    "stateName": "里加",
+    "capital": "里加",
+    "capitalProvId": "9340",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "809": {
+    "stateName": "泽姆加里",
+    "capital": "陶格夫匹尔斯",
+    "capitalProvId": "310",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "222",
+        "vp": 1,
+        "name": "雷泽克内"
+      }
+    ]
+  },
+  "810": {
+    "stateName": "拉特加尔",
+    "capital": "叶尔加瓦",
+    "capitalProvId": "6222",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "3255",
+        "vp": 1,
+        "name": "叶卡布皮尔斯"
+      }
+    ]
+  },
+  "811": {
+    "stateName": "萨列马",
+    "capital": "库雷萨雷",
+    "capitalProvId": "185",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "812": {
+    "stateName": "哈尔尤",
+    "capital": "塔林",
+    "capitalProvId": "3152",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "813": {
+    "stateName": "维鲁玛",
+    "capital": "拉克韦雷",
+    "capitalProvId": "11127",
+    "vp": 1,
+    "otherVPs": [
+      {
+        "provId": "4640",
+        "vp": 1,
+        "name": "纳尔瓦"
+      }
+    ]
+  },
+  "814": {
+    "stateName": "苏杜瓦",
+    "capital": "马里扬泊列",
+    "capitalProvId": "11312",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "815": {
+    "stateName": "奥克斯泰体哈",
+    "capital": "帕内韦日斯",
+    "capitalProvId": "6229",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "816": {
+    "stateName": "西弗吉尼亚",
+    "capital": "查尔斯顿",
+    "capitalProvId": "7588",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "817": {
+    "stateName": "戈壁",
+    "capital": "赛音山达",
+    "capitalProvId": "12612",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "818": {
+    "stateName": "科布多",
+    "capital": "乌兰固木",
+    "capitalProvId": "7843",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "819": {
+    "stateName": "东方",
+    "capital": "巴彦图门",
+    "capitalProvId": "12557",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "820": {
+    "stateName": "库苏古尔",
+    "capital": "达尔汗",
+    "capitalProvId": "7717",
+    "vp": 2,
+    "otherVPs": [
+      {
+        "provId": "7676",
+        "vp": 1,
+        "name": "额尔登特"
+      }
+    ]
+  },
+  "835": {
+    "stateName": "哈勒尔盖",
+    "capital": "哈勒尔",
+    "capitalProvId": "13249",
+    "vp": 3,
+    "otherVPs": [
+      {
+        "provId": "7980",
+        "vp": 2,
+        "name": "德雷达瓦"
+      },
+      {
+        "provId": "12812",
+        "vp": 1,
+        "name": "瓦尔瓦尔"
+      }
+    ]
+  },
+  "836": {
+    "stateName": "巴莱",
+    "capital": "戈巴",
+    "capitalProvId": "10775",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "837": {
+    "stateName": "锡达莫",
+    "capital": "伊尔加阿勒姆",
+    "capitalProvId": "13246",
+    "vp": 2,
+    "otherVPs": [
+      {
+        "provId": "8019",
+        "vp": 1,
+        "name": "亚贝洛"
+      },
+      {
+        "provId": "13247",
+        "vp": 1,
+        "name": "莫亚莱"
+      }
+    ]
+  },
+  "838": {
+    "stateName": "伊路巴博-咖法",
+    "capital": "甘贝拉",
+    "capitalProvId": "13244",
+    "vp": 2,
+    "otherVPs": [
+      {
+        "provId": "7912",
+        "vp": 1,
+        "name": "吉仁"
+      }
+    ]
+  },
+  "839": {
+    "stateName": "沃莱加",
+    "capital": "阿索萨",
+    "capitalProvId": "2009",
+    "vp": 2,
+    "otherVPs": [
+      {
+        "provId": "13243",
+        "vp": 1,
+        "name": "萨约"
+      }
+    ]
+  },
+  "840": {
+    "stateName": "戈贾姆",
+    "capital": "德卜勒马科斯",
+    "capitalProvId": "13242",
+    "vp": 2,
+    "otherVPs": []
+  },
+  "841": {
+    "stateName": "贝根德尔",
+    "capital": "贡德尔",
+    "capitalProvId": "1984",
+    "vp": 2,
+    "otherVPs": []
+  },
+  "842": {
+    "stateName": "提格雷",
+    "capital": "默克莱",
+    "capitalProvId": "2072",
+    "vp": 2,
+    "otherVPs": [
+      {
+        "provId": "13237",
+        "vp": 1,
+        "name": "阿克苏姆"
+      },
+      {
+        "provId": "13238",
+        "vp": 1,
+        "name": "阿杜瓦"
+      }
+    ]
+  },
+  "843": {
+    "stateName": "沃洛",
+    "capital": "德塞",
+    "capitalProvId": "5097",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "844": {
+    "stateName": "朱巴兰",
+    "capital": "基斯马尤",
+    "capitalProvId": "12941",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "851": {
+    "stateName": "瓦尔",
+    "capital": "土伦",
+    "capitalProvId": "911",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "853": {
+    "stateName": "卢布尔雅那",
+    "capital": "卢布尔雅那",
+    "capitalProvId": "9627",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "856": {
+    "stateName": "阿西尔-麦加",
+    "capital": "麦加",
+    "capitalProvId": "5037",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "12883",
+        "vp": 1,
+        "name": "吉达"
+      }
+    ]
+  },
+  "859": {
+    "stateName": "达曼",
+    "capital": "达曼",
+    "capitalProvId": "12702",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "863": {
+    "stateName": "莫里斯",
+    "capital": "萨格奈",
+    "capitalProvId": "12223",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "868": {
+    "stateName": "依善",
+    "capital": "那空叻差是玛",
+    "capitalProvId": "10438",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "869": {
+    "stateName": "兰纳",
+    "capital": "清迈",
+    "capitalProvId": "1488",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "874": {
+    "stateName": "马加丹",
+    "capital": "马加丹",
+    "capitalProvId": "12683",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "875": {
+    "stateName": "楚科奇半岛",
+    "capital": "拉夫连季亚",
+    "capitalProvId": "13204",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "877": {
+    "stateName": "上扬斯克",
+    "capital": "上扬斯克",
+    "capitalProvId": "12549",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "879": {
+    "stateName": "卡尔戈波尔",
+    "capital": "卡尔戈波尔",
+    "capitalProvId": "138",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "880": {
+    "stateName": "科特拉斯",
+    "capital": "科特拉斯",
+    "capitalProvId": "11061",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "882": {
+    "stateName": "巴甫洛达尔",
+    "capital": "巴甫洛达尔",
+    "capitalProvId": "7708",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "883": {
+    "stateName": "卡萨拉",
+    "capital": "苏丹港",
+    "capitalProvId": "12725",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "888": {
+    "stateName": "卢桑博",
+    "capital": "巴宽加",
+    "capitalProvId": "2024",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "889": {
+    "stateName": "伊丽莎白维尔",
+    "capital": "伊丽莎白维尔",
+    "capitalProvId": "191",
+    "vp": 2,
+    "otherVPs": []
+  },
+  "890": {
+    "stateName": "科斯特曼斯维尔",
+    "capital": "阿尔贝维尔",
+    "capitalProvId": "4941",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "892": {
+    "stateName": "西南安哥拉",
+    "capital": "新里斯本",
+    "capitalProvId": "10966",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "900": {
+    "stateName": "贝努埃",
+    "capital": "埃努古",
+    "capitalProvId": "8034",
+    "vp": 2,
+    "otherVPs": []
+  },
+  "902": {
+    "stateName": "索科托",
+    "capital": "索科托",
+    "capitalProvId": "1891",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "905": {
+    "stateName": "蒙巴萨",
+    "capital": "蒙巴萨",
+    "capitalProvId": "5210",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "907": {
+    "stateName": "开罗",
+    "capital": "开罗",
+    "capitalProvId": "7011",
+    "vp": 20,
+    "otherVPs": [
+      {
+        "provId": "3996",
+        "vp": 5,
+        "name": "吉萨"
+      },
+      {
+        "provId": "1068",
+        "vp": 3,
+        "name": "贝尼苏韦夫"
+      }
+    ]
+  },
+  "908": {
+    "stateName": "阿法尔",
+    "capital": "奥萨",
+    "capitalProvId": "13240",
+    "vp": 2,
+    "otherVPs": []
+  },
+  "909": {
+    "stateName": "石勒苏益格",
+    "capital": "弗伦斯堡",
+    "capitalProvId": "317",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "911": {
+    "stateName": "菲英",
+    "capital": "欧登塞",
+    "capitalProvId": "3325",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "912": {
+    "stateName": "南日德兰",
+    "capital": "森讷堡",
+    "capitalProvId": "13258",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "913": {
+    "stateName": "东约特兰",
+    "capital": "林雪平",
+    "capitalProvId": "9393",
+    "vp": 2,
+    "otherVPs": [
+      {
+        "provId": "11380",
+        "vp": 1,
+        "name": "北雪平"
+      }
+    ]
+  },
+  "915": {
+    "stateName": "布胡斯兰",
+    "capital": "乌德瓦拉",
+    "capitalProvId": "6310",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "916": {
+    "stateName": "达拉纳",
+    "capital": "法伦",
+    "capitalProvId": "156",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "917": {
+    "stateName": "耶姆特兰",
+    "capital": "厄斯特松德",
+    "capitalProvId": "11148",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "918": {
+    "stateName": "西博滕",
+    "capital": "于默奥",
+    "capitalProvId": "6132",
+    "vp": 2,
+    "otherVPs": [
+      {
+        "provId": "109",
+        "vp": 1,
+        "name": "威廉明娜"
+      }
+    ]
+  },
+  "919": {
+    "stateName": "韦姆兰",
+    "capital": "卡尔斯塔德",
+    "capitalProvId": "11114",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "920": {
+    "stateName": "奥普兰",
+    "capital": "埃尔沃吕姆",
+    "capitalProvId": "3136",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "921": {
+    "stateName": "泰勒马克",
+    "capital": "希恩",
+    "capitalProvId": "6151",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "922": {
+    "stateName": "阿格德尔",
+    "capital": "克里斯蒂安桑",
+    "capitalProvId": "9296",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "923": {
+    "stateName": "海尔格兰",
+    "capital": "摩城",
+    "capitalProvId": "3048",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "924": {
+    "stateName": "特罗姆斯",
+    "capital": "特罗姆瑟",
+    "capitalProvId": "11050",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "925": {
+    "stateName": "芬马克",
+    "capital": "希尔克内斯",
+    "capitalProvId": "9116",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "929": {
+    "stateName": "奥卢",
+    "capital": "奥卢",
+    "capitalProvId": "158",
+    "vp": 2,
+    "otherVPs": [
+      {
+        "provId": "3073",
+        "vp": 1,
+        "name": "苏奥穆斯萨尔米"
+      }
+    ]
+  },
+  "931": {
+    "stateName": "坎布里亚",
+    "capital": "卡莱尔",
+    "capitalProvId": "11332",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "932": {
+    "stateName": "马恩岛",
+    "capital": "道格拉斯",
+    "capitalProvId": "3311",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "934": {
+    "stateName": "斯库台",
+    "capital": "斯库台",
+    "capitalProvId": "9780",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "988": {
+    "stateName": "北俾路支斯坦",
+    "capital": "奎达",
+    "capitalProvId": "5105",
+    "vp": 3,
+    "otherVPs": []
+  },
+  "990": {
+    "stateName": "曼尼普尔",
+    "capital": "因帕尔",
+    "capitalProvId": "1553",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "992": {
+    "stateName": "亚丁省",
+    "capital": "亚丁",
+    "capitalProvId": "5074",
+    "vp": 2,
+    "otherVPs": []
+  },
+  "993": {
+    "stateName": "景栋和永贵",
+    "capital": "景栋",
+    "capitalProvId": "7909",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "994": {
+    "stateName": "丹那沙林",
+    "capital": "毛淡棉",
+    "capitalProvId": "1403",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "995": {
+    "stateName": "勃固",
+    "capital": "仰光",
+    "capitalProvId": "1330",
+    "vp": 15,
+    "otherVPs": [
+      {
+        "provId": "10344",
+        "vp": 1,
+        "name": "同古"
+      }
+    ]
+  },
+  "996": {
+    "stateName": "伊洛瓦底",
+    "capital": "勃生",
+    "capitalProvId": "7254",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "997": {
+    "stateName": "若开",
+    "capital": "实兑",
+    "capitalProvId": "12090",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "998": {
+    "stateName": "实皆",
+    "capital": "密支那",
+    "capitalProvId": "4425",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "999": {
+    "stateName": "掸族诸邦",
+    "capital": "班弄",
+    "capitalProvId": "4210",
+    "vp": 1,
+    "otherVPs": [
+      {
+        "provId": "7603",
+        "vp": 1,
+        "name": "孟班"
+      }
+    ]
+  },
+  "1000": {
+    "stateName": "东阿塞拜疆",
+    "capital": "大不里士",
+    "capitalProvId": "1896",
+    "vp": 5,
+    "otherVPs": []
+  },
+  "1001": {
+    "stateName": "库尔德斯坦",
+    "capital": "萨南达季",
+    "capitalProvId": "4943",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "5098",
+        "vp": 3,
+        "name": "克尔曼沙赫"
+      }
+    ]
+  },
+  "1002": {
+    "stateName": "亚兹德",
+    "capital": "亚兹德",
+    "capitalProvId": "8031",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "1003": {
+    "stateName": "南霍拉桑",
+    "capital": "比尔詹德",
+    "capitalProvId": "7990",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "1005": {
+    "stateName": "卡塔汉",
+    "capital": "巴格兰",
+    "capitalProvId": "10781",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "1006": {
+    "stateName": "开伯尔山口",
+    "capital": "贾拉拉巴德",
+    "capitalProvId": "12831",
+    "vp": 1,
+    "otherVPs": [
+      {
+        "provId": "5082",
+        "vp": 1,
+        "name": "加德兹"
+      }
+    ]
+  },
+  "1007": {
+    "stateName": "迈马纳",
+    "capital": "昆都士",
+    "capitalProvId": "12248",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "1008": {
+    "stateName": "坎大哈",
+    "capital": "坎大哈",
+    "capitalProvId": "5064",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "1009": {
+    "stateName": "法拉赫",
+    "capital": "法拉赫",
+    "capitalProvId": "2017",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "1010": {
+    "stateName": "安巴尔",
+    "capital": "拉马迪",
+    "capitalProvId": "12413",
+    "vp": 1,
+    "otherVPs": []
+  },
+  "1011": {
+    "stateName": "巴士拉",
+    "capital": "巴士拉",
+    "capitalProvId": "2089",
+    "vp": 5,
+    "otherVPs": [
+      {
+        "provId": "8001",
+        "vp": 3,
+        "name": "纳杰夫"
+      },
+      {
+        "provId": "12726",
+        "vp": 1,
+        "name": "纳西里耶"
+      }
+    ]
+  },
+  "1012": {
+    "stateName": "卡拉特",
+    "capital": "卡拉特",
+    "capitalProvId": "8098",
+    "vp": 1,
+    "otherVPs": []
+  }
+}

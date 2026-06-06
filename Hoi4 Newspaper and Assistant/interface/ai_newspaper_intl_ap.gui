@@ -1,0 +1,150 @@
+guiTypes = {
+	containerWindowType = {
+		name = "ai_newspaper_intl_ap_window"
+
+		position = { x = 0 y = 0 }
+		size = { width = 1000 height = 680 }
+
+		orientation = CENTER
+		origo = center
+
+		moveable = yes
+
+		background = {
+			name = "newspaper_bg"
+			spriteType = "GFX_intl_ap_newspaper_bg"
+		}
+
+		instantTextBoxType = {
+			name = "intl_ap_date"
+			position = { x = 8 y = 8 }
+			font = "hoi_18mbs"
+			text = "intl_ap_date"
+			maxWidth = 200
+			maxHeight = 25
+			format = left
+		}
+
+		instantTextBoxType = {
+			name = "intl_ap_1_title"
+			position = { x = 15 y = 140 }
+			font = "hoi_18mbs"
+			text = "intl_ap_1_title"
+			maxWidth = 305
+			maxHeight = 35
+			format = center
+		}
+		instantTextBoxType = {
+			name = "intl_ap_1_body"
+			position = { x = 15 y = 178 }
+			font = "hoi_18mbs"
+			text = "intl_ap_1_body"
+			maxWidth = 305
+			maxHeight = 165
+			format = left
+		}
+
+		instantTextBoxType = {
+			name = "intl_ap_2_title"
+			position = { x = 345 y = 140 }
+			font = "hoi_18mbs"
+			text = "intl_ap_2_title"
+			maxWidth = 305
+			maxHeight = 35
+			format = center
+		}
+		instantTextBoxType = {
+			name = "intl_ap_2_body"
+			position = { x = 345 y = 178 }
+			font = "hoi_18mbs"
+			text = "intl_ap_2_body"
+			maxWidth = 305
+			maxHeight = 165
+			format = left
+		}
+
+		instantTextBoxType = {
+			name = "intl_ap_3_title"
+			position = { x = 675 y = 140 }
+			font = "hoi_18mbs"
+			text = "intl_ap_3_title"
+			maxWidth = 305
+			maxHeight = 35
+			format = center
+		}
+		instantTextBoxType = {
+			name = "intl_ap_3_body"
+			position = { x = 675 y = 178 }
+			font = "hoi_18mbs"
+			text = "intl_ap_3_body"
+			maxWidth = 305
+			maxHeight = 165
+			format = left
+		}
+
+		instantTextBoxType = {
+			name = "intl_ap_4_title"
+			position = { x = 15 y = 385 }
+			font = "hoi_18mbs"
+			text = "intl_ap_4_title"
+			maxWidth = 305
+			maxHeight = 35
+			format = center
+		}
+		instantTextBoxType = {
+			name = "intl_ap_4_body"
+			position = { x = 15 y = 425 }
+			font = "hoi_18mbs"
+			text = "intl_ap_4_body"
+			maxWidth = 305
+			maxHeight = 185
+			format = left
+		}
+
+		instantTextBoxType = {
+			name = "intl_ap_5_title"
+			position = { x = 345 y = 385 }
+			font = "hoi_18mbs"
+			text = "intl_ap_5_title"
+			maxWidth = 305
+			maxHeight = 35
+			format = center
+		}
+		instantTextBoxType = {
+			name = "intl_ap_5_body"
+			position = { x = 345 y = 425 }
+			font = "hoi_18mbs"
+			text = "intl_ap_5_body"
+			maxWidth = 305
+			maxHeight = 185
+			format = left
+		}
+
+		instantTextBoxType = {
+			name = "intl_ap_6_title"
+			position = { x = 675 y = 385 }
+			font = "hoi_18mbs"
+			text = "intl_ap_6_title"
+			maxWidth = 305
+			maxHeight = 35
+			format = center
+		}
+		instantTextBoxType = {
+			name = "intl_ap_6_body"
+			position = { x = 675 y = 425 }
+			font = "hoi_18mbs"
+			text = "intl_ap_6_body"
+			maxWidth = 305
+			maxHeight = 185
+			format = left
+		}
+
+		buttonType = {
+			name = "close_button"
+			position = { x = 960 y = 8 }
+			size = { width = 30 height = 30 }
+			spriteType = "GFX_closebutton"
+			shortcut = "ESCAPE"
+		}
+	}
+}

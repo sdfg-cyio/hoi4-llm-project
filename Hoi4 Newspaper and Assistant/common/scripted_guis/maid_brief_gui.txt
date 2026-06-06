@@ -1,0 +1,17 @@
+scripted_gui = {
+    ai_maid_brief_gui = {
+        context_type = player_context
+
+        window_name = "ai_maid_brief_window"
+
+        visible = {
+            has_country_flag = show_ai_maid_brief
+        }
+
+        effects = {
+            close_button_click = {
+                clr_country_flag = show_ai_maid_brief
+            }
+        }
+    }
+}

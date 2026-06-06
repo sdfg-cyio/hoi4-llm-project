@@ -1,0 +1,11 @@
+﻿l_english:
+ newspaper_reader:0 "Newspapers"
+ read_sov_newspaper:0 "Read Pravda"
+ read_sov_newspaper_desc:0 "Check the latest report from Pravda."
+ newspaper_dismiss:0 "Close Newspaper"
+ newspaper_next:0 "Next Page"
+ sov_date:0 ""
+ sov_1_title:0 "Awaiting News..."
+ sov_1_body:0 "Pravda awaits the latest dispatch."
+ sov_2_title:0 "Awaiting News..."
+ sov_2_body:0 "Pravda awaits the latest dispatch."

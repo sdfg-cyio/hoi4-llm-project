@@ -1,0 +1,143 @@
+guiTypes = {
+	containerWindowType = {
+		name = "ai_maid_brief_window"
+
+		position = { x = 0 y = 0 }
+		size = { width = 1240 height = 760 }
+
+		orientation = CENTER
+		origo = center
+
+		moveable = yes
+
+		iconType = {
+			name = "maid_brief_bg"
+			position = { x = 360 y = 20 }
+			spriteType = "GFX_maid_brief_bg"
+		}
+
+		iconType = {
+			name = "maid_portrait"
+			position = { x = 65 y = 10 }
+			spriteType = "GFX_maid_portrait"
+		}
+
+		buttonType = {
+			name = "close_button"
+			position = { x = 1225 y = 25 }
+			size = { width = 30 height = 30 }
+			spriteType = "GFX_closebutton"
+			shortcut = "ESCAPE"
+		}
+
+		instantTextBoxType = {
+			name = "maid_date"
+			position = { x = 1010 y = 50 }
+			font = "hoi_18mbs"
+			text = "maid_date"
+			maxWidth = 160
+			maxHeight = 25
+			format = right
+		}
+
+		instantTextBoxType = {
+			name = "maid_1_title"
+			position = { x = 395 y = 110 }
+			font = "hoi_24header"
+			text = "maid_1_title"
+			maxWidth = 780
+			maxHeight = 32
+			format = center
+		}
+
+		instantTextBoxType = {
+			name = "maid_1_body"
+			position = { x = 395 y = 145 }
+			font = "hoi_18mbs"
+			text = "maid_1_body"
+			maxWidth = 780
+			maxHeight = 130
+			format = left
+		}
+
+		instantTextBoxType = {
+			name = "maid_2_title"
+			position = { x = 395 y = 310 }
+			font = "hoi_18mbs"
+			text = "maid_2_title"
+			maxWidth = 370
+			maxHeight = 28
+			format = center
+		}
+
+		instantTextBoxType = {
+			name = "maid_2_body"
+			position = { x = 395 y = 355 }
+			font = "hoi_18mbs"
+			text = "maid_2_body"
+			maxWidth = 370
+			maxHeight = 125
+			format = left
+		}
+
+		instantTextBoxType = {
+			name = "maid_3_title"
+			position = { x = 825 y = 310 }
+			font = "hoi_18mbs"
+			text = "maid_3_title"
+			maxWidth = 370
+			maxHeight = 28
+			format = center
+		}
+
+		instantTextBoxType = {
+			name = "maid_3_body"
+			position = { x = 825 y = 355 }
+			font = "hoi_18mbs"
+			text = "maid_3_body"
+			maxWidth = 350
+			maxHeight = 125
+			format = left
+		}
+
+		instantTextBoxType = {
+			name = "maid_4_title"
+			position = { x = 395 y = 512 }
+			font = "hoi_18mbs"
+			text = "maid_4_title"
+			maxWidth = 370
+			maxHeight = 28
+			format = center
+		}
+
+		instantTextBoxType = {
+			name = "maid_4_body"
+			position = { x = 395 y = 570 }
+			font = "hoi_18mbs"
+			text = "maid_4_body"
+			maxWidth = 370
+			maxHeight = 115
+			format = left
+		}
+
+		instantTextBoxType = {
+			name = "maid_5_title"
+			position = { x = 825 y = 512 }
+			font = "hoi_18mbs"
+			text = "maid_5_title"
+			maxWidth = 370
+			maxHeight = 28
+			format = center
+		}
+
+		instantTextBoxType = {
+			name = "maid_5_body"
+			position = { x = 825 y = 570 }
+			font = "hoi_18mbs"
+			text = "maid_5_body"
+			maxWidth = 350
+			maxHeight = 115
+			format = left
+		}
+	}
+}

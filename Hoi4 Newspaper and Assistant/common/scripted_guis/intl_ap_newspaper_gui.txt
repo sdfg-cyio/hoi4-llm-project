@@ -1,0 +1,17 @@
+scripted_gui = {
+    ai_newspaper_intl_ap_gui = {
+        context_type = player_context
+
+        window_name = "ai_newspaper_intl_ap_window"
+
+        visible = {
+            has_country_flag = show_ai_newspaper_intl_ap
+        }
+
+        effects = {
+            close_button_click = {
+                clr_country_flag = show_ai_newspaper_intl_ap
+            }
+        }
+    }
+}

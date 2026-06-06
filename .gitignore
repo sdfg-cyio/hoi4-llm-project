@@ -34,6 +34,3 @@ npx.cmd
 # 开发工具脚本（个人用）
 tools/dump_and_explore.mjs
 tools/find_in_save.mjs
-
-# 分发包（打包时生成，无需进仓库）
-Hoi4 Newspaper and Assistant/

@@ -1,0 +1,37 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_ger_newspaper_bg"
+        texturefile = "gfx/interface/newspaper/ger_bg.png"
+    }
+	spriteType = {
+		name = "GFX_sov_newspaper_bg"
+		texturefile = "gfx/interface/newspaper/sov_bg.png"
+	}
+	spriteType = {
+	name = "GFX_eng_newspaper_bg"
+	texturefile = "gfx/interface/newspaper/eng_bg.png"
+	}
+	spriteType = {
+		name = "GFX_intl_ap_newspaper_bg"
+		texturefile = "gfx/interface/newspaper/intl_ap_bg.png"
+	}
+		spriteType = {
+		name = "GFX_chi_newspaper_bg"
+		texturefile = "gfx/interface/newspaper/chi_bg.png"
+	}
+
+		spriteType = {
+		name = "GFX_maid_portrait"
+		texturefile = "gfx/interface/amine/maid_portrait.png"
+	}
+
+	spriteType = {
+		name = "GFX_maid_brief_bg"
+		texturefile = "gfx/interface/amine/maid_brief_bg.png"
+	}
+	spriteType = {
+		name = "GFX_gaijin_newspaper_bg"
+		texturefile = "gfx/interface/newspaper/intl_gaijin_bg.png"
+	}
+
+}

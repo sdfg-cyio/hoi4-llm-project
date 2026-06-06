@@ -1,0 +1,24 @@
+newspaper_reader = {
+    read_maid_brief = {
+        icon = generic_political_discourse
+
+        available = {
+            always = yes
+        }
+
+        visible = {
+            always = yes
+        }
+
+        fire_only_once = no
+        cost = 0
+
+        complete_effect = {
+            set_country_flag = show_ai_maid_brief
+        }
+
+        ai_will_do = {
+            factor = 0
+        }
+    }
+}

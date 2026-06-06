@@ -1,0 +1,2073 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HOI4 Newspaper Generator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Noto+Serif+SC:wght@400;600;700;900&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #1a1714;
+  --bg-card: #252119;
+  --bg-input: #1e1b16;
+  --border: #3d362a;
+  --border-accent: #8b7355;
+  --accent: #c9a84c;
+  --accent-dim: #8b7355;
+  --text: #e8dcc8;
+  --text-dim: #9a8e7a;
+  --text-bright: #f5edd8;
+  --red: #c45c4a;
+  --green: #6b9a5a;
+  --blue: #5a8a9a;
+  --drawer-active-bg: rgba(201,168,76,0.06);
+  --drawer-active-border: rgba(201,168,76,0.5);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Noto Serif SC', serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(201,168,76,0.03) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(139,115,85,0.04) 0%, transparent 40%);
+}
+
+.header {
+  text-align: center;
+  padding: 20px 20px 14px;
+  border-bottom: 1px solid var(--border);
+  position: relative;
+  background: linear-gradient(180deg, rgba(201,168,76,0.06) 0%, transparent 100%);
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 2px;
+  background: var(--accent);
+}
+
+.header h1 {
+  font-family: 'Playfair Display', 'Noto Serif SC', serif;
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--accent);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.header .subtitle {
+  font-size: 11px;
+  color: var(--text-dim);
+  margin-top: 2px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+.lang-select {
+  position: absolute;
+  top: 14px;
+  left: 16px;
+  background: var(--bg-input);
+  border: 1px solid var(--border-accent);
+  color: var(--text-dim);
+  padding: 3px 8px;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 11px;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+.lang-select:focus { border-color: var(--accent); color: var(--accent); }
+.lang-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 2px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-accent);
+  border-radius: 2px;
+  display: none;
+  z-index: 100;
+  min-width: 100px;
+}
+.lang-dropdown.open { display: block; }
+.lang-dropdown-item {
+  padding: 5px 12px;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 11px;
+  color: var(--text);
+  cursor: pointer;
+  white-space: nowrap;
+}
+.lang-dropdown-item:hover { background: var(--bg-input); color: var(--accent); }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.panel {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+}
+
+.panel::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent-dim), transparent);
+}
+
+.panel-header {
+  padding: 12px 18px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.panel-header .icon { font-size: 15px; }
+
+.panel-header h2 {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 2px;
+}
+
+.panel-body { padding: 16px 18px 18px; }
+
+.form-group { margin-bottom: 14px; }
+.form-group:last-child { margin-bottom: 0; }
+
+.form-group label {
+  display: block;
+  font-size: 12px;
+  color: var(--text-dim);
+  margin-bottom: 5px;
+  letter-spacing: 1px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group input[type="number"],
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  color: var(--text);
+  padding: 8px 10px;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 13px;
+  border-radius: 2px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: var(--accent-dim);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+  font-family: 'Noto Serif SC', serif;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.form-group select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%239a8e7a' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  padding-right: 30px;
+}
+
+.form-row-4 { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 12px; }
+
+.btn-row { display: flex; gap: 10px; margin-top: 16px; }
+
+.btn {
+  padding: 8px 18px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  font-family: 'Noto Serif SC', serif;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.2s;
+  letter-spacing: 1px;
+}
+
+.btn:hover { border-color: var(--accent-dim); color: var(--accent); }
+.btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.btn-primary {
+  background: var(--accent);
+  color: var(--bg);
+  border-color: var(--accent);
+  font-weight: 600;
+}
+
+.btn-primary:hover { background: #d4b45a; border-color: #d4b45a; color: var(--bg); }
+.btn-primary:disabled { background: var(--accent-dim); border-color: var(--accent-dim); }
+
+.btn-danger { border-color: var(--red); color: var(--red); }
+.btn-danger:hover { background: var(--red); color: var(--text-bright); }
+
+.btn-success { border-color: var(--green); color: var(--green); }
+.btn-success:hover { background: var(--green); color: var(--text-bright); }
+
+.btn-sm { padding: 5px 12px; font-size: 12px; }
+
+.status-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 12px;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--text-dim);
+  flex-shrink: 0;
+}
+
+.status-dot.active {
+  background: var(--green);
+  box-shadow: 0 0 8px rgba(107,154,90,0.5);
+  animation: pulse 2s infinite;
+}
+
+.status-dot.news-ready {
+  background: #e8c33a;
+  box-shadow: 0 0 12px rgba(232,195,58,0.6);
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+
+.reload-box {
+  margin-top: 8px;
+  padding: 8px 10px;
+  background: rgba(232,195,58,0.1);
+  border: 1px solid rgba(232,195,58,0.4);
+  border-radius: 4px;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 12px;
+  color: #e8c33a;
+  display: none;
+}
+
+.reload-box.visible { display: block; }
+
+.reload-box .reload-cmd {
+  margin: 2px 0;
+  padding: 2px 6px;
+  background: rgba(0,0,0,0.3);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.reload-box .reload-cmd:hover { background: rgba(232,195,58,0.2); }
+
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.6; } }
+
+.status-text { font-size: 14px; font-weight: 600; }
+
+.console-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.session-info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 6px 14px;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.session-info dt { color: var(--text-dim); }
+.session-info dd { color: var(--text); }
+
+.tag-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 12px; }
+
+.tag-check {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 4px 0;
+}
+
+.tag-check input[type="checkbox"] {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--border);
+  background: var(--bg-input);
+  cursor: pointer;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.tag-check input[type="checkbox"]:checked {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.tag-check input[type="checkbox"]:checked::after {
+  content: '\2713';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--bg);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.log-box {
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  padding: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 11px;
+  line-height: 1.7;
+  color: var(--text-dim);
+  border-radius: 2px;
+}
+
+.log-box::-webkit-scrollbar { width: 4px; }
+.log-box::-webkit-scrollbar-track { background: transparent; }
+.log-box::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+.log-entry .log-time { color: var(--accent-dim); }
+.log-entry .log-msg { color: var(--text); }
+
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 18px;
+  border-radius: 2px;
+  font-size: 13px;
+  z-index: 1000;
+  transform: translateX(120%);
+  transition: transform 0.3s ease;
+  border: 1px solid;
+}
+
+.toast.show { transform: translateX(0); }
+.toast.success { background: rgba(107,154,90,0.15); border-color: var(--green); color: var(--green); }
+.toast.error { background: rgba(196,92,74,0.15); border-color: var(--red); color: var(--red); }
+
+.divider { border: none; border-top: 1px solid var(--border); margin: 14px 0; }
+
+.provider-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; margin-bottom: 14px; }
+
+.provider-btn {
+  padding: 6px 4px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-dim);
+  font-family: 'Noto Serif SC', serif;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.2s;
+  text-align: center;
+}
+
+.provider-btn.active { border-color: var(--accent); color: var(--accent); background: rgba(201,168,76,0.1); }
+.provider-btn:hover { border-color: var(--accent-dim); }
+
+.news-type-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; margin-bottom: 12px; }
+
+.news-type-btn {
+  padding: 6px 4px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-dim);
+  font-family: 'Noto Serif SC', serif;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.2s;
+  text-align: center;
+}
+
+.news-type-btn.active { border-color: var(--accent); color: var(--accent); background: rgba(201,168,76,0.1); }
+.news-type-btn:hover { border-color: var(--accent-dim); }
+
+.custom-tag-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  border: 1px solid var(--accent-dim);
+  background: rgba(201,168,76,0.08);
+  color: var(--accent);
+  font-family: 'Source Code Pro', monospace;
+  font-size: 12px;
+  border-radius: 2px;
+}
+
+.custom-tag-remove {
+  cursor: pointer;
+  color: var(--text-dim);
+  font-size: 14px;
+  line-height: 1;
+  margin-left: 2px;
+}
+
+.custom-tag-remove:hover { color: var(--red); }
+
+.tag-grid-disabled { opacity: 0.4; pointer-events: none; }
+
+.model-select-row { display: flex; gap: 8px; align-items: flex-end; }
+.model-select-row .form-group { flex: 1; margin-bottom: 0; }
+
+.hint { font-size: 11px; color: var(--text-dim); margin-top: 4px; }
+
+.ctx-bar { height: 4px; background: var(--border); border-radius: 2px; margin-top: 6px; overflow: hidden; }
+.ctx-bar-fill { height: 100%; background: var(--accent); border-radius: 2px; transition: width 0.3s; }
+.ctx-label { display: flex; justify-content: space-between; font-size: 11px; color: var(--text-dim); margin-top: 4px; }
+
+.history-list { max-height: 300px; overflow-y: auto; }
+.history-list::-webkit-scrollbar { width: 4px; }
+.history-list::-webkit-scrollbar-track { background: transparent; }
+.history-list::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+.history-item {
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  padding: 12px;
+  margin-bottom: 10px;
+  background: var(--bg-input);
+}
+
+.history-item:last-child { margin-bottom: 0; }
+
+.history-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.history-issue { font-size: 13px; font-weight: 700; color: var(--accent); }
+.history-date { font-size: 11px; color: var(--text-dim); font-family: 'Source Code Pro', monospace; }
+
+.history-article { padding: 6px 0; border-top: 1px solid var(--border); }
+.history-article:first-child { border-top: none; }
+.history-article-tag { font-family: 'Source Code Pro', monospace; font-size: 11px; color: var(--accent-dim); margin-bottom: 2px; }
+.history-article-title { font-size: 13px; font-weight: 700; color: var(--text); margin-bottom: 2px; }
+.history-article-body { font-size: 12px; color: var(--text-dim); line-height: 1.5; }
+
+.section-label {
+  font-size: 12px;
+  color: var(--text-dim);
+  display: block;
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+/* ===== Drawer Tabs ===== */
+.drawer-tabs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  overflow: hidden;
+  background: var(--bg-card);
+}
+
+.drawer-tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 10px;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.25s;
+  border-right: 1px solid var(--border);
+  background: var(--bg-card);
+  position: relative;
+}
+
+.drawer-tab:last-child { border-right: none; }
+
+.drawer-tab .tab-icon { font-size: 15px; transition: transform 0.2s; }
+
+.drawer-tab .tab-title {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-dim);
+  letter-spacing: 1px;
+  transition: color 0.25s;
+}
+
+.drawer-tab .tab-arrow {
+  font-size: 10px;
+  color: var(--text-dim);
+  transition: transform 0.3s ease, color 0.25s;
+  margin-left: auto;
+}
+
+.drawer-tab:hover {
+  background: rgba(201,168,76,0.03);
+}
+
+.drawer-tab:hover .tab-title { color: var(--text); }
+
+.drawer-tab.active {
+  background: var(--drawer-active-bg);
+  border-bottom: 2px solid var(--accent);
+}
+
+.drawer-tab.active .tab-title { color: var(--accent); }
+.drawer-tab.active .tab-arrow { transform: rotate(90deg); color: var(--accent); }
+.drawer-tab.active .tab-icon { color: var(--accent); }
+
+.drawer-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, padding 0.35s ease, border-color 0.25s;
+  background: var(--bg-card);
+  border: 1px solid transparent;
+  border-top: none;
+  padding: 0 18px;
+}
+
+.drawer-content.open {
+  max-height: 1200px;
+  padding: 18px;
+  border-color: var(--drawer-active-border);
+  border-top: 2px solid var(--accent);
+  background: var(--drawer-active-bg);
+}
+
+/* ===== Style Palette ===== */
+.style-palette {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.style-chip {
+  padding: 6px 14px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text-dim);
+  font-family: 'Noto Serif SC', serif;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.style-chip.active {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(201,168,76,0.12);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+
+.style-chip:hover:not(.active) { border-color: var(--accent-dim); color: var(--text); }
+
+@media (max-width: 768px) {
+  .container { padding: 12px; }
+  .console-grid { grid-template-columns: 1fr; }
+  .form-row-4 { grid-template-columns: 1fr 1fr; }
+  .tag-grid { grid-template-columns: repeat(3, 1fr); }
+  .provider-grid { grid-template-columns: repeat(3, 1fr); }
+  .drawer-tabs { grid-template-columns: repeat(2, 1fr); }
+  .drawer-tab:nth-child(2) { border-right: none; }
+}
+
+.save-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--text-dim);
+  flex-shrink: 0;
+  transition: background 0.3s, box-shadow 0.3s;
+  align-self: center;
+}
+
+.save-indicator.saved {
+  background: var(--green);
+  box-shadow: 0 0 8px rgba(107,154,90,0.6);
+}
+
+.save-indicator.unsaved {
+  background: var(--accent);
+  box-shadow: 0 0 8px rgba(201,168,76,0.6);
+}
+
+.save-indicator.saving {
+  background: var(--blue);
+  box-shadow: 0 0 8px rgba(90,138,154,0.6);
+  animation: pulse 1s infinite;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div style="position:absolute;top:14px;left:16px;">
+    <button class="lang-select" id="lang-select" onclick="toggleLangDropdown()">[A/文]</button>
+    <div class="lang-dropdown" id="lang-dropdown">
+      <div class="lang-dropdown-item" onclick="pickLang('zh')">中文</div>
+      <div class="lang-dropdown-item" onclick="pickLang('en')">English</div>
+      <div class="lang-dropdown-item" onclick="pickLang('rus')">Русский</div>
+    </div>
+  </div>
+  <h1 data-i18n="app.title">HOI4 Newspaper Generator</h1>
+  <div class="subtitle" data-i18n="app.subtitle">新闻生成器控制台</div>
+</div>
+
+<div class="container">
+
+  <div class="panel" id="panel-console">
+    <div class="panel-header">
+      <h2 data-i18n="console">控制台</h2>
+    </div>
+    <div class="panel-body">
+      <div class="console-grid">
+        <div>
+          <div class="status-bar">
+            <div class="status-dot" id="status-dot"></div>
+            <span class="status-text" id="status-text" data-i18n="status.stopped">未启动</span>
+          </div>
+          <div class="reload-box" id="reload-box">
+            <div style="margin-bottom:4px;font-weight:600;" data-i18n="reload.title">请执行：</div>
+            <div id="reload-commands"></div>
+          </div>
+          <dl class="session-info">
+            <dt data-i18n="session.current">当前会话:</dt>
+            <dd id="session-info">--</dd>
+            <dt data-i18n="session.generated">已生成:</dt>
+            <dd id="news-count">--</dd>
+            <dt data-i18n="session.interval">新闻间隔:</dt>
+            <dd>
+              <input type="number" id="min-days" min="5" max="365" value="25" style="width:60px;background:var(--bg-input);border:1px solid var(--border);color:var(--text);padding:3px 6px;font-family:'Source Code Pro',monospace;font-size:12px;border-radius:2px;text-align:center;">
+              <span data-i18n="session.days">天</span>
+            </dd>
+          </dl>
+          <span class="section-label" data-i18n="news.type">新闻类型</span>
+          <div class="news-type-grid" id="news-type-grid">
+            <button class="news-type-btn" data-type="domestic" onclick="selectNewsType('domestic')" data-i18n="news.domestic">国内新闻</button>
+            <button class="news-type-btn" data-type="international" onclick="selectNewsType('international')" data-i18n="news.international">国际新闻</button>
+            <button class="news-type-btn" data-type="both" onclick="selectNewsType('both')" data-i18n="news.both">两者皆有</button>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px;margin-top:8px;">
+            <span class="section-label" style="margin:0;" data-i18n="output.lang">输出语言</span>
+            <select id="output-lang" onchange="onOutputLangChange(this.value)" style="background:var(--bg-input);border:1px solid var(--border);color:var(--text);padding:4px 8px;font-family:'Source Code Pro',monospace;font-size:12px;border-radius:2px;outline:none;">
+              <option value="zh">中文</option>
+              <option value="en">English</option>
+              <option value="rus">Русский</option>
+            </select>
+          </div>
+          <span class="section-label" id="tag-grid-label" data-i18n="tags.label.intl">监听国家（国际新闻）</span>
+          <div class="tag-grid" id="tag-grid"></div>
+          <div class="form-group" style="margin-top:8px;">
+            <label data-i18n="tags.custom">自定义TAG（可添加多个）</label>
+            <div style="display:flex;gap:8px;align-items:center;">
+              <input type="text" id="custom-tag-input" data-i18n-placeholder="tags.placeholder" placeholder="输入TAG后回车，空格分隔多个" style="flex:1;text-transform:uppercase;background:var(--bg-input);border:1px solid var(--border);color:var(--text);padding:6px 10px;font-family:'Source Code Pro',monospace;font-size:13px;border-radius:2px;outline:none;">
+              <button class="btn btn-sm btn-success" onclick="addCustomTag()" data-i18n="tags.add">添加</button>
+            </div>
+            <div id="custom-tags-list" style="margin-top:8px;display:flex;gap:6px;flex-wrap:wrap;"></div>
+          </div>
+          <div class="btn-row">
+            <button class="btn btn-success" id="btn-start" onclick="startWatcher()" data-i18n="btn.start">启动监听</button>
+            <button class="btn btn-danger" id="btn-stop" onclick="stopWatcher()" disabled data-i18n="btn.stop">停止</button>
+            <button class="btn" onclick="resetSession()" data-i18n="btn.reset">重置会话</button>
+          </div>
+        </div>
+        <div>
+          <span class="section-label" data-i18n="log.title">运行日志</span>
+          <div class="log-box" id="log-box"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="drawer-tabs" id="drawer-tabs">
+    <div class="drawer-tab" data-drawer="llm" onclick="toggleDrawer('llm')">
+      <span class="tab-icon">&#9881;</span>
+      <span class="tab-title" data-i18n="tab.llm">LLM 设置</span>
+      <span class="tab-arrow">&#9654;</span>
+    </div>
+    <div class="drawer-tab" data-drawer="paths" onclick="toggleDrawer('paths')">
+      <span class="tab-icon">&#128193;</span>
+      <span class="tab-title" data-i18n="tab.paths">游戏路径</span>
+      <span class="tab-arrow">&#9654;</span>
+    </div>
+    <div class="drawer-tab" data-drawer="domestic" onclick="toggleDrawer('domestic')">
+      <span class="tab-icon">&#128240;</span>
+      <span class="tab-title" data-i18n="tab.domestic">国内新闻</span>
+      <span class="tab-arrow">&#9654;</span>
+    </div>
+    <div class="drawer-tab" data-drawer="international" onclick="toggleDrawer('international')">
+      <span class="tab-icon">&#127758;</span>
+      <span class="tab-title" data-i18n="tab.international">国际新闻</span>
+      <span class="tab-arrow">&#9654;</span>
+    </div>
+  </div>
+
+  <div class="drawer-content" id="drawer-llm">
+    <div class="form-group">
+      <label data-i18n="provider">供应商</label>
+      <div class="provider-grid" id="provider-grid"></div>
+    </div>
+    <div class="form-group">
+      <label data-i18n="api.url">API 地址</label>
+      <input type="text" id="llm-api-url" placeholder="https://api.example.com/v1/chat/completions">
+      <div class="hint" id="api-url-hint"></div>
+    </div>
+    <div class="form-group">
+      <label data-i18n="api.key">API Key</label>
+      <input type="password" id="llm-api-key" placeholder="sk-...">
+    </div>
+    <div class="form-group">
+      <label data-i18n="model">模型</label>
+      <div class="model-select-row">
+        <div class="form-group">
+          <select id="llm-model-select" style="display:none"></select>
+          <input type="text" id="llm-model-input" placeholder="选择或输入模型名">
+        </div>
+        <button class="btn btn-sm btn-success" onclick="fetchModels()" data-i18n="model.fetch">获取模型</button>
+      </div>
+    </div>
+    <div class="form-row-4">
+      <div class="form-group">
+        <label data-i18n="temperature">温度</label>
+        <input type="number" id="llm-temperature" step="0.1" min="0" max="2" value="0.8">
+      </div>
+      <div class="form-group">
+        <label data-i18n="max_tokens">最大输出 Token</label>
+        <input type="number" id="llm-max-tokens" min="50" max="128000" value="400">
+      </div>
+      <div class="form-group">
+        <label data-i18n="context_length">上下文长度</label>
+        <input type="number" id="llm-context-length" min="1024" max="2000000" value="64000">
+      </div>
+      <div class="form-group">
+        <label data-i18n="history_count">历史回溯期数</label>
+        <input type="number" id="llm-history-count" min="0" max="20" value="3">
+      </div>
+    </div>
+    <div class="ctx-bar"><div class="ctx-bar-fill" id="ctx-bar-fill"></div></div>
+    <div class="ctx-label">
+      <span data-i18n="token_usage">Token 使用率</span>
+      <span id="ctx-usage-text">0 / 64K</span>
+    </div>
+    <div class="btn-row" style="align-items:center;">
+      <button class="btn btn-success" onclick="testConnection()" data-i18n="btn.test">测试连接</button>
+      <button class="btn btn-primary" onclick="saveLLMSettings()" data-i18n="btn.save">保存</button>
+      <div class="save-indicator" id="llm-save-indicator" title="未保存更改"></div>
+      <span id="llm-save-label" style="font-size:11px;color:var(--text-dim);" data-i18n="save.unsaved">未保存</span>
+    </div>
+  </div>
+
+  <div class="drawer-content" id="drawer-paths">
+    <div class="form-group">
+      <label data-i18n="path.hoi4">HOI4 安装目录</label>
+      <input type="text" id="path-hoi4-dir" placeholder="D:\Steam\steamapps\common\Hearts of Iron IV">
+      <div class="hint" data-i18n="path.hint.default">留空则使用默认路径</div>
+    </div>
+    <div class="form-group">
+      <label data-i18n="path.save">存档目录</label>
+      <input type="text" id="path-save-dir" placeholder="C:\Users\...\Paradox Interactive\Hearts of Iron IV\save games">
+      <div class="hint" data-i18n="path.hint.default">留空则使用默认路径</div>
+    </div>
+    <div class="form-group">
+      <label data-i18n="path.mod">Mod 目录</label>
+      <input type="text" id="path-mod-dir" placeholder="C:\Users\...\Paradox Interactive\Hearts of Iron IV\mod\hoi4_newspaper">
+      <div class="hint" data-i18n="path.hint.mod">hoi4_newspaper 模组根目录，新闻 yml 将写入其下 localisation/</div>
+    </div>
+    <hr class="divider">
+    <div class="form-group">
+      <label data-i18n="path.template">模板扫描目录</label>
+      <div id="template-dirs-list"></div>
+      <div style="display:flex;gap:8px;margin-top:6px;">
+        <input type="text" id="new-template-dir" data-i18n-placeholder="path.hint.template_input" placeholder="填入包含 sub-mod 的目录路径" style="flex:1;">
+        <button class="btn btn-sm" onclick="addTemplateDir()">+</button>
+      </div>
+      <div class="hint" data-i18n="path.hint.template">添加包含 template.json 的 mod 所在目录，扫描模板时会遍历这些目录的子文件夹</div>
+    </div>
+    <div class="btn-row">
+      <button class="btn btn-primary" onclick="savePaths()" data-i18n="btn.save_paths">保存路径</button>
+    </div>
+  </div>
+
+  <div class="drawer-content" id="drawer-domestic">
+    <span class="section-label" data-i18n="style.select">选择报纸风格</span>
+    <div class="style-palette" id="style-palette"></div>
+    <div style="display:flex;gap:8px;margin-bottom:14px;">
+      <button class="btn btn-sm" onclick="scanAndShowTemplates('domestic')">&#128270;<span data-i18n="btn.scan_template"> 扫描模板</span></button>
+      <span class="hint" id="tpl-scan-hint-domestic" style="align-self:center;"></span>
+    </div>
+    <div id="tpl-list-domestic" style="margin-bottom:14px;"></div>
+    <div class="form-group">
+      <label data-i18n="newspaper.name">报纸名</label>
+      <input type="text" id="newspaper-name" placeholder="《柏林日报》">
+    </div>
+    <div class="form-group">
+      <label data-i18n="newspaper.tone">风格描述</label>
+      <textarea id="newspaper-tone" rows="3"></textarea>
+    </div>
+    <hr class="divider">
+    <div class="form-group">
+      <label data-i18n="newspaper.prompt">国内新闻 Prompt 模板</label>
+      <textarea id="newspaper-prompt" rows="5"></textarea>
+      <div class="hint" data-i18n="newspaper.hint_dom">可用占位符：{报纸名} {风格描述} {起始日期} {结束日期} {国家名} {稳定度} {战争支持度} {燃油信息} {历史新闻} {事件列表} {articleCount}</div>
+    </div>
+    <div class="btn-row">
+      <button class="btn" onclick="resetNewspaperDefaults()" data-i18n="btn.restore">恢复默认</button>
+      <button class="btn btn-primary" onclick="saveNewspaperSettings()" data-i18n="btn.save">保存</button>
+    </div>
+  </div>
+
+  <div class="drawer-content" id="drawer-international">
+    <span class="section-label" data-i18n="style.select_intl">选择国际通讯社风格</span>
+    <div class="style-palette" id="intl-style-palette"></div>
+    <div style="display:flex;gap:8px;margin-bottom:14px;">
+      <button class="btn btn-sm" onclick="scanAndShowTemplates('international')">&#128270;<span data-i18n="btn.scan_template"> 扫描模板</span></button>
+      <span class="hint" id="tpl-scan-hint-international" style="align-self:center;"></span>
+    </div>
+    <div id="tpl-list-international" style="margin-bottom:14px;"></div>
+    <div class="form-group">
+      <label data-i18n="agency.name">通讯社名</label>
+      <input type="text" id="intl-newspaper-name" placeholder="《国际先驱论坛报》">
+    </div>
+    <div class="form-group">
+      <label data-i18n="newspaper.tone">风格描述</label>
+      <textarea id="intl-newspaper-tone" rows="3"></textarea>
+    </div>
+    <hr class="divider">
+    <div class="form-group">
+      <label data-i18n="newspaper.prompt_intl">国际新闻 Prompt 模板</label>
+      <textarea id="intl-newspaper-prompt" rows="5"></textarea>
+      <div class="hint" data-i18n="newspaper.hint_intl">可用占位符：{报纸名} {风格描述} {起始日期} {结束日期} {历史新闻} {各国事件} {articleCount}</div>
+    </div>
+    <div class="btn-row">
+      <button class="btn" onclick="resetNewspaperDefaults()" data-i18n="btn.restore">恢复默认</button>
+      <button class="btn btn-primary" onclick="saveNewspaperSettings()" data-i18n="btn.save">保存</button>
+    </div>
+  </div>
+
+  <div class="panel" id="panel-history">
+    <div class="panel-header">
+      <span class="icon">&#128218;</span>
+      <h2 data-i18n="history.title">新闻历史</h2>
+    </div>
+    <div class="panel-body">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">
+        <span class="hint" id="history-summary" data-i18n="history.empty">暂无历史记录</span>
+        <button class="btn btn-sm btn-danger" onclick="clearHistory()" data-i18n="history.clear">清空历史</button>
+      </div>
+      <div class="history-list" id="history-list">
+        <div style="color:var(--text-dim);font-size:13px;text-align:center;padding:20px;" data-i18n="history.empty_list">暂无新闻历史</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const I18N = {
+  zh: {
+    'app.title': 'HOI4 Newspaper Generator',
+    'app.subtitle': '新闻生成器控制台',
+    'console': '控制台',
+    'status.stopped': '未启动',
+    'reload.title': '请执行：',
+    'status.watching': '监听中',
+    'status.no_session': '无会话',
+    'session.current': '当前会话:',
+    'session.generated': '已生成:',
+    'session.interval': '新闻间隔:',
+    'session.days': '天',
+    'session.news_count': '${n} 期新闻',
+    'news.type': '新闻类型',
+    'news.domestic': '国内新闻',
+    'news.international': '国际新闻',
+    'news.both': '两者皆有',
+    'output.lang': '输出语言',
+    'tags.label.intl': '监听国家（国际新闻）',
+    'tags.label.domestic': '监听国家（国内新闻不需要）',
+    'tags.custom': '自定义TAG（可添加多个）',
+    'tags.placeholder': '输入TAG后回车，空格分隔多个',
+    'tags.add': '添加',
+    'btn.start': '启动监听',
+    'btn.stop': '停止',
+    'btn.reset': '重置会话',
+    'log.title': '运行日志',
+    'tab.llm': 'LLM 设置',
+    'tab.paths': '游戏路径',
+    'tab.domestic': '国内新闻',
+    'tab.international': '国际新闻',
+    'provider': '供应商',
+    'api.url': 'API 地址',
+    'api.key': 'API Key',
+    'model': '模型',
+    'model.fetch': '获取模型',
+    'model.select': '-- 选择模型 --',
+    'temperature': '温度',
+    'max_tokens': '最大输出 Token',
+    'context_length': '上下文长度',
+    'history_count': '历史回溯期数',
+    'token_usage': 'Token 使用率',
+    'btn.test': '测试连接',
+    'btn.save': '保存',
+    'save.saved': '已保存',
+    'save.unsaved': '未保存',
+    'save.saving': '保存中...',
+    'save.unsaved_changes': '有未保存的更改',
+    'path.hoi4': 'HOI4 安装目录',
+    'path.save': '存档目录',
+    'path.mod': 'Mod 目录',
+    'path.template': '模板扫描目录',
+    'path.hint.default': '留空则使用默认路径',
+    'path.hint.mod': 'hoi4_newspaper 模组根目录，新闻 yml 将写入其下 localisation/',
+    'path.hint.template': '添加包含 template.json 的 mod 所在目录，扫描模板时会遍历这些目录的子文件夹',
+    'path.hint.template_input': '填入包含 sub-mod 的目录路径',
+    'btn.save_paths': '保存路径',
+    'style.select': '选择报纸风格',
+    'style.select_intl': '选择国际通讯社风格',
+    'btn.scan_template': ' 扫描模板',
+    'newspaper.name': '报纸名',
+    'newspaper.tone': '风格描述',
+    'newspaper.prompt': '国内新闻 Prompt 模板',
+    'newspaper.prompt_intl': '国际新闻 Prompt 模板',
+    'newspaper.hint_dom': '可用占位符：{报纸名} {风格描述} {起始日期} {结束日期} {国家名} {稳定度} {战争支持度} {燃油信息} {历史新闻} {事件列表} {articleCount}',
+    'newspaper.hint_intl': '可用占位符：{报纸名} {风格描述} {起始日期} {结束日期} {历史新闻} {各国事件} {articleCount}',
+    'agency.name': '通讯社名',
+    'btn.restore': '恢复默认',
+    'history.title': '新闻历史',
+    'history.empty': '暂无历史记录',
+    'history.empty_list': '暂无新闻历史',
+    'history.clear': '清空历史',
+    'history.issue': '第 ${n} 期',
+    'history.total': '共 ${n} 期新闻',
+    'history.domestic': '国内',
+    'history.international': '国际',
+    'custom_mode_hint': '自定义模式：请手动填写 API 地址',
+    'toast.added_tags': '已添加 ${n} 个TAG',
+    'toast.tag_in_preset': '${tag} 已在预设列表中，请直接勾选',
+    'toast.tag_already': '${tag} 已添加',
+    'toast.tag_invalid': '请输入3个英文字母的TAG',
+    'toast.template_imported': '模板 "${name}" 已导入',
+    'toast.template_removed': '模板已移除',
+    'toast.template_not_found': '未找到模板（需在Mod目录的子目录中放置template.json）',
+    'toast.template_found': '找到 ${n} 个模板',
+    'toast.template_article_groups': '${n}个文章组',
+    'toast.llm_saved': 'LLM 设置已保存',
+    'toast.save_failed': '保存失败',
+    'toast.paths_saved': '路径已保存，如监听中将自动重启',
+    'toast.watcher_started': '监听已启动',
+    'toast.watcher_stopped': '监听已停止',
+    'toast.watcher_start_failed': '启动失败',
+    'toast.watcher_stop_failed': '停止失败',
+    'toast.session_reset': '会话已重置',
+    'toast.testing': '正在测试连接...',
+    'toast.test_ok': '连接成功: ${reply}',
+    'toast.test_failed': '连接失败: ${error}',
+    'toast.fetching_models': '正在获取模型列表...',
+    'toast.models_fetched': '获取到 ${n} 个模型',
+    'toast.fetch_models_failed': '获取模型失败: ${error}',
+    'toast.fill_api_key': '请先填写 API Key',
+    'toast.newspaper_saved': '设置已保存',
+    'toast.defaults_restored': '已恢复默认设置',
+    'toast.dir_exists': '该目录已存在',
+    'toast.history_cleared': '历史已清空',
+    'toast.scanning': '扫描中...',
+  },
+  en: {
+    'app.title': 'HOI4 Newspaper Generator',
+    'app.subtitle': 'Newspaper Generator Console',
+    'console': 'Console',
+    'status.stopped': 'Stopped',
+    'reload.title': 'Run in console:',
+    'status.watching': 'Watching',
+    'status.no_session': 'No Session',
+    'session.current': 'Session:',
+    'session.generated': 'Generated:',
+    'session.interval': 'Interval:',
+    'session.days': 'days',
+    'session.news_count': '${n} issues',
+    'news.type': 'News Type',
+    'news.domestic': 'Domestic',
+    'news.international': 'International',
+    'news.both': 'Both',
+    'output.lang': 'Output Lang',
+    'tags.label.intl': 'Monitored Countries (International)',
+    'tags.label.domestic': 'Monitored Countries (Not needed for domestic)',
+    'tags.custom': 'Custom TAGs (add multiple)',
+    'tags.placeholder': 'Enter TAG, press Enter, space to separate',
+    'tags.add': 'Add',
+    'btn.start': 'Start',
+    'btn.stop': 'Stop',
+    'btn.reset': 'Reset',
+    'log.title': 'Runtime Log',
+    'tab.llm': 'LLM Settings',
+    'tab.paths': 'Game Paths',
+    'tab.domestic': 'Domestic News',
+    'tab.international': 'Intl News',
+    'provider': 'Provider',
+    'api.url': 'API URL',
+    'api.key': 'API Key',
+    'model': 'Model',
+    'model.fetch': 'Fetch Models',
+    'model.select': '-- Select Model --',
+    'temperature': 'Temperature',
+    'max_tokens': 'Max Output Tokens',
+    'context_length': 'Context Length',
+    'history_count': 'History Issues',
+    'token_usage': 'Token Usage',
+    'btn.test': 'Test',
+    'btn.save': 'Save',
+    'save.saved': 'Saved',
+    'save.unsaved': 'Unsaved',
+    'save.saving': 'Saving...',
+    'save.unsaved_changes': 'Unsaved changes',
+    'path.hoi4': 'HOI4 Install Dir',
+    'path.save': 'Save Dir',
+    'path.mod': 'Mod Dir',
+    'path.template': 'Template Scan Dirs',
+    'path.hint.default': 'Leave empty for default',
+    'path.hint.mod': 'hoi4_newspaper mod root directory. News yml will be written to localisation/',
+    'path.hint.template': 'Add directories containing template.json; subfolders will be scanned',
+    'path.hint.template_input': 'Enter sub-mod directory path',
+    'btn.save_paths': 'Save Paths',
+    'style.select': 'Select Newspaper Style',
+    'style.select_intl': 'Select Intl Agency Style',
+    'btn.scan_template': ' Scan Templates',
+    'newspaper.name': 'Newspaper Name',
+    'newspaper.tone': 'Style Description',
+    'newspaper.prompt': 'Domestic Prompt Template',
+    'newspaper.prompt_intl': 'Intl Prompt Template',
+    'newspaper.hint_dom': 'Placeholders: {newspaperName} {styleDesc} {dateFrom} {dateTo} {countryName} {stability} {warSupport} {fuelInfo} {historyNews} {eventList} {articleCount}',
+    'newspaper.hint_intl': 'Placeholders: {newspaperName} {styleDesc} {dateFrom} {dateTo} {historyNews} {countryEvents} {articleCount}',
+    'agency.name': 'Agency Name',
+    'btn.restore': 'Restore Defaults',
+    'history.title': 'News History',
+    'history.empty': 'No history',
+    'history.empty_list': 'No news history',
+    'history.clear': 'Clear',
+    'history.issue': 'Issue #${n}',
+    'history.total': '${n} issues total',
+    'history.domestic': 'Domestic',
+    'history.international': 'Intl',
+    'custom_mode_hint': 'Custom mode: enter API URL manually',
+    'toast.added_tags': 'Added ${n} TAG(s)',
+    'toast.tag_in_preset': '${tag} is in preset list, just check it',
+    'toast.tag_already': '${tag} already added',
+    'toast.tag_invalid': 'Enter a 3-letter TAG',
+    'toast.template_imported': 'Template "${name}" imported',
+    'toast.template_removed': 'Template removed',
+    'toast.template_not_found': 'No templates found (place template.json in sub-mod folder)',
+    'toast.template_found': 'Found ${n} template(s)',
+    'toast.template_article_groups': '${n} article groups',
+    'toast.llm_saved': 'LLM settings saved',
+    'toast.save_failed': 'Save failed',
+    'toast.paths_saved': 'Paths saved, watcher will restart if running',
+    'toast.watcher_started': 'Watcher started',
+    'toast.watcher_stopped': 'Watcher stopped',
+    'toast.watcher_start_failed': 'Start failed',
+    'toast.watcher_stop_failed': 'Stop failed',
+    'toast.session_reset': 'Session reset',
+    'toast.testing': 'Testing connection...',
+    'toast.test_ok': 'Connected: ${reply}',
+    'toast.test_failed': 'Connection failed: ${error}',
+    'toast.fetching_models': 'Fetching models...',
+    'toast.models_fetched': 'Fetched ${n} models',
+    'toast.fetch_models_failed': 'Fetch failed: ${error}',
+    'toast.fill_api_key': 'Enter API Key first',
+    'toast.newspaper_saved': 'Settings saved',
+    'toast.defaults_restored': 'Defaults restored',
+    'toast.dir_exists': 'Directory already exists',
+    'toast.history_cleared': 'History cleared',
+    'toast.scanning': 'Scanning...',
+  },
+  rus: {
+    'app.title': 'Генератор газет HOI4',
+    'app.subtitle': 'Консоль генератора новостей',
+    'console': 'Консоль',
+    'status.stopped': 'Остановлен',
+    'reload.title': 'Выполните в консоли:',
+    'status.watching': 'Наблюдение',
+    'status.no_session': 'Нет сессии',
+    'session.current': 'Текущая сессия:',
+    'session.generated': 'Сгенерировано:',
+    'session.interval': 'Интервал:',
+    'session.days': 'дней',
+    'session.news_count': '${n} выпусков',
+    'news.type': 'Тип новостей',
+    'news.domestic': 'Внутренние',
+    'news.international': 'Международные',
+    'news.both': 'Оба типа',
+    'output.lang': 'Язык вывода',
+    'tags.label.intl': 'Наблюдаемые страны (международные)',
+    'tags.label.domestic': 'Наблюдаемые страны (не нужны для внутренних)',
+    'tags.custom': 'Пользовательские теги (можно добавить несколько)',
+    'tags.placeholder': 'Введите тег и нажмите Enter, пробел для разделения',
+    'tags.add': 'Добавить',
+    'btn.start': 'Запустить',
+    'btn.stop': 'Остановить',
+    'btn.reset': 'Сбросить сессию',
+    'log.title': 'Журнал',
+    'tab.llm': 'Настройки LLM',
+    'tab.paths': 'Пути игры',
+    'tab.domestic': 'Внутренние новости',
+    'tab.international': 'Международные новости',
+    'provider': 'Провайдер',
+    'api.url': 'URL API',
+    'api.key': 'Ключ API',
+    'model': 'Модель',
+    'model.fetch': 'Получить модели',
+    'model.select': '-- Выберите модель --',
+    'temperature': 'Температура',
+    'max_tokens': 'Макс. токенов вывода',
+    'context_length': 'Длина контекста',
+    'history_count': 'Выпусков истории',
+    'token_usage': 'Использование токенов',
+    'btn.test': 'Тест',
+    'btn.save': 'Сохранить',
+    'save.saved': 'Сохранено',
+    'save.unsaved': 'Не сохранено',
+    'save.saving': 'Сохранение...',
+    'save.unsaved_changes': 'Несохранённые изменения',
+    'path.hoi4': 'Директория HOI4',
+    'path.save': 'Директория сохранений',
+    'path.mod': 'Директория мода',
+    'path.template': 'Директории шаблонов',
+    'path.hint.default': 'Оставьте пустым для значения по умолчанию',
+    'path.hint.mod': 'Корневая директория мода hoi4_newspaper. Новости yml будут записаны в localisation/',
+    'path.hint.template': 'Добавьте директории, содержащие template.json; подпапки будут просканированы',
+    'path.hint.template_input': 'Введите путь к директории субмода',
+    'btn.save_paths': 'Сохранить пути',
+    'style.select': 'Выберите стиль газеты',
+    'style.select_intl': 'Выберите стиль международного агентства',
+    'btn.scan_template': ' Сканировать шаблоны',
+    'newspaper.name': 'Название газеты',
+    'newspaper.tone': 'Описание стиля',
+    'newspaper.prompt': 'Шаблон промпта внутренних новостей',
+    'newspaper.prompt_intl': 'Шаблон промпта международных новостей',
+    'newspaper.hint_dom': 'Заполнители: {newspaperName} {styleDesc} {dateFrom} {dateTo} {countryName} {stability} {warSupport} {fuelInfo} {historyNews} {eventList} {articleCount}',
+    'newspaper.hint_intl': 'Заполнители: {newspaperName} {styleDesc} {dateFrom} {dateTo} {historyNews} {countryEvents} {articleCount}',
+    'agency.name': 'Название агентства',
+    'btn.restore': 'Восстановить по умолчанию',
+    'history.title': 'История новостей',
+    'history.empty': 'Нет истории',
+    'history.empty_list': 'Нет истории новостей',
+    'history.clear': 'Очистить',
+    'history.issue': 'Выпуск №${n}',
+    'history.total': 'Всего ${n} выпусков',
+    'history.domestic': 'Внутренние',
+    'history.international': 'Международные',
+    'custom_mode_hint': 'Пользовательский режим: введите URL API вручную',
+    'toast.added_tags': 'Добавлено ${n} тегов',
+    'toast.tag_in_preset': '${tag} уже в предустановленном списке, просто отметьте его',
+    'toast.tag_already': '${tag} уже добавлен',
+    'toast.tag_invalid': 'Введите тег из 3 латинских букв',
+    'toast.template_imported': 'Шаблон "${name}" импортирован',
+    'toast.template_removed': 'Шаблон удалён',
+    'toast.template_not_found': 'Шаблоны не найдены (поместите template.json в папку субмода)',
+    'toast.template_found': 'Найдено ${n} шаблонов',
+    'toast.template_article_groups': '${n} групп статей',
+    'toast.llm_saved': 'Настройки LLM сохранены',
+    'toast.save_failed': 'Ошибка сохранения',
+    'toast.paths_saved': 'Пути сохранены, наблюдатель перезапустится при необходимости',
+    'toast.watcher_started': 'Наблюдение запущено',
+    'toast.watcher_stopped': 'Наблюдение остановлено',
+    'toast.watcher_start_failed': 'Ошибка запуска',
+    'toast.watcher_stop_failed': 'Ошибка остановки',
+    'toast.session_reset': 'Сессия сброшена',
+    'toast.testing': 'Тестирование соединения...',
+    'toast.test_ok': 'Подключено: ${reply}',
+    'toast.test_failed': 'Ошибка подключения: ${error}',
+    'toast.fetching_models': 'Получение списка моделей...',
+    'toast.models_fetched': 'Получено ${n} моделей',
+    'toast.fetch_models_failed': 'Ошибка получения моделей: ${error}',
+    'toast.fill_api_key': 'Сначала введите ключ API',
+    'toast.newspaper_saved': 'Настройки сохранены',
+    'toast.defaults_restored': 'Настройки по умолчанию восстановлены',
+    'toast.dir_exists': 'Директория уже существует',
+    'toast.history_cleared': 'История очищена',
+    'toast.scanning': 'Сканирование...',
+  }
+};
+
+let currentLang = localStorage.getItem('lang') || 'zh';
+
+function t(key, params) {
+  let str = I18N[currentLang]?.[key] || I18N['zh']?.[key] || key;
+  if (params) {
+    Object.entries(params).forEach(([k, v]) => {
+      str = str.replace(new RegExp('\\$\\{' + k + '\\}', 'g'), v);
+    });
+  }
+  return str;
+}
+
+function applyLang() {
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    el.textContent = t(el.dataset.i18n);
+  });
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    el.placeholder = t(el.dataset.i18nPlaceholder);
+  });
+  document.title = t('app.title');
+  document.documentElement.lang = currentLang === 'zh' ? 'zh-CN' : currentLang === 'rus' ? 'ru' : 'en';
+  const langBtn = document.getElementById('lang-select');
+  if (langBtn) langBtn.textContent = currentLang === 'zh' ? '[A/文]' : currentLang === 'rus' ? '[A/Ж]' : '[文/A]';
+  const tagLabel = document.getElementById('tag-grid-label');
+  if (tagLabel) {
+    tagLabel.textContent = currentNewsType === 'domestic' ? t('tags.label.domestic') : t('tags.label.intl');
+  }
+  setLLMSaveIndicator(currentSaveState);
+  const modelSelect = document.getElementById('llm-model-select');
+  if (modelSelect.style.display !== 'none' && modelSelect.options.length > 0) {
+    modelSelect.options[0].textContent = t('model.select');
+  }
+  const apiUrlHint = document.getElementById('api-url-hint');
+  if (apiUrlHint.textContent && currentProvider === 'custom') {
+    apiUrlHint.textContent = t('custom_mode_hint');
+  }
+  updateStatus();
+  loadHistory();
+}
+
+function setLang(lang) {
+  currentLang = lang;
+  localStorage.setItem('lang', lang);
+  applyLang();
+}
+
+function toggleUILang() {
+  const langs = ['zh', 'en', 'rus'];
+  const idx = langs.indexOf(currentLang);
+  setLang(langs[(idx + 1) % langs.length]);
+}
+
+function toggleLangDropdown() {
+  document.getElementById('lang-dropdown').classList.toggle('open');
+}
+
+function pickLang(lang) {
+  setLang(lang);
+  document.getElementById('lang-dropdown').classList.remove('open');
+}
+
+document.addEventListener('click', function(e) {
+  const dd = document.getElementById('lang-dropdown');
+  const btn = document.getElementById('lang-select');
+  if (dd && !dd.contains(e.target) && e.target !== btn) {
+    dd.classList.remove('open');
+  }
+});
+
+let currentSettings = null;
+let selectedStyle = 'GER';
+let selectedIntlStyle = 'intl_ap';
+let currentProvider = 'deepseek';
+let currentNewsType = 'both';
+let customTags = [];
+let initializing = false;
+let providerPresets = {};
+let availableModels = [];
+let pollTimer = null;
+let tagGridInitialized = false;
+let activeDrawer = null;
+let cachedDefaults = null;
+let currentSaveState = 'saved';
+
+
+function showToast(msg, type = 'success') {
+  const toastEl = document.getElementById('toast');
+  toastEl.textContent = msg;
+  toastEl.className = 'toast ' + type;
+  requestAnimationFrame(() => toastEl.classList.add('show'));
+  setTimeout(() => toastEl.classList.remove('show'), 2500);
+}
+
+function toggleDrawer(name) {
+  const content = document.getElementById('drawer-' + name);
+  const tab = document.querySelector(`.drawer-tab[data-drawer="${name}"]`);
+
+  if (activeDrawer === name) {
+    content.classList.remove('open');
+    tab.classList.remove('active');
+    activeDrawer = null;
+  } else {
+    if (activeDrawer) {
+      document.getElementById('drawer-' + activeDrawer).classList.remove('open');
+      document.querySelector(`.drawer-tab[data-drawer="${activeDrawer}"]`).classList.remove('active');
+    }
+    content.classList.add('open');
+    tab.classList.add('active');
+    activeDrawer = name;
+  }
+}
+
+async function api(method, path, body) {
+  const opts = { method };
+  if (body) {
+    opts.headers = { 'Content-Type': 'application/json' };
+    opts.body = JSON.stringify(body);
+  }
+  const res = await fetch('/api' + path, opts);
+  return res.json();
+}
+
+async function loadAllSettings() {
+  const [settings, defaults, providers] = await Promise.all([
+    api('GET', '/settings'),
+    api('GET', '/defaults'),
+    api('GET', '/providers'),
+  ]);
+  cachedDefaults = defaults;
+  currentSettings = settings;
+  providerPresets = providers;
+  currentProvider = settings.llm.provider || 'deepseek';
+  selectedStyle = settings.newspaper?.selectedStyle || 'GER';
+  selectedIntlStyle = settings.newspaper?.selectedInternationalStyle || 'intl_ap';
+  renderLLMSettings(settings);
+  renderNewspaperSettings(settings, defaults);
+  renderConsoleSettings(settings);
+  renderPathsSettings(settings);
+  setLLMSaveIndicator('saved');
+  loadHistory();
+}
+
+function renderProviderGrid() {
+  const grid = document.getElementById('provider-grid');
+  grid.innerHTML = '';
+  Object.entries(providerPresets).forEach(([key, p]) => {
+    const btn = document.createElement('button');
+    btn.className = 'provider-btn' + (key === currentProvider ? ' active' : '');
+    btn.textContent = p.name;
+    btn.onclick = () => selectProvider(key);
+    grid.appendChild(btn);
+  });
+}
+
+function selectProvider(key) {
+  currentProvider = key;
+  renderProviderGrid();
+  const preset = providerPresets[key];
+  if (key === 'custom') {
+    document.getElementById('llm-api-url').value = '';
+    document.getElementById('api-url-hint').textContent = t('custom_mode_hint');
+  } else if (preset && preset.baseUrl) {
+    document.getElementById('llm-api-url').value = preset.baseUrl + '/v1/chat/completions';
+    document.getElementById('api-url-hint').textContent = '';
+  }
+  const selectEl = document.getElementById('llm-model-select');
+  const inputEl = document.getElementById('llm-model-input');
+  selectEl.style.display = 'none';
+  inputEl.style.display = '';
+  inputEl.value = '';
+  availableModels = [];
+}
+
+function renderLLMSettings(s) {
+  renderProviderGrid();
+  document.getElementById('llm-api-url').value = s.llm.apiUrl || '';
+  document.getElementById('llm-api-key').value = s.llm.apiKey || '';
+  document.getElementById('llm-model-input').value = s.llm.model || '';
+  document.getElementById('llm-temperature').value = s.llm.temperature ?? 0.8;
+  document.getElementById('llm-max-tokens').value = s.llm.maxTokens ?? 400;
+  document.getElementById('llm-context-length').value = s.llm.contextLength ?? 64000;
+  document.getElementById('llm-history-count').value = s.llm.historyCount ?? 3;
+  updateCtxBar();
+}
+
+function updateCtxBar() {
+  const maxTokens = parseInt(document.getElementById('llm-max-tokens').value) || 400;
+  const ctxLength = parseInt(document.getElementById('llm-context-length').value) || 64000;
+  const pct = Math.min(100, (maxTokens / ctxLength) * 100);
+  document.getElementById('ctx-bar-fill').style.width = pct + '%';
+  document.getElementById('ctx-bar-fill').style.background =
+    pct > 80 ? 'var(--red)' : pct > 50 ? 'var(--accent)' : 'var(--green)';
+  document.getElementById('ctx-usage-text').textContent =
+    `${(maxTokens/1000).toFixed(1)}K / ${ctxLength >= 1000000 ? (ctxLength/1000000).toFixed(1)+'M' : (ctxLength/1000).toFixed(0)+'K'}`;
+}
+
+const llmInputIds = new Set([
+  'llm-api-url', 'llm-api-key', 'llm-model-input',
+  'llm-temperature', 'llm-max-tokens', 'llm-context-length', 'llm-history-count'
+]);
+
+document.addEventListener('input', (e) => {
+  if (e.target.id === 'llm-max-tokens' || e.target.id === 'llm-context-length') {
+    updateCtxBar();
+  }
+  if (llmInputIds.has(e.target.id)) {
+    setLLMSaveIndicator('unsaved');
+  saveConsoleSettings();
+}
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.target.id === 'custom-tag-input' && e.key === 'Enter') {
+    addCustomTag();
+  }
+  saveConsoleSettings();
+});
+
+async function fetchModels() {
+  const apiKey = document.getElementById('llm-api-key').value;
+  const settings = await api('GET', '/settings');
+  const effectiveKey = (apiKey && !apiKey.includes('****')) ? apiKey : settings.llm.apiKey;
+  if (!effectiveKey) { showToast(t('toast.fill_api_key'), 'error'); return; }
+
+  showToast(t('toast.fetching_models'), 'success');
+  const res = await api('POST', '/models', { provider: currentProvider, apiKey: effectiveKey });
+
+  if (res.ok && res.models) {
+    availableModels = res.models;
+    const selectEl = document.getElementById('llm-model-select');
+    const inputEl = document.getElementById('llm-model-input');
+    const currentVal = inputEl.value;
+
+    selectEl.innerHTML = '<option value="">' + t('model.select') + '</option>';
+    res.models.forEach(m => {
+      const opt = document.createElement('option');
+      opt.value = m.id;
+      const ctx = m.context_length ? ` (${(m.context_length/1000).toFixed(0)}K)` : '';
+      opt.textContent = m.id + ctx;
+      selectEl.appendChild(opt);
+    });
+
+    if (currentVal && res.models.some(m => m.id === currentVal)) selectEl.value = currentVal;
+    selectEl.style.display = '';
+    inputEl.style.display = 'none';
+
+    selectEl.onchange = () => {
+      inputEl.value = selectEl.value;
+      const selected = res.models.find(m => m.id === selectEl.value);
+      if (selected?.context_length) {
+        document.getElementById('llm-context-length').value = selected.context_length;
+        updateCtxBar();
+      }
+    };
+    showToast(t('toast.models_fetched', {n: res.models.length}));
+  } else {
+    showToast(t('toast.fetch_models_failed', {error: res.error || 'unknown'}), 'error');
+  }
+}
+
+function renderNewspaperSettings(s, defaults) {
+  const palette = document.getElementById('style-palette');
+  palette.innerHTML = '';
+  const outputLang = document.getElementById('output-lang')?.value || 'zh';
+  const isEn = outputLang === 'en';
+  const isRus = outputLang === 'rus';
+
+  const allStyles = { ...(defaults.newspaper.styles || {}), ...(s.newspaper.styles || {}) };
+  Object.entries(allStyles).forEach(([key, style]) => {
+    const chip = document.createElement('button');
+    chip.className = 'style-chip' + (key === selectedStyle ? ' active' : '');
+    const displayName = isRus ? (style.nameRus || style.nameEn || style.name || key) : isEn ? (style.nameEn || style.name || key) : (style.name || key);
+    chip.innerHTML = escapeHtml(displayName);
+    chip.onclick = () => {
+      selectedStyle = key;
+      renderNewspaperSettings(currentSettings, defaults);
+    };
+    palette.appendChild(chip);
+  });
+
+  const currentStyleData = allStyles[selectedStyle] || { name: '', tone: '', promptTemplate: '', articleGroups: [] };
+  document.getElementById('newspaper-name').value = isRus ? (currentStyleData.nameRus || currentStyleData.nameEn || currentStyleData.name || '') : isEn ? (currentStyleData.nameEn || currentStyleData.name || '') : (currentStyleData.name || '');
+  document.getElementById('newspaper-tone').value = isRus ? (currentStyleData.toneRus || currentStyleData.toneEn || currentStyleData.tone || '') : isEn ? (currentStyleData.toneEn || currentStyleData.tone || '') : (currentStyleData.tone || '');
+  document.getElementById('newspaper-prompt').value = isRus ? (currentStyleData.promptTemplateRus || currentStyleData.promptTemplateEn || currentStyleData.promptTemplate || '') : isEn ? (currentStyleData.promptTemplateEn || currentStyleData.promptTemplate || '') : (currentStyleData.promptTemplate || '');
+
+  const intlStyle = s.newspaper.internationalStyles?.[selectedIntlStyle] || defaults.newspaper.internationalStyles?.[selectedIntlStyle] || { name: '', tone: '', promptTemplate: '' };
+  document.getElementById('intl-newspaper-name').value = isRus ? (intlStyle.nameRus || intlStyle.nameEn || intlStyle.name || '') : isEn ? (intlStyle.nameEn || intlStyle.name || '') : (intlStyle.name || '');
+  document.getElementById('intl-newspaper-tone').value = isRus ? (intlStyle.toneRus || intlStyle.toneEn || intlStyle.tone || '') : isEn ? (intlStyle.toneEn || intlStyle.tone || '') : (intlStyle.tone || '');
+  document.getElementById('intl-newspaper-prompt').value = isRus ? (intlStyle.promptTemplateRus || intlStyle.promptTemplateEn || intlStyle.promptTemplate || '') : isEn ? (intlStyle.promptTemplateEn || intlStyle.promptTemplate || '') : (intlStyle.promptTemplate || '');
+
+  renderIntlStylePalette(s, defaults);
+}
+
+function renderIntlStylePalette(s, defaults) {
+  const palette = document.getElementById('intl-style-palette');
+  palette.innerHTML = '';
+  const outputLang = document.getElementById('output-lang')?.value || 'zh';
+  const isEn = outputLang === 'en';
+  const isRus = outputLang === 'rus';
+
+  const allIntlStyles = { ...(defaults.newspaper.internationalStyles || {}), ...(s.newspaper.internationalStyles || {}) };
+  Object.entries(allIntlStyles).forEach(([key, style]) => {
+    const chip = document.createElement('button');
+    chip.className = 'style-chip' + (key === selectedIntlStyle ? ' active' : '');
+    const displayName = isRus ? (style.nameRus || style.nameEn || style.name || key) : isEn ? (style.nameEn || style.name || key) : (style.name || key);
+    chip.innerHTML = escapeHtml(displayName);
+    chip.onclick = () => {
+      selectedIntlStyle = key;
+      renderNewspaperSettings(currentSettings, defaults);
+    };
+    palette.appendChild(chip);
+  });
+}
+
+function selectNewsType(type) {
+  currentNewsType = type;
+  document.querySelectorAll('.news-type-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.type === type);
+  });
+  const tagGrid = document.getElementById('tag-grid');
+  const tagLabel = document.getElementById('tag-grid-label');
+  if (type === 'domestic') {
+    tagGrid.classList.add('tag-grid-disabled');
+    tagLabel.textContent = t('tags.label.domestic');
+  } else {
+    tagGrid.classList.remove('tag-grid-disabled');
+    tagLabel.textContent = t('tags.label.intl');
+  }
+  if (!initializing) saveConsoleSettings();
+}
+
+async function scanAndShowTemplates(type) {
+  const hintEl = document.getElementById('tpl-scan-hint-' + type);
+  hintEl.textContent = t('toast.scanning');
+  const res = await api('GET', '/templates');
+  const templates = (res.templates || []).filter(tpl => tpl.type === type);
+  const container = document.getElementById('tpl-list-' + type);
+  container.innerHTML = '';
+
+  if (templates.length === 0) {
+    hintEl.textContent = t('toast.template_not_found');
+    return;
+  }
+
+  hintEl.textContent = t('toast.template_found', {n: templates.length});
+  templates.forEach(tpl => {
+    const item = document.createElement('div');
+    item.style.cssText = 'display:flex;align-items:center;gap:10px;padding:8px 12px;border:1px solid var(--border);border-radius:2px;margin-bottom:6px;background:var(--bg-input);';
+    item.innerHTML = `
+      <div style="flex:1;">
+        <div style="font-size:13px;font-weight:600;color:var(--text);">${escapeHtml(tpl.name)}</div>
+        <div style="font-size:11px;color:var(--text-dim);margin-top:2px;">${escapeHtml(tpl.tone || '').substring(0, 60)}${(tpl.tone||'').length > 60 ? '...' : ''} · ${t('toast.template_article_groups', {n: tpl.articleGroups.length})}</div>
+      </div>
+      <button class="btn btn-sm btn-success" onclick="importTemplateFromScan(${JSON.stringify(tpl).replace(/"/g, '&quot;')})">导入</button>
+    `;
+    container.appendChild(item);
+  });
+}
+
+async function importTemplateFromScan(template) {
+  const res = await api('POST', '/templates/import', { template });
+  if (res.ok) {
+    showToast(t('toast.template_imported', {name: template.name}));
+    currentSettings = await (await fetch('/api/settings')).json();
+    const defaults = await api('GET', '/defaults');
+    renderNewspaperSettings(currentSettings, defaults);
+  } else {
+    showToast(t('toast.save_failed'), 'error');
+  }
+}
+
+async function removeTemplateStyle(styleKey) {
+  const res = await api('DELETE', '/templates/' + styleKey);
+  if (res.ok) {
+    showToast(t('toast.template_removed'));
+    currentSettings = await (await fetch('/api/settings')).json();
+    const defaults = await api('GET', '/defaults');
+    if (selectedStyle === styleKey) {
+      selectedStyle = Object.keys(currentSettings.newspaper.styles)[0] || 'GER';
+    }
+    if (selectedIntlStyle === styleKey) {
+      selectedIntlStyle = Object.keys(currentSettings.newspaper.internationalStyles)[0] || 'intl_ap';
+    }
+    renderNewspaperSettings(currentSettings, defaults);
+  } else {
+    showToast(t('toast.save_failed'), 'error');
+  }
+}
+
+function addCustomTag() {
+  const input = document.getElementById('custom-tag-input');
+  const raw = input.value.trim().toUpperCase();
+  if (!raw) return;
+  const newTags = raw.split(/[\s,;，；]+/).filter(tag => tag.length === 3 && /^[A-Z]{3}$/.test(tag));
+  if (newTags.length === 0) { showToast(t('toast.tag_invalid'), 'error'); return; }
+  const presetTags = ['GER','ENG','FRA','SOV','USA','JAP','ITA','CHI'];
+  let added = 0;
+  for (const tag of newTags) {
+    if (presetTags.includes(tag)) { showToast(t('toast.tag_in_preset', {tag}), 'error'); continue; }
+    if (customTags.includes(tag)) { showToast(t('toast.tag_already', {tag}), 'error'); continue; }
+    customTags.push(tag);
+    added++;
+  }
+  input.value = '';
+  renderCustomTags();
+  if (added > 0) showToast(t('toast.added_tags', {n: added}));
+}
+
+function removeCustomTag(tag) {
+  customTags = customTags.filter(tItem => tItem !== tag);
+  renderCustomTags();
+}
+
+function renderCustomTags() {
+  const list = document.getElementById('custom-tags-list');
+  if (customTags.length === 0) { list.innerHTML = ''; return; }
+  list.innerHTML = customTags.map(tag =>
+    `<span class="custom-tag-item">${escapeHtml(tag)} <span class="custom-tag-remove" onclick="removeCustomTag('${tag}')">&times;</span></span>`
+  ).join('');
+}
+
+function renderConsoleSettings(s) {
+  initializing = true;
+  document.getElementById('min-days').value = s.console.minDaysBetweenNews ?? 25;
+  currentNewsType = s.console.newsType || 'both';
+  selectNewsType(currentNewsType);
+  customTags = s.console.customTags || [];
+  renderCustomTags();
+  const outputLangSelect = document.getElementById('output-lang');
+  if (outputLangSelect) outputLangSelect.value = s.console?.outputLang || 'zh';
+  if (!tagGridInitialized) { renderTagGrid(s); tagGridInitialized = true; }
+  else { updateTagGridState(s); }
+  initializing = false;
+}
+
+function renderPathsSettings(s) {
+  document.getElementById('path-hoi4-dir').value = s.paths?.hoi4Dir || '';
+  document.getElementById('path-save-dir').value = s.paths?.saveDir || '';
+  document.getElementById('path-mod-dir').value = s.paths?.modDir || '';
+  renderTemplateDirs();
+}
+
+function renderTemplateDirs() {
+  const container = document.getElementById('template-dirs-list');
+  const dirs = currentSettings.paths?.templateDirs || [];
+  container.innerHTML = '';
+  dirs.forEach((dir, i) => {
+    const row = document.createElement('div');
+    row.style.cssText = 'display:flex;align-items:center;gap:8px;margin-bottom:4px;';
+    row.innerHTML = `
+      <input type="text" value="${escapeHtml(dir)}" readonly
+        style="flex:1;background:var(--bg-input);border:1px solid var(--border);padding:4px 8px;border-radius:2px;font-size:12px;color:var(--text);">
+      <button class="btn btn-sm" onclick="removeTemplateDir(${i})" style="padding:2px 8px;">×</button>
+    `;
+    container.appendChild(row);
+  });
+}
+
+function addTemplateDir() {
+  const input = document.getElementById('new-template-dir');
+  const dir = input.value.trim();
+  if (!dir) return;
+  if (!currentSettings.paths.templateDirs) currentSettings.paths.templateDirs = [];
+  if (currentSettings.paths.templateDirs.includes(dir)) {
+    showToast(t('toast.dir_exists'));
+    return;
+  }
+  currentSettings.paths.templateDirs.push(dir);
+  input.value = '';
+  renderTemplateDirs();
+  savePaths();
+}
+
+function removeTemplateDir(index) {
+  currentSettings.paths.templateDirs.splice(index, 1);
+  renderTemplateDirs();
+  savePaths();
+}
+
+function renderTagGrid(s) {
+  const grid = document.getElementById('tag-grid');
+  grid.innerHTML = '';
+  const allTags = ['GER','ENG','FRA','SOV','USA','JAP','ITA','CHI'];
+  const selected = new Set(s.console.newsTags || []);
+  allTags.forEach(tag => {
+    const label = document.createElement('label');
+    label.className = 'tag-check';
+    const cb = document.createElement('input');
+    cb.type = 'checkbox';
+    cb.value = tag;
+    cb.checked = selected.has(tag);
+    cb.onchange = () => saveConsoleSettings();
+    const span = document.createElement('span');
+    span.textContent = tag;
+    label.appendChild(cb);
+    label.appendChild(span);
+    grid.appendChild(label);
+  });
+}
+
+function updateTagGridState(s) {
+  const selected = new Set(s.console.newsTags || []);
+  document.querySelectorAll('#tag-grid input[type=checkbox]').forEach(cb => {
+    cb.checked = selected.has(cb.value);
+  });
+}
+
+function getSelectedTags() {
+  const tags = [];
+  document.querySelectorAll('#tag-grid input[type=checkbox]').forEach(cb => { if (cb.checked) tags.push(cb.value); });
+  return tags;
+}
+
+function setLLMSaveIndicator(state) {
+  currentSaveState = state;
+  const dot = document.getElementById('llm-save-indicator');
+  const label = document.getElementById('llm-save-label');
+  if (!dot) return;
+  dot.className = 'save-indicator ' + state;
+  if (state === 'saved') {
+    dot.title = t('save.saved');
+    label.textContent = t('save.saved');
+    label.style.color = 'var(--green)';
+  } else if (state === 'unsaved') {
+    dot.title = t('save.unsaved_changes');
+    label.textContent = t('save.unsaved');
+    label.style.color = 'var(--accent)';
+  } else if (state === 'saving') {
+    dot.title = t('save.saving');
+    label.textContent = t('save.saving');
+    label.style.color = 'var(--blue)';
+  }
+}
+
+async function saveLLMSettings() {
+  setLLMSaveIndicator('saving');
+  const inputEl = document.getElementById('llm-model-input');
+  const selectEl = document.getElementById('llm-model-select');
+  const model = inputEl.style.display !== 'none' ? inputEl.value : selectEl.value;
+  const body = {
+    provider: currentProvider,
+    apiUrl: document.getElementById('llm-api-url').value,
+    model,
+    temperature: parseFloat(document.getElementById('llm-temperature').value),
+    maxTokens: parseInt(document.getElementById('llm-max-tokens').value),
+    contextLength: parseInt(document.getElementById('llm-context-length').value),
+    historyCount: parseInt(document.getElementById('llm-history-count').value),
+  };
+  const keyVal = document.getElementById('llm-api-key').value;
+  if (keyVal && !keyVal.includes('****')) body.apiKey = keyVal;
+  const res = await api('PUT', '/settings/llm', body);
+  if (res.ok) {
+    setLLMSaveIndicator('saved');
+    showToast(t('toast.llm_saved'));
+  } else {
+    setLLMSaveIndicator('unsaved');
+    showToast(t('toast.save_failed'), 'error');
+  }
+}
+
+async function testConnection() {
+  const inputEl = document.getElementById('llm-model-input');
+  const selectEl = document.getElementById('llm-model-select');
+  const model = inputEl.style.display !== 'none' ? inputEl.value : selectEl.value;
+  showToast(t('toast.testing'), 'success');
+  const body = { model };
+  const keyVal = document.getElementById('llm-api-key').value;
+  if (keyVal && !keyVal.includes('****')) body.apiKey = keyVal;
+  const urlVal = document.getElementById('llm-api-url').value;
+  if (urlVal) body.apiUrl = urlVal;
+  const res = await api('POST', '/test-connection', body);
+  if (res.ok) showToast(t('toast.test_ok', {reply: res.reply}));
+  else showToast(t('toast.test_failed', {error: res.error || 'unknown'}), 'error');
+}
+
+async function saveNewspaperSettings() {
+  const outputLang = document.getElementById('output-lang')?.value || 'zh';
+  const isEn = outputLang === 'en';
+  const isRus = outputLang === 'rus';
+  const styles = { ...currentSettings.newspaper.styles };
+  if (isRus) {
+    styles[selectedStyle] = {
+      ...styles[selectedStyle],
+      nameRus: document.getElementById('newspaper-name').value,
+      toneRus: document.getElementById('newspaper-tone').value,
+      promptTemplateRus: document.getElementById('newspaper-prompt').value,
+    };
+  } else if (isEn) {
+    styles[selectedStyle] = {
+      ...styles[selectedStyle],
+      nameEn: document.getElementById('newspaper-name').value,
+      toneEn: document.getElementById('newspaper-tone').value,
+      promptTemplateEn: document.getElementById('newspaper-prompt').value,
+    };
+  } else {
+    styles[selectedStyle] = {
+      ...styles[selectedStyle],
+      name: document.getElementById('newspaper-name').value,
+      tone: document.getElementById('newspaper-tone').value,
+      promptTemplate: document.getElementById('newspaper-prompt').value,
+    };
+  }
+
+  const internationalStyles = { ...currentSettings.newspaper.internationalStyles };
+  if (isRus) {
+    internationalStyles[selectedIntlStyle] = {
+      ...internationalStyles[selectedIntlStyle],
+      nameRus: document.getElementById('intl-newspaper-name').value,
+      toneRus: document.getElementById('intl-newspaper-tone').value,
+      promptTemplateRus: document.getElementById('intl-newspaper-prompt').value,
+    };
+  } else if (isEn) {
+    internationalStyles[selectedIntlStyle] = {
+      ...internationalStyles[selectedIntlStyle],
+      nameEn: document.getElementById('intl-newspaper-name').value,
+      toneEn: document.getElementById('intl-newspaper-tone').value,
+      promptTemplateEn: document.getElementById('intl-newspaper-prompt').value,
+    };
+  } else {
+    internationalStyles[selectedIntlStyle] = {
+      ...internationalStyles[selectedIntlStyle],
+      name: document.getElementById('intl-newspaper-name').value,
+      tone: document.getElementById('intl-newspaper-tone').value,
+      promptTemplate: document.getElementById('intl-newspaper-prompt').value,
+    };
+  }
+
+  const body = {
+    styles,
+    selectedStyle,
+    internationalStyles,
+    selectedInternationalStyle: selectedIntlStyle,
+  };
+  const res = await api('PUT', '/settings/newspaper', body);
+  if (res.ok) {
+    currentSettings.newspaper.styles = styles;
+    currentSettings.newspaper.selectedStyle = selectedStyle;
+    currentSettings.newspaper.internationalStyles = internationalStyles;
+    currentSettings.newspaper.selectedInternationalStyle = selectedIntlStyle;
+    showToast(t('toast.newspaper_saved'));
+  } else {
+    showToast(t('toast.save_failed'), 'error');
+  }
+}
+
+async function resetNewspaperDefaults() {
+  const defaults = await api('GET', '/defaults');
+  currentSettings.newspaper = { ...defaults.newspaper };
+  selectedStyle = defaults.newspaper.selectedStyle || 'GER';
+  const res = await api('PUT', '/settings/newspaper', defaults.newspaper);
+  if (res.ok) {
+    renderNewspaperSettings(currentSettings, defaults);
+    showToast(t('toast.defaults_restored'));
+  }
+}
+
+async function saveConsoleSettings() {
+  const newsTags = getSelectedTags();
+  const body = {
+    newsTags,
+    minDaysBetweenNews: parseInt(document.getElementById('min-days').value) || 25,
+    newsType: currentNewsType,
+    customTags,
+    outputLang: document.getElementById('output-lang')?.value || 'zh',
+  };
+  return api('PUT', '/settings/console', body);
+}
+
+function onOutputLangChange(lang) {
+  if (!initializing) saveConsoleSettings();
+  renderNewspaperSettings(currentSettings, cachedDefaults);
+}
+
+async function savePaths() {
+  const body = {
+    hoi4Dir: document.getElementById('path-hoi4-dir').value,
+    saveDir: document.getElementById('path-save-dir').value,
+    modDir: document.getElementById('path-mod-dir').value,
+    templateDirs: currentSettings.paths?.templateDirs || [],
+  };
+  const res = await api('PUT', '/settings/paths', body);
+  if (res.ok) showToast(t('toast.paths_saved'));
+  else showToast(t('toast.save_failed'), 'error');
+}
+
+async function startWatcher() {
+  await saveConsoleSettings();
+  const res = await api('POST', '/watcher/start');
+  if (res.ok) { showToast(t('toast.watcher_started')); updateStatus(); }
+  else showToast(res.error || t('toast.watcher_start_failed'), 'error');
+}
+
+async function stopWatcher() {
+  const res = await api('POST', '/watcher/stop');
+  if (res.ok) { showToast(t('toast.watcher_stopped')); updateStatus(); }
+  else showToast(res.error || t('toast.watcher_stop_failed'), 'error');
+}
+
+async function resetSession() {
+  const res = await api('POST', '/session/reset');
+  if (res.ok) { showToast(t('toast.session_reset')); updateStatus(); }
+}
+
+async function loadHistory() {
+  try {
+    const history = await api('GET', '/history');
+    renderHistory(history);
+  } catch (e) { console.error('loadHistory error:', e); }
+}
+
+function renderHistory(history) {
+  const list = document.getElementById('history-list');
+  const summary = document.getElementById('history-summary');
+  if (!history || history.length === 0) {
+    list.innerHTML = '<div style="color:var(--text-dim);font-size:13px;text-align:center;padding:20px;" data-i18n="history.empty_list">' + t('history.empty_list') + '</div>';
+    summary.textContent = t('history.empty');
+    return;
+  }
+  summary.textContent = t('history.total', {n: history.length});
+  list.innerHTML = history.slice().reverse().map(entry => {
+    const articlesHtml = entry.articles.map(a => {
+      const articleType = a.type || 'domestic';
+      const typeLabel = articleType === 'international' ? '<span style="color:var(--blue);font-size:10px;margin-right:4px;">🌍' + t('history.international') + '</span>' : '<span style="color:var(--accent-dim);font-size:10px;margin-right:4px;">📰' + t('history.domestic') + '</span>';
+      return `<div class="history-article">
+        <div class="history-article-tag">${typeLabel}${escapeHtml(a.tag)}</div>
+        <div class="history-article-title">${escapeHtml(a.title)}</div>
+        <div class="history-article-body">${escapeHtml(a.body)}</div>
+      </div>`;
+    }).join('');
+    return `<div class="history-item">
+      <div class="history-item-header">
+        <span class="history-issue">${t('history.issue', {n: entry.issue})}</span>
+        <span class="history-date">${escapeHtml(entry.dateFrom)} ~ ${escapeHtml(entry.dateTo)}</span>
+      </div>
+      ${articlesHtml}
+    </div>`;
+  }).join('');
+}
+
+async function clearHistory() {
+  const res = await api('DELETE', '/history');
+  if (res.ok) { showToast(t('toast.history_cleared')); loadHistory(); }
+}
+
+let lastReloadTime = 0;
+
+async function updateStatus() {
+  try {
+    const status = await api('GET', '/status');
+    const dot = document.getElementById('status-dot');
+    const text = document.getElementById('status-text');
+    const btnStart = document.getElementById('btn-start');
+    const btnStop = document.getElementById('btn-stop');
+    const reloadBox = document.getElementById('reload-box');
+    const reloadCmds = document.getElementById('reload-commands');
+
+    if (status.isWatching) {
+      dot.classList.add('active');
+      text.textContent = t('status.watching');
+      text.style.color = 'var(--green)';
+      btnStart.disabled = true;
+      btnStop.disabled = false;
+    } else {
+      dot.classList.remove('active');
+      text.textContent = t('status.stopped');
+      text.style.color = 'var(--text-dim)';
+      btnStart.disabled = false;
+      btnStop.disabled = true;
+    }
+
+    if (status.reloadCommands && status.reloadCommands.time > lastReloadTime) {
+      lastReloadTime = status.reloadCommands.time;
+      dot.classList.remove('active');
+      dot.classList.add('news-ready');
+      reloadBox.classList.add('visible');
+      reloadCmds.innerHTML = status.reloadCommands.commands
+        .map(c => `<div class="reload-cmd" onclick="navigator.clipboard.writeText('${c}')">${c}</div>`)
+        .join('');
+      try {
+        const ctx = new (window.AudioContext || window.webkitAudioContext)();
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.frequency.value = 880;
+        osc.type = 'sine';
+        gain.gain.value = 0.3;
+        osc.start();
+        gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.5);
+        osc.stop(ctx.currentTime + 0.5);
+      } catch(e) {}
+    } else if (!status.reloadCommands || (status.reloadCommands && status.reloadCommands.time <= lastReloadTime && !reloadBox.classList.contains('visible'))) {
+      dot.classList.remove('news-ready');
+      reloadBox.classList.remove('visible');
+    }
+
+    if (status.session) {
+      const s = status.session;
+      document.getElementById('session-info').textContent = `${s.playerTag || '--'} ${s.lastDateStr || '--'}`;
+      document.getElementById('news-count').textContent = t('session.news_count', {n: s.newsCount ?? 0});
+    } else {
+      document.getElementById('session-info').textContent = t('status.no_session');
+      document.getElementById('news-count').textContent = '--';
+    }
+
+    const logBox = document.getElementById('log-box');
+    const wasAtBottom = logBox.scrollTop + logBox.clientHeight >= logBox.scrollHeight - 20;
+    logBox.innerHTML = (status.logs || []).map(l =>
+      `<div class="log-entry"><span class="log-time">[${l.time}]</span> <span class="log-msg">${escapeHtml(l.message)}</span></div>`
+    ).join('');
+    if (wasAtBottom) logBox.scrollTop = logBox.scrollHeight;
+  } catch (e) { console.error('updateStatus error:', e); }
+}
+
+function escapeHtml(str) {
+  return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+applyLang();
+loadAllSettings();
+updateStatus();
+pollTimer = setInterval(updateStatus, 3000);
+setInterval(loadHistory, 15000);
+</script>
+</body>
+</html>

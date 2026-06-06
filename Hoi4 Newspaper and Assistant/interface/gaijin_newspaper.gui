@@ -1,0 +1,103 @@
+guiTypes = {
+	containerWindowType = {
+		name = "ai_newspaper_gaijin_window"
+
+		position = { x = 0 y = 0 }
+		size = { width = 1000 height = 680 }
+
+		orientation = CENTER
+		origo = center
+
+		moveable = yes
+
+		background = {
+			name = "newspaper_bg"
+			spriteType = "GFX_gaijin_newspaper_bg"
+		}
+
+		# 日期，放右上角边框内
+		instantTextBoxType = {
+			name = "gaijin_date"
+			position = { x = 510 y = 35 }
+			font = "hoi_18mbs"
+			text = "gaijin_date"
+			maxWidth = 210
+			maxHeight = 25
+			format = right
+		}
+
+		# 左栏标题
+		instantTextBoxType = {
+			name = "gaijin_1_title"
+			position = { x = 30 y = 200 }
+			font = "hoi_18mbs"
+			text = "gaijin_1_title"
+			maxWidth = 285
+			maxHeight = 35
+			format = center
+		}
+
+		# 左栏正文
+		instantTextBoxType = {
+			name = "gaijin_1_body"
+			position = { x = 30 y = 230 }
+			font = "hoi_18mbs"
+			text = "gaijin_1_body"
+			maxWidth = 285
+			maxHeight = 270
+			format = left
+		}
+
+		# 中栏标题
+		instantTextBoxType = {
+			name = "gaijin_2_title"
+			position = { x = 358 y = 200 }
+			font = "hoi_18mbs"
+			text = "gaijin_2_title"
+			maxWidth = 285
+			maxHeight = 35
+			format = center
+		}
+
+		# 中栏正文
+		instantTextBoxType = {
+			name = "gaijin_2_body"
+			position = { x = 358 y = 230 }
+			font = "hoi_18mbs"
+			text = "gaijin_2_body"
+			maxWidth = 285
+			maxHeight = 270
+			format = left
+		}
+
+		# 右栏标题
+		instantTextBoxType = {
+			name = "gaijin_3_title"
+			position = { x = 685 y = 200 }
+			font = "hoi_18mbs"
+			text = "gaijin_3_title"
+			maxWidth = 285
+			maxHeight = 35
+			format = center
+		}
+
+		# 右栏正文
+		instantTextBoxType = {
+			name = "gaijin_3_body"
+			position = { x = 685 y = 230 }
+			font = "hoi_18mbs"
+			text = "gaijin_3_body"
+			maxWidth = 285
+			maxHeight = 270
+			format = left
+		}
+
+		buttonType = {
+			name = "close_button"
+			position = { x = 960 y = 8 }
+			size = { width = 30 height = 30 }
+			spriteType = "GFX_closebutton"
+			shortcut = "ESCAPE"
+		}
+	}
+}

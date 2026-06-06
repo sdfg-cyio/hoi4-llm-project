@@ -1,0 +1,13 @@
+﻿l_simp_chinese:
+ newspaper_reader:0 "新闻阅读"
+ read_gaijin_newspaper:0 "阅读盖金社"
+ read_gaijin_newspaper_desc:0 "查看盖金社的最新报道。"
+ newspaper_dismiss:0 "关闭报纸"
+ newspaper_next:0 "下一页"
+ gaijin_date:0 ""
+ gaijin_1_title:0 "等待新闻..."
+ gaijin_1_body:0 "盖金社等待最新消息。"
+ gaijin_2_title:0 "等待新闻..."
+ gaijin_2_body:0 "盖金社等待最新消息。"
+ gaijin_3_title:0 "等待新闻..."
+ gaijin_3_body:0 "盖金社等待最新消息。"

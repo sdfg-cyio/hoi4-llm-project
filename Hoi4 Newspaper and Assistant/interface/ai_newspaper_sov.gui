@@ -1,0 +1,76 @@
+guiTypes = {
+	containerWindowType = {
+		name = "ai_newspaper_sov_window"
+
+		position = { x = 0 y = 0 }
+		size = { width = 1000 height = 680 }
+
+		orientation = CENTER
+		origo = center
+
+		moveable = yes
+
+		background = {
+			name = "newspaper_bg"
+			spriteType = "GFX_sov_newspaper_bg"
+		}
+
+		instantTextBoxType = {
+			name = "sov_date"
+			position = { x = 15 y = 8 }
+			font = "hoi_18mbs"
+			text = "sov_date"
+			maxWidth = 200
+			maxHeight = 20
+			format = left
+		}
+
+		instantTextBoxType = {
+			name = "sov_1_title"
+			position = { x = 80 y = 275 }
+			font = "hoi_24header"
+			text = "sov_1_title"
+			maxWidth = 840
+			maxHeight = 70
+			format = center
+		}
+
+		instantTextBoxType = {
+			name = "sov_1_body"
+			position = { x = 18 y = 395 }
+			font = "hoi_18mbs"
+			text = "sov_1_body"
+			maxWidth = 305
+			maxHeight = 275
+			format = left
+		}
+
+		instantTextBoxType = {
+			name = "sov_2_title"
+			position = { x = 355 y = 395 }
+			font = "hoi_18mbs"
+			text = "sov_2_title"
+			maxWidth = 285
+			maxHeight = 30
+			format = center
+		}
+
+		instantTextBoxType = {
+			name = "sov_2_body"
+			position = { x = 355 y = 430 }
+			font = "hoi_18mbs"
+			text = "sov_2_body"
+			maxWidth = 285
+			maxHeight = 240
+			format = left
+		}
+
+		buttonType = {
+			name = "close_button"
+			position = { x = 960 y = 8 }
+			size = { width = 30 height = 30 }
+			spriteType = "GFX_closebutton"
+			shortcut = "ESCAPE"
+		}
+	}
+}

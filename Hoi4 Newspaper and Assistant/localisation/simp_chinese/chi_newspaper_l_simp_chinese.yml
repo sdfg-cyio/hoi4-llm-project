@@ -1,0 +1,13 @@
+﻿l_simp_chinese:
+ newspaper_reader:0 "新闻阅读"
+ chi_date:0 ""
+ chi_1_title:0 "等待新闻..."
+ chi_1_body:0 "《大公报》等待最新消息。"
+ chi_2_title:0 "等待新闻..."
+ chi_2_body:0 "《大公报》等待最新消息。"
+ chi_3_title:0 "等待新闻..."
+ chi_3_body:0 "《大公报》等待最新消息。"
+ newspaper_dismiss:0 "合上报纸"
+ newspaper_next:0 "翻页"
+ read_chi_newspaper:0 "阅读大公报"
+ read_chi_newspaper_desc:0 "查看《大公报》最新报道。"

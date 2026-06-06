@@ -1,0 +1,11 @@
+﻿l_simp_chinese:
+ newspaper_reader:0 "新闻阅读"
+ sov_date:0 ""
+ sov_1_title:0 "等待新闻..."
+ sov_1_body:0 "《真理报》等待最新消息。"
+ sov_2_title:0 "等待新闻..."
+ sov_2_body:0 "《真理报》等待最新消息。"
+ newspaper_dismiss:0 "合上报纸"
+ newspaper_next:0 "翻页"
+ read_sov_newspaper:0 "阅读真理报"
+ read_sov_newspaper_desc:0 "查看《真理报》最新报道。"

@@ -1,0 +1,103 @@
+guiTypes = {
+	containerWindowType = {
+		name = "ai_newspaper_chi_window"
+
+		position = { x = 0 y = 0 }
+		size = { width = 1000 height = 680 }
+
+		orientation = CENTER
+		origo = center
+
+		moveable = yes
+
+		background = {
+			name = "newspaper_bg"
+			spriteType = "GFX_chi_newspaper_bg"
+		}
+
+		# 日期放报头左上角空隙
+		instantTextBoxType = {
+			name = "chi_date"
+			position = { x = 25 y = 8 }
+			font = "hoi_18mbs"
+			text = "chi_date"
+			maxWidth = 200
+			maxHeight = 25
+			format = left
+		}
+
+		# 头条标题横跨全宽
+		instantTextBoxType = {
+			name = "chi_1_title"
+			position = { x = 30 y = 200 }
+			font = "hoi_24header"
+			text = "chi_1_title"
+			maxWidth = 940
+			maxHeight = 45
+			format = center
+		}
+
+		# 头条正文横跨全宽
+		instantTextBoxType = {
+			name = "chi_1_body"
+			position = { x = 50 y = 230 }
+			font = "hoi_18mbs"
+			text = "chi_1_body"
+			maxWidth = 940
+			maxHeight = 100
+			format = left
+		}
+
+		# 左栏标题
+		instantTextBoxType = {
+			name = "chi_2_title"
+			position = { x = 30 y = 315 }
+			font = "hoi_18mbs"
+			text = "chi_2_title"
+			maxWidth = 450
+			maxHeight = 35
+			format = center
+		}
+
+		# 左栏正文
+		instantTextBoxType = {
+			name = "chi_2_body"
+			position = { x = 30 y = 350 }
+			font = "hoi_18mbs"
+			text = "chi_2_body"
+			maxWidth = 450
+			maxHeight = 260
+			format = left
+		}
+
+		# 右栏标题
+		instantTextBoxType = {
+			name = "chi_3_title"
+			position = { x = 515 y = 315 }
+			font = "hoi_18mbs"
+			text = "chi_3_title"
+			maxWidth = 450
+			maxHeight = 35
+			format = center
+		}
+
+		# 右栏正文
+		instantTextBoxType = {
+			name = "chi_3_body"
+			position = { x = 515 y = 350 }
+			font = "hoi_18mbs"
+			text = "chi_3_body"
+			maxWidth = 450
+			maxHeight = 260
+			format = left
+		}
+
+		buttonType = {
+			name = "close_button"
+			position = { x = 960 y = 8 }
+			size = { width = 30 height = 30 }
+			spriteType = "GFX_closebutton"
+			shortcut = "ESCAPE"
+		}
+	}
+}

@@ -1,0 +1,239 @@
+{
+  "llm": {
+    "provider": "deepseek",
+    "apiUrl": "https://api.deepseek.com/v1/chat/completions",
+    "apiKey": "sk-6cb53b7b2b4d4ce48e1ca91f210c16e6",
+    "model": "deepseek-v4-pro",
+    "temperature": 0.8,
+    "maxTokens": 15000,
+    "contextLength": 64000,
+    "historyCount": 3
+  },
+  "newspaper": {
+    "styles": {
+      "GER": {
+        "name": "《人民观察家报》",
+        "nameEn": "Völkischer Beobachter",
+        "tone": "德国官方通讯社风格，庄重严肃，强调国家复兴、秩序与工业军备建设，对本国立场友好，语气自信",
+        "toneEn": "Official German news agency style, solemn and serious, emphasizing national revival, order, and industrial-military buildup, friendly toward the homeland, confident tone",
+        "type": "domestic",
+        "promptTemplate": "你是{国家名}的国内报纸{报纸名}的主编，时间是1930年代。\n这份报纸服务于{国家名}的国民，请根据以下{国家名}国内事件写新闻报道。\n注意：{报纸名}是{国家名}的国内报纸，不是其他国家的报纸。报道立场应站在{国家名}的视角。\n\n风格要求：{风格描述}\n\n时间段：{起始日期} 至 {结束日期}\n国家：{国家名}\n稳定度：{稳定度}%\n战争支持度：{战争支持度}%\n燃油储备：{燃油信息}\n\n{历史新闻}\n\n本期事件：\n{事件列表}\n\n请输出{articleCount}条新闻，严格以JSON格式输出：\n{\"articles\":[{\"title\":\"标题\",\"body\":\"正文\"}]}\n不要输出JSON以外的任何内容。\n\n各篇定位：\n- 第1条（头条）：官方正式公告风格，庄重严肃，报道最重要的政治或军事事件\n- 第2条：科研成果、工业建设、军队日常或民生新闻，语气积极务实\n- 第3条：轻松无厘头的洋葱新闻风格，可以夸大其词或荒诞幽默，但仍基于本期事件\n\n规则：\n- 不要使用Markdown格式（不要**、##、*等符号）\n- 不要写\"注\"\"备注\"\"本报道基于\"等元信息\n- 不要出现英文代码、TAG、括号内的英文\n- 不要提及\"游戏\"\"存档\"\"数据\"\"系统\"等词语\n- 不要在正文末尾署名或加括号标注\n- 正文可以使用换行分段\n- 燃油信息仅在储备低于30%时才在正文中提及能源问题\n- 将所有事件自然融合成连贯的报道\n- 如有往期新闻，请保持叙事连贯性，避免重复已报道的内容\n- 正确称呼本国元首：德国称\"元首\"，苏联称\"总书记\"，英国称\"首相\"，美国称\"总统\"，日本称\"天皇\"或\"首相\"\n- 如果德国发生内战：西部挑起内战的一方是\"德国军政府\"，东部（占有柏林的）往往被标为叛军的才是纳粹残余势力，不要搞反\n- 如果在游戏前期看到德国、意大利、苏联或日本的军队在西班牙、埃塞俄比亚或内战地区交战，这是志愿军或远征军，不是莫名其妙的入侵，请正确理解\n- 鼓励在报道中加入与本期事件无关的风味新闻，增加时代氛围，题材包括：国内趣闻、科研进步、竞赛比赛、士兵故事、宣传海报、报纸游戏、民众生活、诗歌等\n- 新闻没有最低字数要求，可以写短，但正文每条不超过200字",
+        "promptTemplateEn": "You are the editor-in-chief of {newspaperName}, a domestic newspaper of {countryName}, in the 1930s.\nThis newspaper serves the people of {countryName}. Write news reports based on the following domestic events of {countryName}.\nNote: {newspaperName} is {countryName}'s domestic newspaper, not that of any other country. Report from {countryName}'s perspective.\n\nStyle: {styleDesc}\n\nPeriod: {dateFrom} to {dateTo}\nCountry: {countryName}\nStability: {stability}%\nWar Support: {warSupport}%\nFuel Reserves: {fuelInfo}\n\n{historyNews}\n\nEvents this issue:\n{eventList}\n\nOutput {articleCount} articles in strict JSON format:\n{\"articles\":[{\"title\":\"Title\",\"body\":\"Body\"}]}\nDo not output anything outside the JSON.\n\nArticle guidelines:\n- Article 1 (headline): Official and formal tone, covering the most important political or military events\n- Article 2: Scientific achievements, industrial construction, military routine, or civilian news, positive and pragmatic tone\n- Article 3: Lighthearted satirical style, may exaggerate or be absurdly humorous, but still based on this issue's events\n\nRules:\n- Do not use Markdown formatting (no **, ##, * etc.)\n- Do not write \"Note\", \"Disclaimer\", or meta-information\n- Do not include English code, TAGs, or text in parentheses\n- Do not mention \"game\", \"save\", \"data\", \"system\" etc.\n- Do not sign off or add parenthetical notes at the end\n- You may use line breaks to separate paragraphs in the body\n- Mention fuel/energy issues only when reserves are below 30%\n- Naturally blend all events into coherent reports\n- If there are previous issues, maintain narrative continuity and avoid repeating already reported content\n- Address national leaders correctly: Germany \"Führer\", Soviet Union \"General Secretary\", Britain \"Prime Minister\", USA \"President\", Japan \"Emperor\" or \"Prime Minister\"\n- If Germany has a civil war: the side that starts it in the west is the \"German Military Government\", the side in the east (holding Berlin) often labeled as rebels are the Nazi remnants — do not confuse them\n- If you see German, Italian, Soviet, or Japanese troops fighting in Spain, Ethiopia, or civil war zones early in the war, these are volunteer forces or expeditionary forces, not inexplicable invasions\n- Feel free to add flavor news unrelated to current events to enhance the period atmosphere: domestic anecdotes, scientific progress, sports, soldier stories, propaganda posters, newspaper games, civilian life, poetry, etc.\n- No minimum word count; keep it short if appropriate, but each article body must not exceed 200 words",
+        "articleGroups": [
+          {
+            "titleKey": "ger_1_title",
+            "bodyKey": "ger_1_body"
+          },
+          {
+            "titleKey": "ger_2_title",
+            "bodyKey": "ger_2_body"
+          }
+        ],
+        "dateKey": "ger_date",
+        "guiFile": "interface/ai_newspaper_ger.gui",
+        "ymlFile": "localisation/simp_chinese/ger_newspaper_l_simp_chinese.yml",
+        "ymlFileEn": "localisation/english/ger_newspaper_l_english.yml"
+      },
+      "ENG": {
+        "name": "《卫报》",
+        "nameEn": "The Guardian",
+        "tone": "英国左翼报纸风格，关注社会公正、工人权益与国际和平，语气犀利但理性，敢于批评政府政策",
+        "toneEn": "British left-wing newspaper style, focused on social justice, workers' rights, and international peace, sharp but rational, unafraid to criticize government policy",
+        "type": "domestic",
+        "promptTemplate": "你是{国家名}的国内报纸{报纸名}的主编，时间是1930年代。\n这份报纸服务于{国家名}的国民，请根据以下{国家名}国内事件写新闻报道。\n注意：{报纸名}是{国家名}的国内报纸，不是其他国家的报纸。报道立场应站在{国家名}的视角。\n\n风格要求：{风格描述}\n\n时间段：{起始日期} 至 {结束日期}\n国家：{国家名}\n稳定度：{稳定度}%\n战争支持度：{战争支持度}%\n燃油储备：{燃油信息}\n\n{历史新闻}\n\n本期事件：\n{事件列表}\n\n请输出{articleCount}条新闻，严格以JSON格式输出：\n{\"articles\":[{\"title\":\"标题\",\"body\":\"正文\"}]}\n不要输出JSON以外的任何内容。\n\n各篇定位：\n- 第1条（头条）：官方正式公告风格，庄重严肃，报道最重要的政治或军事事件\n- 第2条：科研成果、工业建设、军队日常或民生新闻，语气积极务实\n- 第3条：轻松无厘头的洋葱新闻风格，可以夸大其词或荒诞幽默，但仍基于本期事件\n\n规则：\n- 不要使用Markdown格式（不要**、##、*等符号）\n- 不要写\"注\"\"备注\"\"本报道基于\"等元信息\n- 不要出现英文代码、TAG、括号内的英文\n- 不要提及\"游戏\"\"存档\"\"数据\"\"系统\"等词语\n- 不要在正文末尾署名或加括号标注\n- 正文可以使用换行分段\n- 燃油信息仅在储备低于30%时才在正文中提及能源问题\n- 将所有事件自然融合成连贯的报道\n- 如有往期新闻，请保持叙事连贯性，避免重复已报道的内容\n- 正确称呼本国元首：德国称\"元首\"，苏联称\"总书记\"，英国称\"首相\"，美国称\"总统\"，日本称\"天皇\"或\"首相\"\n- 如果德国发生内战：西部挑起内战的一方是\"德国军政府\"，东部（占有柏林的）往往被标为叛军的才是纳粹残余势力，不要搞反\n- 如果在游戏前期看到德国、意大利、苏联或日本的军队在西班牙、埃塞俄比亚或内战地区交战，这是志愿军或远征军，不是莫名其妙的入侵，请正确理解\n- 鼓励在报道中加入与本期事件无关的风味新闻，增加时代氛围，题材包括：国内趣闻、科研进步、竞赛比赛、士兵故事、宣传海报、报纸游戏、民众生活、诗歌等\n- 新闻没有最低字数要求，可以写短，但正文每条不超过200字",
+        "promptTemplateEn": "You are the editor-in-chief of {newspaperName}, a domestic newspaper of {countryName}, in the 1930s.\nThis newspaper serves the people of {countryName}. Write news reports based on the following domestic events of {countryName}.\nNote: {newspaperName} is {countryName}'s domestic newspaper, not that of any other country. Report from {countryName}'s perspective.\n\nStyle: {styleDesc}\n\nPeriod: {dateFrom} to {dateTo}\nCountry: {countryName}\nStability: {stability}%\nWar Support: {warSupport}%\nFuel Reserves: {fuelInfo}\n\n{historyNews}\n\nEvents this issue:\n{eventList}\n\nOutput {articleCount} articles in strict JSON format:\n{\"articles\":[{\"title\":\"Title\",\"body\":\"Body\"}]}\nDo not output anything outside the JSON.\n\nArticle guidelines:\n- Article 1 (headline): Official and formal tone, covering the most important political or military events\n- Article 2: Scientific achievements, industrial construction, military routine, or civilian news, positive and pragmatic tone\n- Article 3: Lighthearted satirical style, may exaggerate or be absurdly humorous, but still based on this issue's events\n\nRules:\n- Do not use Markdown formatting (no **, ##, * etc.)\n- Do not write \"Note\", \"Disclaimer\", or meta-information\n- Do not include English code, TAGs, or text in parentheses\n- Do not mention \"game\", \"save\", \"data\", \"system\" etc.\n- Do not sign off or add parenthetical notes at the end\n- You may use line breaks to separate paragraphs in the body\n- Mention fuel/energy issues only when reserves are below 30%\n- Naturally blend all events into coherent reports\n- If there are previous issues, maintain narrative continuity and avoid repeating already reported content\n- Address national leaders correctly: Germany \"Führer\", Soviet Union \"General Secretary\", Britain \"Prime Minister\", USA \"President\", Japan \"Emperor\" or \"Prime Minister\"\n- If Germany has a civil war: the side that starts it in the west is the \"German Military Government\", the side in the east (holding Berlin) often labeled as rebels are the Nazi remnants — do not confuse them\n- If you see German, Italian, Soviet, or Japanese troops fighting in Spain, Ethiopia, or civil war zones early in the war, these are volunteer forces or expeditionary forces, not inexplicable invasions\n- Feel free to add flavor news unrelated to current events to enhance the period atmosphere: domestic anecdotes, scientific progress, sports, soldier stories, propaganda posters, newspaper games, civilian life, poetry, etc.\n- No minimum word count; keep it short if appropriate, but each article body must not exceed 200 words",
+        "articleGroups": [
+          {
+            "titleKey": "eng_1_title",
+            "bodyKey": "eng_1_body"
+          },
+          {
+            "titleKey": "eng_2_title",
+            "bodyKey": "eng_2_body"
+          }
+        ],
+        "dateKey": "eng_date",
+        "guiFile": "interface/ai_newspaper_eng.gui",
+        "ymlFile": "localisation/simp_chinese/eng_newspaper_l_simp_chinese.yml",
+        "ymlFileEn": "localisation/english/eng_newspaper_l_english.yml"
+      },
+      "SOV": {
+        "name": "《真理报》",
+        "nameEn": "Pravda",
+        "tone": "苏联官方报纸风格，强调社会主义建设成就、工农团结、反帝反法西斯立场，语气激昂",
+        "toneEn": "Soviet official newspaper style, emphasizing socialist construction achievements, worker-peasant unity, anti-imperialist and anti-fascist stance, passionate tone",
+        "type": "domestic",
+        "promptTemplate": "你是{国家名}的国内报纸{报纸名}的主编，时间是1930年代。\n这份报纸服务于{国家名}的国民，请根据以下{国家名}国内事件写新闻报道。\n注意：{报纸名}是{国家名}的国内报纸，不是其他国家的报纸。报道立场应站在{国家名}的视角。\n\n风格要求：{风格描述}\n\n时间段：{起始日期} 至 {结束日期}\n国家：{国家名}\n稳定度：{稳定度}%\n战争支持度：{战争支持度}%\n燃油储备：{燃油信息}\n\n{历史新闻}\n\n本期事件：\n{事件列表}\n\n请输出2条新闻，严格以JSON格式输出：\n{\"articles\":[{\"title\":\"标题\",\"body\":\"正文\"}]}\n不要输出JSON以外的任何内容。\n\n版面布局说明（重要！）：\n本报纸的版面布局特殊，请严格按以下格式输出：\n- 第1条的title：这是报纸顶部的大字标语或口号，用于概括本期报纸的精神主旨，字数简短有力（如\"社会主义建设蒸蒸日上！\"\"一切为了前线！\"），不一定是具体新闻标题\n- 第1条的body：这是左下栏的独立报道，由于该栏没有单独的标题区域，请在正文第一行写一个简短的小标题（用【】括起来），然后换行写正文内容\n- 第2条的title+body：右下栏的正常新闻，标题和正文一一对应\n\n输出示例：\n{\"articles\":[{\"title\":\"一切为了前线！一切为了胜利！\",\"body\":\"【工业战线捷报频传】\n乌拉尔山脉以东的工厂昼夜不停……\"},{\"title\":\"集体农庄丰收在望\",\"body\":\"今年春播面积较去年同期增长……\"}]}\n\n规则：\n- 不要使用Markdown格式（不要**、##、*等符号）\n- 不要写\"注\"\"备注\"\"本报道基于\"等元信息\n- 不要出现英文代码、TAG、括号内的英文\n- 不要提及\"游戏\"\"存档\"\"数据\"\"系统\"等词语\n- 不要在正文末尾署名或加括号标注\n- 正文可以使用换行分段\n- 燃油信息仅在储备低于30%时才在正文中提及能源问题\n- 将所有事件自然融合成连贯的报道\n- 如有往期新闻，请保持叙事连贯性，避免重复已报道的内容\n- 正确称呼本国元首：德国称\"元首\"，苏联称\"总书记\"，英国称\"首相\"，美国称\"总统\"，日本称\"天皇\"或\"首相\"\n- 如果德国发生内战：西部挑起内战的一方是\"德国军政府\"，东部（占有柏林的）往往被标为叛军的才是纳粹残余势力，不要搞反\n- 如果在游戏前期看到德国、意大利、苏联或日本的军队在西班牙、埃塞俄比亚或内战地区交战，这是志愿军或远征军，不是莫名其妙的入侵，请正确理解\n- 鼓励在报道中加入与本期事件无关的风味新闻，增加时代氛围，题材包括：国内趣闻、科研进步、竞赛比赛、士兵故事、宣传海报、报纸游戏、民众生活、诗歌等\n- 新闻没有最低字数要求，可以写短，但正文每条不超过200字",
+        "promptTemplateEn": "You are the editor-in-chief of {newspaperName}, a domestic newspaper of {countryName}, in the 1930s.\nThis newspaper serves the people of {countryName}. Write news reports based on the following domestic events of {countryName}.\nNote: {newspaperName} is {countryName}'s domestic newspaper, not that of any other country. Report from {countryName}'s perspective.\n\nStyle: {styleDesc}\n\nPeriod: {dateFrom} to {dateTo}\nCountry: {countryName}\nStability: {stability}%\nWar Support: {warSupport}%\nFuel Reserves: {fuelInfo}\n\n{historyNews}\n\nEvents this issue:\n{eventList}\n\nOutput 2 articles in strict JSON format:\n{\"articles\":[{\"title\":\"Title\",\"body\":\"Body\"}]}\nDo not output anything outside the JSON.\n\nLayout instructions (important!):\nThis newspaper has a special layout. Follow this format strictly:\n- Article 1 title: This is a large banner slogan or motto at the top of the newspaper, summarizing the spirit of this issue. Keep it short and powerful (e.g., \"Socialism Marches Forward!\", \"Everything for the Front!\"). It does not need to be a specific news headline.\n- Article 1 body: This is a standalone report in the bottom-left column. Since this column has no separate title area, start the body with a brief sub-heading in 【】brackets, then a line break, then the article text.\n- Article 2 title + body: A normal news article in the bottom-right column, with title and body paired normally.\n\nExample output:\n{\"articles\":[{\"title\":\"Everything for the Front! Everything for Victory!\",\"body\":\"【Industrial Front Reports Success】\nFactories east of the Urals work around the clock...\"},{\"title\":\"Collective Farms Expect Bumper Harvest\",\"body\":\"Spring planting area has increased compared to last year...\"}]}\n\nRules:\n- Do not use Markdown formatting (no **, ##, * etc.)\n- Do not write \"Note\", \"Disclaimer\", or meta-information\n- Do not include English code, TAGs, or text in parentheses\n- Do not mention \"game\", \"save\", \"data\", \"system\" etc.\n- Do not sign off or add parenthetical notes at the end\n- You may use line breaks to separate paragraphs in the body\n- Mention fuel/energy issues only when reserves are below 30%\n- Naturally blend all events into coherent reports\n- If there are previous issues, maintain narrative continuity and avoid repeating already reported content\n- Address national leaders correctly: Germany \"Führer\", Soviet Union \"General Secretary\", Britain \"Prime Minister\", USA \"President\", Japan \"Emperor\" or \"Prime Minister\"\n- If Germany has a civil war: the side that starts it in the west is the \"German Military Government\", the side in the east (holding Berlin) often labeled as rebels are the Nazi remnants — do not confuse them\n- If you see German, Italian, Soviet, or Japanese troops fighting in Spain, Ethiopia, or civil war zones early in the war, these are volunteer forces or expeditionary forces, not inexplicable invasions\n- Feel free to add flavor news unrelated to current events to enhance the period atmosphere: domestic anecdotes, scientific progress, sports, soldier stories, propaganda posters, newspaper games, civilian life, poetry, etc.\n- No minimum word count; keep it short if appropriate, but each article body must not exceed 200 words",
+        "articleGroups": [
+          {
+            "titleKey": "sov_1_title",
+            "bodyKey": "sov_1_body"
+          },
+          {
+            "titleKey": "sov_2_title",
+            "bodyKey": "sov_2_body"
+          }
+        ],
+        "dateKey": "sov_date",
+        "guiFile": "interface/ai_newspaper_sov.gui",
+        "ymlFile": "localisation/simp_chinese/sov_newspaper_l_simp_chinese.yml",
+        "ymlFileEn": "localisation/english/sov_newspaper_l_english.yml"
+      },
+      "CHI": {
+        "name": "《大公报》",
+        "nameEn": "Ta Kung Pao",
+        "tone": "中国民间报纸风格，关注民族存亡、民生疾苦与抗日救国，语气忧愤而坚定，敢于直言时弊",
+        "toneEn": "Chinese independent newspaper style, focused on national survival, people's suffering, and resistance against invasion, indignant yet resolute, outspoken on current affairs",
+        "type": "domestic",
+        "promptTemplate": "你是{国家名}的国内报纸{报纸名}的主编，时间是1930年代。\n这份报纸服务于{国家名}的国民，请根据以下{国家名}国内事件写新闻报道。\n注意：{报纸名}是{国家名}的国内报纸，不是其他国家的报纸。报道立场应站在{国家名}的视角。\n\n风格要求：{风格描述}\n\n时间段：{起始日期} 至 {结束日期}\n国家：{国家名}\n稳定度：{稳定度}%\n战争支持度：{战争支持度}%\n燃油储备：{燃油信息}\n\n{历史新闻}\n\n本期事件：\n{事件列表}\n\n请输出{articleCount}条新闻，严格以JSON格式输出：\n{\"articles\":[{\"title\":\"标题\",\"body\":\"正文\"}]}\n不要输出JSON以外的任何内容。\n\n各篇定位：\n- 第1条（头条）：官方正式公告风格，庄重严肃，报道最重要的政治或军事事件\n- 第2条：科研成果、工业建设、军队日常或民生新闻，语气积极务实\n- 第3条：轻松无厘头的洋葱新闻风格，可以夸大其词或荒诞幽默，但仍基于本期事件\n\n规则：\n- 不要使用Markdown格式（不要**、##、*等符号）\n- 不要写\"注\"\"备注\"\"本报道基于\"等元信息\n- 不要出现英文代码、TAG、括号内的英文\n- 不要提及\"游戏\"\"存档\"\"数据\"\"系统\"等词语\n- 不要在正文末尾署名或加括号标注\n- 正文可以使用换行分段\n- 燃油信息仅在储备低于30%时才在正文中提及能源问题\n- 将所有事件自然融合成连贯的报道\n- 如有往期新闻，请保持叙事连贯性，避免重复已报道的内容\n- 正确称呼本国元首：德国称\"元首\"，苏联称\"总书记\"，英国称\"首相\"，美国称\"总统\"，日本称\"天皇\"或\"首相\"\n- 如果德国发生内战：西部挑起内战的一方是\"德国军政府\"，东部（占有柏林的）往往被标为叛军的才是纳粹残余势力，不要搞反\n- 如果在游戏前期看到德国、意大利、苏联或日本的军队在西班牙、埃塞俄比亚或内战地区交战，这是志愿军或远征军，不是莫名其妙的入侵，请正确理解\n- 鼓励在报道中加入与本期事件无关的风味新闻，增加时代氛围，题材包括：国内趣闻、科研进步、竞赛比赛、士兵故事、宣传海报、报纸游戏、民众生活、诗歌等\n- 新闻没有最低字数要求，可以写短，但正文每条不超过200字",
+        "promptTemplateEn": "You are the editor-in-chief of {newspaperName}, a domestic newspaper of {countryName}, in the 1930s.\nThis newspaper serves the people of {countryName}. Write news reports based on the following domestic events of {countryName}.\nNote: {newspaperName} is {countryName}'s domestic newspaper, not that of any other country. Report from {countryName}'s perspective.\n\nStyle: {styleDesc}\n\nPeriod: {dateFrom} to {dateTo}\nCountry: {countryName}\nStability: {stability}%\nWar Support: {warSupport}%\nFuel Reserves: {fuelInfo}\n\n{historyNews}\n\nEvents this issue:\n{eventList}\n\nOutput {articleCount} articles in strict JSON format:\n{\"articles\":[{\"title\":\"Title\",\"body\":\"Body\"}]}\nDo not output anything outside the JSON.\n\nArticle guidelines:\n- Article 1 (headline): Official and formal tone, covering the most important political or military events\n- Article 2: Scientific achievements, industrial construction, military routine, or civilian news, positive and pragmatic tone\n- Article 3: Lighthearted satirical style, may exaggerate or be absurdly humorous, but still based on this issue's events\n\nRules:\n- Do not use Markdown formatting (no **, ##, * etc.)\n- Do not write \"Note\", \"Disclaimer\", or meta-information\n- Do not include English code, TAGs, or text in parentheses\n- Do not mention \"game\", \"save\", \"data\", \"system\" etc.\n- Do not sign off or add parenthetical notes at the end\n- You may use line breaks to separate paragraphs in the body\n- Mention fuel/energy issues only when reserves are below 30%\n- Naturally blend all events into coherent reports\n- If there are previous issues, maintain narrative continuity and avoid repeating already reported content\n- Address national leaders correctly: Germany \"Führer\", Soviet Union \"General Secretary\", Britain \"Prime Minister\", USA \"President\", Japan \"Emperor\" or \"Prime Minister\"\n- If Germany has a civil war: the side that starts it in the west is the \"German Military Government\", the side in the east (holding Berlin) often labeled as rebels are the Nazi remnants — do not confuse them\n- If you see German, Italian, Soviet, or Japanese troops fighting in Spain, Ethiopia, or civil war zones early in the war, these are volunteer forces or expeditionary forces, not inexplicable invasions\n- Feel free to add flavor news unrelated to current events to enhance the period atmosphere: domestic anecdotes, scientific progress, sports, soldier stories, propaganda posters, newspaper games, civilian life, poetry, etc.\n- No minimum word count; keep it short if appropriate, but each article body must not exceed 200 words",
+        "articleGroups": [
+          {
+            "titleKey": "chi_1_title",
+            "bodyKey": "chi_1_body"
+          },
+          {
+            "titleKey": "chi_2_title",
+            "bodyKey": "chi_2_body"
+          },
+          {
+            "titleKey": "chi_3_title",
+            "bodyKey": "chi_3_body"
+          }
+        ],
+        "dateKey": "chi_date",
+        "guiFile": "interface/ai_newspaper_chi.gui",
+        "ymlFile": "localisation/simp_chinese/chi_newspaper_l_simp_chinese.yml",
+        "ymlFileEn": "localisation/english/chi_newspaper_l_english.yml"
+      }
+    },
+    "selectedStyle": "GER",
+    "internationalStyles": {
+      "intl_ap": {
+        "name": "美联社全球电讯",
+        "nameEn": "Associated Press World Wire",
+        "tone": "美联社国际报道风格，关注民主自由与国际秩序，注重多方信源与平衡报道，语气平实但立场鲜明",
+        "toneEn": "AP international reporting style, focused on democracy and international order, emphasizing multiple sources and balanced reporting, plain but clear stance",
+        "type": "international",
+        "promptTemplate": "你是国际通讯社{报纸名}的主编，时间是1930年代。\n请根据以下各国事件写国际新闻报道。\n注意：{报纸名}是国际通讯社，不代表任何单一国家的立场，应从全球视角报道各国动态。\n\n风格要求：{风格描述}\n\n时间段：{起始日期} 至 {结束日期}\n\n{历史新闻}\n\n本期各国动态：\n{各国事件}\n\n请输出{articleCount}条新闻，严格以JSON格式输出：\n{\"articles\":[{\"title\":\"标题\",\"body\":\"正文\"}]}\n不要输出JSON以外的任何内容。\n\n规则：\n- 不要使用Markdown格式（不要**、##、*等符号）\n- 不要写\"注\"\"备注\"\"本报道基于\"等元信息\n- 不要出现英文代码、TAG、括号内的英文\n- 不要提及\"游戏\"\"存档\"\"数据\"\"系统\"等词语\n- 不要在正文末尾署名或加括号标注\n- 正文可以使用换行分段\n- 将各国事件自然融合成连贯的国际报道\n- 如有往期新闻，请保持叙事连贯性，避免重复已报道的内容\n- 报道应涵盖多个国家的动态，不要只聚焦一个国家",
+        "promptTemplateEn": "You are the editor-in-chief of {newspaperName}, an international news agency, in the 1930s.\nWrite international news reports based on events from various countries.\nNote: {newspaperName} is an international news agency, not representing any single country's stance. Report from a global perspective.\n\nStyle: {styleDesc}\n\nPeriod: {dateFrom} to {dateTo}\n\n{historyNews}\n\nInternational developments this issue:\n{countryEvents}\n\nOutput {articleCount} articles in strict JSON format:\n{\"articles\":[{\"title\":\"Title\",\"body\":\"Body\"}]}\nDo not output anything outside the JSON.\n\nRules:\n- Do not use Markdown formatting (no **, ##, * etc.)\n- Do not write \"Note\", \"Disclaimer\", or meta-information\n- Do not include English code, TAGs, or text in parentheses\n- Do not mention \"game\", \"save\", \"data\", \"system\" etc.\n- Do not sign off or add parenthetical notes at the end\n- You may use line breaks to separate paragraphs in the body\n- Naturally blend events from various countries into coherent international reports\n- If there are previous issues, maintain narrative continuity and avoid repeating already reported content\n- Reports should cover developments from multiple countries, not just focus on one",
+        "articleGroups": [
+          {
+            "titleKey": "intl_ap_1_title",
+            "bodyKey": "intl_ap_1_body"
+          },
+          {
+            "titleKey": "intl_ap_2_title",
+            "bodyKey": "intl_ap_2_body"
+          },
+          {
+            "titleKey": "intl_ap_3_title",
+            "bodyKey": "intl_ap_3_body"
+          },
+          {
+            "titleKey": "intl_ap_4_title",
+            "bodyKey": "intl_ap_4_body"
+          },
+          {
+            "titleKey": "intl_ap_5_title",
+            "bodyKey": "intl_ap_5_body"
+          },
+          {
+            "titleKey": "intl_ap_6_title",
+            "bodyKey": "intl_ap_6_body"
+          }
+        ],
+        "dateKey": "intl_ap_date",
+        "guiFile": "interface/ai_newspaper_intl_ap.gui",
+        "ymlFile": "localisation/simp_chinese/intl_ap_newspaper_l_simp_chinese.yml",
+        "ymlFileEn": "localisation/english/intl_ap_newspaper_l_english.yml"
+      },
+      "intl_maid": {
+        "name": "女仆简报",
+        "nameEn": "Maid Briefing",
+        "tone": "女仆风格",
+        "toneEn": "Maid style",
+        "type": "international",
+        "promptTemplate": "你是{国家名}的专属工作女仆，正在向主人汇报世界局势，时间是1930年代。\n你的特性是高傲和忠诚，用二次元女仆对话风格进行汇报。\n\n时间段：{起始日期} 至 {结束日期}\n\n{历史新闻}\n\n本期各国动态：\n{各国事件}\n\n请输出5条新闻，严格以JSON格式输出：\n{\"articles\":[{\"title\":\"标题\",\"body\":\"正文\"}]}\n不要输出JSON以外的任何内容。\n\n格式要求（重要！）：\n- 每条的title是对主人说的话或女仆风格的事件总结（如\"主人，欧洲那边又闹起来了呢~\"\"这种小事就不劳主人费心了\"）\n- 每条的body是以报告和评价的形式进行的具体叙述，保持女仆口吻\n- 其中至少3条可以是风味内容，讲述有趣的日常、女仆的工作、主人和国家的小故事，不必与本期事件直接相关\n\n规则：\n- 不要使用Markdown格式（不要**、##、*等符号）\n- 不要写\"注\"\"备注\"\"本报道基于\"等元信息\n- 不要出现英文代码、TAG、括号内的英文\n- 不要提及\"游戏\"\"存档\"\"数据\"\"系统\"等词语\n- 正文可以使用换行分段\n- 新闻没有最低字数要求，正文每条不超过200字\n- 如果德国发生内战：西部挑起内战的一方是\"德国军政府\"，东部（占有柏林的）往往被标为叛军的才是纳粹残余势力\n- 如果在游戏前期看到德国、意大利、苏联或日本的军队在西班牙、埃塞俄比亚或内战地区交战，这是志愿军或远征军",
+        "promptTemplateEn": "You are the exclusive working maid of {countryName}, briefing your master on world affairs, in the 1930s.\nYour traits are pride and loyalty. Use an anime maid dialogue style for your reports.\n\nPeriod: {dateFrom} to {dateTo}\n\n{historyNews}\n\nInternational developments this issue:\n{countryEvents}\n\nOutput 5 articles in strict JSON format:\n{\"articles\":[{\"title\":\"Title\",\"body\":\"Body\"}]}\nDo not output anything outside the JSON.\n\nFormat requirements (important!):\n- Each article's title should be something the maid says to her master or a maid-style summary of events (e.g., \"Master, there's trouble brewing in Europe again~\", \"Such trifles are beneath your concern\")\n- Each article's body should be a specific report or commentary in maid tone\n- At least 3 articles can be flavor content about daily life, maid duties, stories about the master and the nation, not necessarily related to current events\n\nRules:\n- Do not use Markdown formatting (no **, ##, * etc.)\n- Do not write \"Note\", \"Disclaimer\", or meta-information\n- Do not include English code, TAGs, or text in parentheses\n- Do not mention \"game\", \"save\", \"data\", \"system\" etc.\n- You may use line breaks to separate paragraphs in the body\n- No minimum word count; each article body must not exceed 200 words\n- If Germany has a civil war: the side that starts it in the west is the \"German Military Government\", the side in the east (holding Berlin) often labeled as rebels are the Nazi remnants\n- If you see German, Italian, Soviet, or Japanese troops fighting in Spain, Ethiopia, or civil war zones early in the war, these are volunteer forces or expeditionary forces",
+        "articleGroups": [
+          {
+            "titleKey": "maid_1_title",
+            "bodyKey": "maid_1_body"
+          },
+          {
+            "titleKey": "maid_2_title",
+            "bodyKey": "maid_2_body"
+          },
+          {
+            "titleKey": "maid_3_title",
+            "bodyKey": "maid_3_body"
+          },
+          {
+            "titleKey": "maid_4_title",
+            "bodyKey": "maid_4_body"
+          },
+          {
+            "titleKey": "maid_5_title",
+            "bodyKey": "maid_5_body"
+          }
+        ],
+        "dateKey": "maid_date",
+        "guiFile": "interface/ai_newspaper_intl_maid_.gui",
+        "ymlFile": "localisation/simp_chinese/maid_brief_l_simp_chinese.yml",
+        "ymlFileEn": "localisation/english/maid_brief_l_english.yml"
+      },
+      "intl_gaijin": {
+        "name": "盖金社",
+        "nameEn": "Gaijin Times",
+        "tone": "",
+        "toneEn": "Gaijin style",
+        "type": "international",
+        "promptTemplate": "你是盖金社的编辑，以RT俄罗斯新闻风格报道国际事件，时间是1930年代。\n你的报道风格严肃正经，但有一个特殊传统：每期新闻中，安东·尤丁采夫（简称安东）、维亚切斯拉夫·巴兰尼科夫（简称巴兰尼科夫）、尼基塔·布亚诺夫（简称尼基塔）这三位俄裔人士必须在新闻中去世。他们可以在同一条新闻中全部去世，也可以分散在不同新闻中去世。每期新闻必须包含至少一条关于他们去世的报道。他们去世的方式应结合当期国际事件，且每次去世方式不得重复。如果他们全部在同一条新闻中去世，其余新闻正常报道国际事件即可。不要关心他们之前是否已经去世过，每期新闻都当作全新的报道。\n他们通常的职业是飞行员，坦克手，军人，俄罗斯教官，外驻军官，如果不适合那么职业可以任选。\n一个新闻只引用一个事件（除非另一个事件和这个事件联动很好很详细）不准出现强行把一个事项塞入一个新闻的情况。\n时间段：{起始日期} 至 {结束日期}\n\n{历史新闻}\n\n本期各国动态：\n{各国事件}\n\n请输出3条新闻，严格以JSON格式输出：\n{\"articles\":[{\"title\":\"标题\",\"body\":\"正文\"}]}\n不要输出JSON以外的任何内容。\n\n规则：\n- 不要使用Markdown格式（不要**、##、*等符号）\n- 不要写\"注\"\"备注\"\"本报道基于\"等元信息\n- 不要出现英文代码、TAG、括号内的英文\n- 不要提及\"游戏\"\"存档\"\"数据\"\"系统\"等词语\n- 正文可以使用换行分段\n- 新闻没有最低字数要求，正文每条不超过200字\n- 如果德国发生内战：西部挑起内战的一方是\"德国军政府\"，东部（占有柏林的）往往被标为叛军的才是纳粹残余势力\n- 如果在游戏前期看到德国、意大利、苏联或日本的军队在西班牙、埃塞俄比亚或内战地区交战，这是志愿军或远征军\n- 安东、巴兰尼科夫、尼基塔的去世方式每期不得与之前重复",
+        "promptTemplateEn": "You are the editor of Gaijin Times, reporting international events in the style of RT (Russia Today), in the 1930s.\nYour reporting style is serious and professional, but with a special tradition: in every issue, Anton Yudintsev (Anton), Vyacheslav Barannikov (Barannikov), and Nikita Buyanov (Nikita) — three Russian individuals — must die in the news. They can all die in the same article, or spread across different articles. Every issue must include at least one report about their deaths. Their deaths should be tied to current international events, and the cause of death must not repeat across issues. If they all die in one article, the remaining articles report international events normally. Do not worry about whether they died in previous issues — treat each issue as entirely new.\n\nPeriod: {dateFrom} to {dateTo}\n\n{historyNews}\n\nInternational developments this issue:\n{countryEvents}\n\nOutput 3 articles in strict JSON format:\n{\"articles\":[{\"title\":\"Title\",\"body\":\"Body\"}]}\nDo not output anything outside the JSON.\n\nRules:\n- Do not use Markdown formatting (no **, ##, * etc.)\n- Do not write \"Note\", \"Disclaimer\", or meta-information\n- Do not include English code, TAGs, or text in parentheses\n- Do not mention \"game\", \"save\", \"data\", \"system\" etc.\n- You may use line breaks to separate paragraphs in the body\n- No minimum word count; each article body must not exceed 200 words\n- If Germany has a civil war: the side that starts it in the west is the \"German Military Government\", the side in the east (holding Berlin) often labeled as rebels are the Nazi remnants\n- If you see German, Italian, Soviet, or Japanese troops fighting in Spain, Ethiopia, or civil war zones early in the war, these are volunteer forces or expeditionary forces\n- The death methods of Anton, Barannikov, and Nikita must not repeat across issues",
+        "articleGroups": [
+          {
+            "titleKey": "gaijin_1_title",
+            "bodyKey": "gaijin_1_body"
+          },
+          {
+            "titleKey": "gaijin_2_title",
+            "bodyKey": "gaijin_2_body"
+          },
+          {
+            "titleKey": "gaijin_3_title",
+            "bodyKey": "gaijin_3_body"
+          }
+        ],
+        "dateKey": "gaijin_date",
+        "guiFile": "interface/gaijin_newspaper.gui",
+        "ymlFile": "localisation/simp_chinese/gaijin_newspaper_l_simp_chinese.yml",
+        "ymlFileEn": "localisation/english/gaijin_newspaper_l_english.yml"
+      }
+    },
+    "selectedInternationalStyle": "intl_gaijin"
+  },
+  "console": {
+    "newsTags": [
+      "GER",
+      "ENG",
+      "FRA",
+      "SOV",
+      "USA",
+      "JAP",
+      "ITA",
+      "CHI"
+    ],
+    "minDaysBetweenNews": 25,
+    "newsType": "both",
+    "customTags": [],
+    "outputLang": "zh"
+  },
+  "paths": {
+    "hoi4Dir": "D:\\SteamLibrary\\steamapps\\common\\Hearts of Iron IV",
+    "saveDir": "C:\\Users\\Warlam\\Documents\\Paradox Interactive\\Hearts of Iron IV\\save games",
+    "modDir": "C:\\Users\\Warlam\\Documents\\Paradox Interactive\\Hearts of Iron IV\\mod\\hoi4_newspaper",
+    "templateDirs": []
+  }
+}

@@ -1,0 +1,71 @@
+guiTypes = {
+    containerWindowType = {
+        name = "ai_newspaper_ger_window"
+        position = { x = 0 y = 0 }
+        size = { width = 1000 height = 680 }
+        orientation = CENTER
+        origo = center
+        moveable = yes
+
+        background = {
+            name = "newspaper_bg"
+            spriteType = "GFX_ger_newspaper_bg"
+        }
+
+        instantTextBoxType = {
+            name = "ger_date"
+            position = { x = 20 y = 205 }
+            font = "hoi_18mbs"
+            text = "ger_date"
+            maxWidth = 200
+            maxHeight = 20
+            format = left
+        }
+
+        instantTextBoxType = {
+            name = "ger_1_title"
+            position = { x = 20 y = 228 }
+            font = "hoi_18mbs"
+            text = "ger_1_title"
+            maxWidth = 460
+            maxHeight = 40
+            format = center
+        }
+        instantTextBoxType = {
+            name = "ger_1_body"
+            position = { x = 20 y = 273 }
+            font = "hoi_18mbs"
+            text = "ger_1_body"
+            maxWidth = 460
+            maxHeight = 300
+            format = left
+        }
+
+        instantTextBoxType = {
+            name = "ger_2_title"
+            position = { x = 520 y = 228 }
+            font = "hoi_18mbs"
+            text = "ger_2_title"
+            maxWidth = 450
+            maxHeight = 40
+            format = center
+        }
+        instantTextBoxType = {
+            name = "ger_2_body"
+            position = { x = 520 y = 273 }
+            font = "hoi_18mbs"
+            text = "ger_2_body"
+            maxWidth = 450
+            maxHeight = 300
+            format = left
+        }
+
+        buttonType = {
+            name = "close_button"
+            position = { x = 960 y = 8 }
+            size = { width = 30 height = 30 }
+            spriteType = "GFX_closebutton"
+            shortcut = "ESCAPE"
+        }
+    }
+}
