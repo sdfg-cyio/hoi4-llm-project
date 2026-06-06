@@ -1,0 +1,39 @@
+# 敏感信息
+.env
+runtime/settings.json
+
+# 内部文档
+INTERNAL.md
+
+# 运行时数据（每个人不同，换游戏需清理）
+runtime/last_snapshot.json
+runtime/session.json
+runtime/news_history.json
+
+# 调试输出文件
+explore_result.txt
+find_result.txt
+
+# 预生成字典（体积大，且依赖本地游戏路径）
+data/states_dict.json
+data/vp_dict.json
+
+# Node依赖（从npm安装）
+node_modules/
+
+# Node.js免安装版（用户自行下载放入）
+node.exe
+npm
+npm.cmd
+npx
+npx.cmd
+
+# Git重写临时目录
+.git-rewrite/
+
+# 开发工具脚本（个人用）
+tools/dump_and_explore.mjs
+tools/find_in_save.mjs
+
+# 分发包（打包时生成，无需进仓库）
+Hoi4 Newspaper and Assistant/

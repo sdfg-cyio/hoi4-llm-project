@@ -1,0 +1,31 @@
+{
+  "llm": {
+    "provider": "deepseek",
+    "apiUrl": "https://api.deepseek.com/v1/chat/completions",
+    "apiKey": "",
+    "model": "",
+    "temperature": 0.8,
+    "maxTokens": 800,
+    "contextLength": 64000,
+    "historyCount": 3
+  },
+  "newspaper": {
+    "styles": {},
+    "selectedStyle": "GER",
+    "internationalStyles": {},
+    "selectedInternationalStyle": "intl_ap"
+  },
+  "console": {
+    "newsTags": [],
+    "minDaysBetweenNews": 25,
+    "newsType": "both",
+    "customTags": [],
+    "outputLang": "zh"
+  },
+  "paths": {
+    "hoi4Dir": "",
+    "saveDir": "",
+    "modDir": "",
+    "templateDirs": []
+  }
+}
