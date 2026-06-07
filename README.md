@@ -691,6 +691,10 @@ node data/generate_dicts.mjs
 
 这会从 HOI4 游戏文件中读取州定义和本地化，生成 `data/states_dict.json` 和 `data/vp_dict.json`。
 
+Virustotal扫描结果：
+<img width="1568" height="728" alt="download" src="https://github.com/user-attachments/assets/a457e6cd-c109-451a-a747-ca1ab457a3ef" />
+<img width="1568" height="739" alt="download" src="https://github.com/user-attachments/assets/5c7be881-e6be-4255-9ff4-9cf15c966348" />
+
 ---
 
 ## 依赖
